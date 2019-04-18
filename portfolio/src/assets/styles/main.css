@@ -1,0 +1,152 @@
+/* FONTS */
+
+* {
+    font-family: 'Lato', sans-serif !important;
+}
+
+/* BASE FONT SIZE */
+html {
+    font-size: 17px;
+}
+
+body {
+    background: #eee;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+h1:first-of-type {
+    font-size: calc(1.3rem + 1.3vw);
+    margin-bottom: calc(1rem + 1vw);
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 130%;
+    font-weight: 300;
+}
+
+h1,
+h2 {
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+b {
+    font-weight: 700;
+}
+
+p,
+ul {
+    margin-bottom: 25px;
+}
+
+p,
+li {
+    line-height: 150%;
+    letter-spacing: 0.1px;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+li {
+    font-weight: 300;
+    margin-bottom: 15px;
+    list-style-type: disc;
+}
+
+p em {
+    font-style: italic;
+}
+
+.small {
+    font-size: 0.7rem;
+    letter-spacing: 0.2px;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.small.caps {
+    line-height: 80%;
+}
+
+.comin-soon {
+    color: #999;
+}
+
+a {
+    transition: all 0.3s;
+    color: #c00;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+}
+
+section,
+ul {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+ul {
+    padding-right: 15px;
+}
+
+section {
+    padding: 15px;
+}
+
+section:first-of-type {
+    padding-top: 20px;
+    padding-top: calc(10px + 5vw);
+}
+
+
+/* LAYOUT */
+
+#range-contain {
+    padding: 0 25px;
+}
+
+#range,
+#range-display {
+    max-width: 300px;
+    margin: 25px auto 15px;
+}
+
+#range-display {
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: 50px;
+    /* border-top: 1px solid grey; */
+    padding: 15px;
+}
+
+/* UI CHANGES */
+
+.no-ui {
+    background: white;
+}
+
+

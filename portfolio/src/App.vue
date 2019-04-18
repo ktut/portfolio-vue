@@ -1,28 +1,150 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+require('@/assets/styles/reset.css');
+require('@/assets/styles/main.css');
+require('@/assets/styles/extra.css');
+
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Ramzi's Vue.js App"/>
+  <section>
+      <h1>Hey, I’m Ramzi.</h1>
+
+      <h2>I’m a <a href="#web">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
+
+      <p>Currently I do front-end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s fullstack coding bootcamp on nights/weekends (learning React, Mongo, MySQL and more). Here's my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
+  
+      <p id="web" style="margin-bottom: 10px;">At <em>Chicago</em>, I did a lot of editorial web design, which <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank">won a national award</a> from the City and Regional Magazine Association:</p>
+  </section>
+  
+    <ul class="resp">
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-1.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank">A Second City</a> (design direction, interactive components, <a href="https://citymag.org/crma_events/2019-national-city-and-regional-magazine-awards-finalists/" target="_blank">2019 CRMA Finalist for Multiplatform Storytelling</a>)
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-2.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        
+        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank">Welcome to Refugee High</a> (video/interactive components, <a href="https://citymag.org/crma_events/2018-national-city-and-regional-magazine-awards-finalists/" target="_blank">2018 CRMA Finalist for Multiplatform Storytelling</a>)
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-3.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank">What’s in Their Fridge</a> (3D transforms, SVGs, pseudo elements)
+      </li>
+
+      <li>
+          <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">
+            <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+              <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </a>
+          <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
+        </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-5.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank">Face of a Century</a> (custom gallery with audio integration)
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-6.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank">A Guide to Farmer’s Markets</a> (photo deconstructed into flexbox components)
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted poster="https://ktut.github.io/portfolio/assets/rendered/vid-7-poster.jpg">
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">How to Buy Art</a> (responsive design using viewheight units)
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank">A Foolproof Guide to Finding the Best Beach for You</a> (interactive quiz)
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-9.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">What Trauma Docs Know</a> (CSS Grid, typography
+        )</li>
+    </ul>
+
+    <section>
+
+      <p style="padding-top: 15px;">At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools. Recently I've been tasked with building programmatic design systems, like this one:</p>
+
+      <p>
+        <video class="video" width="100%" autoplay loop muted controls>
+          <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </p>
+
+      <p>The developer building the page simply feeds a "card" component an array of objects, and the component designs itself using a simple patterning ruleset, and plucks atomic classes from an array. Fun stuff.</p>
+      <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
+
+    </section>
+
+    <p style="max-width: 900px; margin-left: auto; margin-right: auto; padding-right: 15px; padding-left: 15px;">
+      <video class="video" width="100%" autoplay loop muted controls>
+        <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </p>
+
+    <section>
+
+      <br><hr><br>
+
+      <p>Here are some clients I've worked with on a freelance basis (if you care about that kind of thing): ConAgra, Avant, Rag & Bone, Printavo, The Chicago Community Trust, ADA25, KNSTRCT, Chicago Public Schools, Mariano’s, Dalhousie University ...and more!</p>
+
+      <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>.</p>
+    </section>
+  
   </div>
 </template>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
