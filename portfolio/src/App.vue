@@ -1,7 +1,7 @@
 <script>
 require('@/assets/styles/reset.css');
 require('@/assets/styles/main.css');
-require('@/assets/styles/extra.css');
+require('@/assets/styles/theme1.css');
 
 
 export default {
@@ -12,10 +12,10 @@ export default {
     }
   },
   mounted: function () {
-    this.getTimeOfDay();
+    this.updateGreetingByTimeOfDay();
   },
   methods: {
-    getTimeOfDay: function () {
+    updateGreetingByTimeOfDay: function () {
       const currentTime = new Date().getHours();
 
       if (0 <= currentTime&&currentTime < 5) {
