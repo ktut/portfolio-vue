@@ -8,7 +8,8 @@ export default {
   name: 'app',
   data: function () {
     return { 
-      greeting: 'Hi,'
+      greeting: 'Hi,',
+      themes: ['theme1'],
     }
   },
   mounted: function () {

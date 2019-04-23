@@ -1,3 +1,42 @@
+/* header */
+
+section.title {
+    min-height: 100vh;
+    padding: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+}
+
+section.title > h1 {
+    font-size: calc(2rem + 2.4vw);
+    margin-bottom: calc(1rem + 1vw);
+}
+
+section.title > h2 {
+    font-size: calc(1rem + 1.4vw);
+}
+
+section.title > h1,
+section.title > h2 {
+    width: 100%;
+    max-width: 75vw;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    section.title > h1,
+    section.title > h2 {
+        max-width: 620px;
+    }
+}
+
+
+/* video grid */
+
 .no-resp {
     display: none;
 }
@@ -32,7 +71,7 @@
 
     ul.resp > li {
         transition: all 0.4s;
-        flex: 1 1 25%;
+        flex: 1 1 30%;
         display: block;
         list-style-type: none;
         padding: 15px;

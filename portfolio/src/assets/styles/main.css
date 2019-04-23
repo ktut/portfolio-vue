@@ -1,5 +1,6 @@
 /* FONTS */
 * {
+    box-sizing: border-box;
     font-family: neue-haas-grotesk-display, sans-serif !important;
 }
 
@@ -15,11 +16,6 @@ body {
 h1 {
     font-size: 2rem;
     line-height: 100%;
-}
-
-h1:first-of-type {
-    font-size: calc(1.3rem + 1.3vw);
-    margin-bottom: calc(1rem + 1vw);
 }
 
 h2 {
