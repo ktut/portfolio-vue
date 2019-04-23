@@ -1,7 +1,7 @@
 /* FONTS */
 
 * {
-    font-family: 'Lato', sans-serif !important;
+    font-family: neue-haas-grotesk-display, sans-serif !important;
 }
 
 /* BASE FONT SIZE */
@@ -16,7 +16,6 @@ body {
 h1 {
     font-size: 2rem;
     line-height: 100%;
-    font-weight: 400;
 }
 
 h1:first-of-type {
@@ -32,7 +31,7 @@ h2 {
 
 h1,
 h2 {
-    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 p {
@@ -52,7 +51,7 @@ ul {
 p,
 li {
     line-height: 150%;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.95px;
 }
 
 ul {
@@ -118,7 +117,7 @@ section:first-of-type {
 
 
 /* LAYOUT */
-
+/* 
 #range-contain {
     padding: 0 25px;
 }
@@ -131,7 +130,7 @@ section:first-of-type {
 
 #range-display {
     text-align: center;
-}
+} */
 
 body {
     min-height: 100vh;
@@ -142,11 +141,4 @@ footer {
     /* border-top: 1px solid grey; */
     padding: 15px;
 }
-
-/* UI CHANGES */
-
-.no-ui {
-    background: white;
-}
-
 

@@ -6,15 +6,53 @@ require('@/assets/styles/extra.css');
 
 export default {
   name: 'app',
+  data: function () {
+    return { 
+      greeting: 'Hi,'
+    }
+  },
+  mounted: function () {
+    this.getTimeOfDay();
+  },
+  methods: {
+    getTimeOfDay: function () {
+      const currentTime = new Date().getHours();
+
+      if (0 <= currentTime&&currentTime < 5) {
+      // nighttime
+       this.greeting = 'Good evening!';
+      }
+      if (5 <= currentTime&&currentTime < 11) {
+      // morning
+       this.greeting = 'Good morning!';
+      }
+      if (11 <= currentTime&&currentTime < 16) {
+      // day
+       this.greeting = 'Good day!';
+      }
+      if (16 <= currentTime&&currentTime < 22) {
+        // evening
+       this.greeting = 'Good evening!';
+      }
+      if (22 <= currentTime&&currentTime <= 24) {
+        // nighttime
+       this.greeting = 'Good evening!';
+      }
+    }
+  }
 }
 </script>
 
 <template>
   <div id="app">
-  <section>
-      <h1>Hey, I’m Ramzi.</h1>
 
-      <h2>I’m a <a href="#web">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
+<section class="title" id="title">
+    <h1>{{greeting}} I’m Ramzi.</h1>
+
+    <h2>I’m a <a href="#web">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
+</section>
+
+  <section>
 
       <p>Currently I do front-end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s fullstack coding bootcamp on nights/weekends (learning React, Mongo, MySQL and more). Here's my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
   
@@ -54,16 +92,6 @@ export default {
       </li>
 
       <li>
-          <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">
-            <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
-              <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-        </a>
-          <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
-        </li>
-
-      <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank">
           <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-5.mov" type="video/mp4">
@@ -84,13 +112,13 @@ export default {
       </li>
 
       <li>
-        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted poster="https://ktut.github.io/portfolio/assets/rendered/vid-7-poster.jpg">
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov" type="video/mp4">
+          <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">
+            <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+              <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
             Your browser does not support the video tag.
-          </video>
+            </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">How to Buy Art</a> (responsive design using viewheight units)
+        <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
       </li>
 
       <li>
@@ -104,6 +132,26 @@ export default {
       </li>
 
       <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank">Twelve Blocks</a> (responsive design and interactivity)
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank">Top Doctors</a> (animation, responsive design)
+      </li>
+
+      <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">
           <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-9.mov" type="video/mp4">
@@ -111,7 +159,28 @@ export default {
           </video>
         </a>
         <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">What Trauma Docs Know</a> (CSS Grid, typography
-        )</li>
+        )
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-12.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank">House Music</a> (Spotify integration, interactive Roland TB-303)
+      </li>
+
+      <li>
+        <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">
+          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted poster="https://ktut.github.io/portfolio/assets/rendered/vid-7-poster.jpg">
+            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">How to Buy Art</a> (responsive design using viewheight units)
+      </li>
     </ul>
 
     <section>
