@@ -46,18 +46,19 @@ export default {
 <template>
   <div id="app">
 
-<section class="title" id="title">
+  <section class="title" id="title">
     <h1>{{greeting}} I’m Ramzi.</h1>
 
-    <h2>I’m a <a href="#web">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
-</section>
+    <h2>I’m a <a href="#web-design">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
+  </section>
 
-  <section>
+  <section class="about" id="about">
 
       <p>Currently I do front-end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s fullstack coding bootcamp on nights/weekends (learning React, Mongo, MySQL and more). Here's my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
-  
-      <p id="web" style="margin-bottom: 10px;">At <em>Chicago</em>, I did a lot of editorial web design, which <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank">won a national award</a> from the City and Regional Magazine Association:</p>
   </section>
+
+  <section class="web-design" id="web-design">
+    <p style="margin-bottom: 10px;">At <em>Chicago</em>, I did a lot of editorial web design, which <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank">won a national award</a> from the City and Regional Magazine Association:</p>
   
     <ul class="resp">
       <li>
@@ -182,22 +183,22 @@ export default {
         <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">How to Buy Art</a> (responsive design using viewheight units)
       </li>
     </ul>
+    
+  </section>
 
-    <section>
+  <section class="code" id="code">
 
-      <p style="padding-top: 15px;">At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools. Recently I've been tasked with building programmatic design systems, like this one:</p>
+    <p style="padding-top: 15px;">At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools. Recently I've been tasked with building programmatic design systems, like this one:</p>
 
-      <p>
-        <video class="video" width="100%" autoplay loop muted controls>
-          <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </p>
+    <p>
+      <video class="video" width="100%" autoplay loop muted controls>
+        <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </p>
 
-      <p>The developer building the page simply feeds a "card" component an array of objects, and the component designs itself using a simple patterning ruleset, and plucks atomic classes from an array. Fun stuff.</p>
-      <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
-
-    </section>
+    <p>The developer building the page simply feeds a "card" component an array of objects, and the component designs itself using a simple patterning ruleset, and plucks atomic classes from an array. Fun stuff.</p>
+    <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
     <p style="max-width: 900px; margin-left: auto; margin-right: auto; padding-right: 15px; padding-left: 15px;">
       <video class="video" width="100%" autoplay loop muted controls>
@@ -206,14 +207,16 @@ export default {
       </video>
     </p>
 
-    <section>
+  </section>
 
-      <br><hr><br>
+  <section class="contact" id="contact">
 
-      <p>Here are some clients I've worked with on a freelance basis (if you care about that kind of thing): ConAgra, Avant, Rag & Bone, Printavo, The Chicago Community Trust, ADA25, KNSTRCT, Chicago Public Schools, Mariano’s, Dalhousie University ...and more!</p>
+    <br><hr><br>
 
-      <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>.</p>
-    </section>
+    <p>Here are some clients I've worked with on a freelance basis (if you care about that kind of thing): ConAgra, Avant, Rag & Bone, Printavo, The Chicago Community Trust, ADA25, KNSTRCT, Chicago Public Schools, Mariano’s, Dalhousie University ...and more!</p>
+
+    <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>.</p>
+  </section>
   
   </div>
 </template>
