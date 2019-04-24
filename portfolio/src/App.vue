@@ -17,16 +17,15 @@ export default {
     this.updateGreetingByTimeOfDay();
   },
   computed: {
-    titleCardStyle() {
+    titleCardGradient() {
       return 'background: linear-gradient(to right, rgba(190,190,190,1) 0%,rgba(255,255,255,1) ' + this.gradientFocus + ',rgba(190,190,190,1) 100%)';
     }
   },
   methods: {
-    moveGradient() {
+    updateGradientPosition() {
       let cursorX = event.pageX;
       let titleWidth = document.getElementById('title').offsetWidth;
-      let widthString = parseInt((cursorX / titleWidth).toFixed(2) * 100) + '%';
-      this.gradientFocus = widthString;
+      this.gradientFocus = parseInt((cursorX / titleWidth).toFixed(2) * 100) + '%';
     },
     updateGreetingByTimeOfDay() {
       const currentTime = new Date().getHours();
@@ -59,7 +58,7 @@ export default {
 <template>
   <div id="app">
 
-  <section class="title" id="title" :style="titleCardStyle" @mousemove="moveGradient()" >
+  <section class="title" id="title" :style="titleCardGradient" @mousemove="updateGradientPosition()" >
     <h2>{{greeting}}</h2>
     <h1>I’m Ramzi.</h1>
 
