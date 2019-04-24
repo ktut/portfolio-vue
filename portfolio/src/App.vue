@@ -6,17 +6,29 @@ require('@/assets/styles/theme1.css');
 
 export default {
   name: 'app',
-  data: function () {
+  data() {
     return { 
-      greeting: 'Hi,',
+      greeting: 'Hey there,',
       themes: ['theme1'],
+      gradientFocus: '50%',
     }
   },
-  mounted: function () {
+  mounted() {
     this.updateGreetingByTimeOfDay();
   },
+  computed: {
+    titleCardStyle() {
+      return 'background: linear-gradient(to right, rgba(190,190,190,1) 0%,rgba(255,255,255,1) ' + this.gradientFocus + ',rgba(190,190,190,1) 100%)';
+    }
+  },
   methods: {
-    updateGreetingByTimeOfDay: function () {
+    moveGradient() {
+      let cursorX = event.pageX;
+      let titleWidth = document.getElementById('title').offsetWidth;
+      let widthString = parseInt((cursorX / titleWidth).toFixed(2) * 100) + '%';
+      this.gradientFocus = widthString;
+    },
+    updateGreetingByTimeOfDay() {
       const currentTime = new Date().getHours();
 
       if (0 <= currentTime&&currentTime < 5) {
@@ -47,8 +59,9 @@ export default {
 <template>
   <div id="app">
 
-  <section class="title" id="title">
-    <h1>{{greeting}} I’m Ramzi.</h1>
+  <section class="title" id="title" :style="titleCardStyle" @mousemove="moveGradient()" >
+    <h2>{{greeting}}</h2>
+    <h1>I’m Ramzi.</h1>
 
     <h2>I’m a <a href="#web-design">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
   </section>
