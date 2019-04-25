@@ -6,7 +6,9 @@ require('@/assets/styles/transitions.css');
 require('@/assets/styles/theme1.css');
 
 // js
-// import smoothScroll from ./methods/smoothscroll.js';
+import Vue from 'vue';
+import vueSmoothScroll from 'vue2-smooth-scroll';
+Vue.use(vueSmoothScroll);
 
 
 export default {
@@ -67,7 +69,7 @@ export default {
     <h2>{{greeting}}</h2>
     <h1>I’m Ramzi.</h1>
 
-    <h2>I’m a <a id="test" href="#web-design">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
+    <h2>I’m a <a id="test" href="#web-design" v-smooth-scroll>web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
   </section>
 
   <section class="about" id="about">
