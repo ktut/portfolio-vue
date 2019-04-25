@@ -1,0 +1,12 @@
+/* TRANSITIONS */
+
+body,
+.in-transition {
+    transition: transform 400ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}

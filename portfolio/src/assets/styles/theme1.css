@@ -55,7 +55,11 @@ section.title > h2 {
 
 @media (min-width: 768px) {
 
-    .no.resp {
+    li .thumb {
+        display: none;
+    }
+
+    a.no-resp {
         display: block;
     }
 

@@ -1,7 +1,12 @@
 <script>
+// css
 require('@/assets/styles/reset.css');
 require('@/assets/styles/main.css');
+require('@/assets/styles/transitions.css');
 require('@/assets/styles/theme1.css');
+
+// js
+// import smoothScroll from './methods/smoothscroll.js';
 
 
 export default {
@@ -10,7 +15,7 @@ export default {
     return { 
       greeting: 'Hey there,',
       themes: ['theme1'],
-      gradientFocus: '50%',
+      gradientFocusPercentage: '50%',
     }
   },
   mounted() {
@@ -18,14 +23,14 @@ export default {
   },
   computed: {
     titleCardGradient() {
-      return 'background: linear-gradient(to right, rgba(190,190,190,1) 0%,rgba(255,255,255,1) ' + this.gradientFocus + ',rgba(190,190,190,1) 100%)';
+      return 'background: linear-gradient(to right, rgba(190,190,190,1) 0%,rgba(255,255,255,1) ' + this.gradientFocusPercentage + ',rgba(190,190,190,1) 100%)';
     }
   },
   methods: {
     updateGradientPosition() {
       let cursorX = event.pageX;
       let titleWidth = document.getElementById('title').offsetWidth;
-      this.gradientFocus = parseInt((cursorX / titleWidth).toFixed(2) * 100) + '%';
+      this.gradientFocusPercentage = parseInt((cursorX / titleWidth).toFixed(2) * 100) + '%';
     },
     updateGreetingByTimeOfDay() {
       const currentTime = new Date().getHours();
@@ -62,16 +67,16 @@ export default {
     <h2>{{greeting}}</h2>
     <h1>I’m Ramzi.</h1>
 
-    <h2>I’m a <a href="#web-design">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
+    <h2>I’m a <a id="test" href="#web-design">web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
   </section>
 
   <section class="about" id="about">
 
-      <p>Currently I do front-end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s fullstack coding bootcamp on nights/weekends (learning React, Mongo, MySQL and more). Here's my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
+      <p>Currently I do front-end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s fullstack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here's my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
   </section>
 
   <section class="web-design" id="web-design">
-    <p style="margin-bottom: 10px;">At <em>Chicago</em>, I did a lot of editorial web design, which <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank">won a national award</a> from the City and Regional Magazine Association:</p>
+    <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design, and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank">won a national award</a> from the City and Regional Magazine Association. Here’s some of the work I did there:</p>
   
     <ul class="resp">
       <li>
@@ -81,7 +86,11 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank">A Second City</a> (design direction, interactive components, <a href="https://citymag.org/crma_events/2019-national-city-and-regional-magazine-awards-finalists/" target="_blank">2019 CRMA Finalist for Multiplatform Storytelling</a>)
+
+        <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank">A Second City</a> (design direction, interactive components, <a href="https://citymag.org/crma_events/2019-national-city-and-regional-magazine-awards-finalists/" target="_blank">2019 CRMA Finalist for Multiplatform Storytelling</a>)
+        </div>
       </li>
 
       <li>
@@ -91,8 +100,11 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        
-        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank">Welcome to Refugee High</a> (video/interactive components, <a href="https://citymag.org/crma_events/2018-national-city-and-regional-magazine-awards-finalists/" target="_blank">2018 CRMA Finalist for Multiplatform Storytelling</a>)
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank">Welcome to Refugee High</a> (video/interactive components, <a href="https://citymag.org/crma_events/2018-national-city-and-regional-magazine-awards-finalists/" target="_blank">2018 CRMA Finalist for Multiplatform Storytelling</a>)
+        </div>
       </li>
 
       <li>
@@ -102,7 +114,11 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank">What’s in Their Fridge</a> (3D transforms, SVGs, pseudo elements)
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank">What’s in Their Fridge</a> (3D transforms, SVGs, pseudo elements)
+        </div>
       </li>
 
       <li>
@@ -112,7 +128,11 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank">Face of a Century</a> (custom gallery with audio integration)
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank">Face of a Century</a> (custom gallery with audio integration)
+        </div>
       </li>
 
       <li>
@@ -122,7 +142,11 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank">A Guide to Farmer’s Markets</a> (photo deconstructed into flexbox components)
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank">A Guide to Farmer’s Markets</a> (photo deconstructed into flexbox components)
+        </div>
       </li>
 
       <li>
@@ -132,7 +156,11 @@ export default {
             Your browser does not support the video tag.
             </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
+        </div>
       </li>
 
       <li>
@@ -142,7 +170,11 @@ export default {
           Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank">A Foolproof Guide to Finding the Best Beach for You</a> (interactive quiz)
+
+        <a class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank">A Foolproof Guide to Finding the Best Beach for You</a> (interactive quiz)
+        </div>
       </li>
 
       <li>
@@ -152,7 +184,11 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank">Twelve Blocks</a> (responsive design and interactivity)
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank">Twelve Blocks</a> (responsive design and interactivity)
+        </div>
       </li>
 
       <li>
@@ -162,7 +198,11 @@ export default {
           Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank">Top Doctors</a> (animation, responsive design)
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank">Top Doctors</a> (animation, responsive design)
+        </div>
       </li>
 
       <li>
@@ -172,8 +212,11 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">What Trauma Docs Know</a> (CSS Grid, typography
-        )
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">What Trauma Docs Know</a> (CSS Grid, typography)
+        </div>
       </li>
 
       <li>
@@ -183,7 +226,11 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank">House Music</a> (Spotify integration, interactive Roland TB-303)
+
+        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank">House Music</a> (Spotify integration, interactive Roland TB-303)
+        </div>
       </li>
 
       <li>
@@ -193,7 +240,10 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">How to Buy Art</a> (responsive design using viewheight units)
+        <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" class="thumb"></a>
+        <div class="text">
+          <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">How to Buy Art</a> (responsive design using viewheight units)
+        </div>
       </li>
     </ul>
     

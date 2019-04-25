@@ -52,13 +52,25 @@ li {
 
 ul {
     list-style-position: inside;
-    padding-left: 1rem;
 }
 
 li {
+    display: flex;
     font-weight: 300;
     margin-bottom: 15px;
-    list-style-type: disc;
+}
+
+li a.thumb {
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    background: grey;
+    border-radius: 75px;
+    float: left;
+    margin: 5px 10px 5px 0;
+    clear: both;
 }
 
 p em {
@@ -89,7 +101,6 @@ a:hover {
 }
 
 ul {
-    padding-right: 15px;
     margin: 0 auto;
 }
 
