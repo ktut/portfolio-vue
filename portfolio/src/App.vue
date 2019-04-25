@@ -81,7 +81,7 @@ export default {
     <ul class="resp">
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-1.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -96,7 +96,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-2.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -111,7 +111,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-3.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -126,7 +126,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-5.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -141,7 +141,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-6.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -156,7 +156,7 @@ export default {
 
       <li>
           <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">
-            <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+            <video class="video" width="100%" autoplay loop muted>
               <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
             Your browser does not support the video tag.
             </video>
@@ -171,7 +171,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov" type="video/mp4">
           Your browser does not support the video tag.
           </video>
@@ -186,7 +186,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -201,7 +201,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov" type="video/mp4">
           Your browser does not support the video tag.
           </video>
@@ -216,7 +216,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-9.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -231,7 +231,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted>
+          <video class="video" width="100%" autoplay loop muted>
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-12.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -246,7 +246,7 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">
-          <video onmouseover="this.play()" onmouseout="this.pause()" class="video" width="100%" loop muted poster="https://ktut.github.io/portfolio/assets/rendered/vid-7-poster.jpg">
+          <video class="video" width="100%" autoplay loop muted poster="https://ktut.github.io/portfolio/assets/rendered/vid-7-poster.jpg">
             <source src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -266,7 +266,7 @@ export default {
     <p style="padding-top: 15px;">At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools. Recently I've been tasked with building programmatic design systems, like this one:</p>
 
     <p>
-      <video class="video" width="100%" autoplay loop muted controls>
+      <video class="video" width="100%" autoplay autoplay loop muted controls>
         <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -276,7 +276,7 @@ export default {
     <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
     <p style="max-width: 900px; margin-left: auto; margin-right: auto; padding-right: 15px; padding-left: 15px;">
-      <video class="video" width="100%" autoplay loop muted controls>
+      <video class="video" width="100%" autoplay autoplay loop muted controls>
         <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
         Your browser does not support the video tag.
       </video>
