@@ -266,7 +266,7 @@ export default {
     <p style="padding-top: 15px;">At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools. Recently I've been tasked with building programmatic design systems, like this one:</p>
 
     <p>
-      <video class="video" width="100%" autoplay autoplay loop muted controls>
+      <video class="video" width="100%" autoplay loop muted controls>
         <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -276,7 +276,7 @@ export default {
     <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
     <p style="max-width: 900px; margin-left: auto; margin-right: auto; padding-right: 15px; padding-left: 15px;">
-      <video class="video" width="100%" autoplay autoplay loop muted controls>
+      <video class="video" width="100%" autoplay loop muted controls>
         <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
         Your browser does not support the video tag.
       </video>
