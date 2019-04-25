@@ -6,7 +6,7 @@ require('@/assets/styles/transitions.css');
 require('@/assets/styles/theme1.css');
 
 // js
-// import smoothScroll from './methods/smoothscroll.js';
+// import smoothScroll from ./methods/smoothscroll.js';
 
 
 export default {
@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     titleCardGradient() {
-      return 'background: linear-gradient(to right, rgba(190,190,190,1) 0%,rgba(255,255,255,1) ' + this.gradientFocusPercentage + ',rgba(190,190,190,1) 100%)';
+      return 'background: linear-gradient(to right, rgba(190,190,190,0.5) 0%,rgba(255,255,255,0.5) ' + this.gradientFocusPercentage + ',rgba(150,150,150,0.5) 100%)';
     }
   },
   methods: {
@@ -87,7 +87,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-1.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank">A Second City</a> (design direction, interactive components, <a href="https://citymag.org/crma_events/2019-national-city-and-regional-magazine-awards-finalists/" target="_blank">2019 CRMA Finalist for Multiplatform Storytelling</a>)
         </div>
@@ -101,7 +102,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-2.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank">Welcome to Refugee High</a> (video/interactive components, <a href="https://citymag.org/crma_events/2018-national-city-and-regional-magazine-awards-finalists/" target="_blank">2018 CRMA Finalist for Multiplatform Storytelling</a>)
         </div>
@@ -115,7 +117,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-3.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank">What’s in Their Fridge</a> (3D transforms, SVGs, pseudo elements)
         </div>
@@ -129,7 +132,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-5.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank">Face of a Century</a> (custom gallery with audio integration)
         </div>
@@ -143,7 +147,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-6.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank">A Guide to Farmer’s Markets</a> (photo deconstructed into flexbox components)
         </div>
@@ -157,7 +162,8 @@ export default {
             </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-4.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
         </div>
@@ -171,7 +177,8 @@ export default {
           </video>
         </a>
 
-        <a class="thumb"></a>
+        <a class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-8.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank">A Foolproof Guide to Finding the Best Beach for You</a> (interactive quiz)
         </div>
@@ -185,7 +192,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-10.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank">Twelve Blocks</a> (responsive design and interactivity)
         </div>
@@ -199,7 +207,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-11.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank">Top Doctors</a> (animation, responsive design)
         </div>
@@ -213,7 +222,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-9.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">What Trauma Docs Know</a> (CSS Grid, typography)
         </div>
@@ -227,7 +237,8 @@ export default {
           </video>
         </a>
 
-        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-12.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank">House Music</a> (Spotify integration, interactive Roland TB-303)
         </div>
@@ -240,7 +251,8 @@ export default {
             Your browser does not support the video tag.
           </video>
         </a>
-        <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" class="thumb"></a>
+        <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-7.jpg');"></a>
+        
         <div class="text">
           <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">How to Buy Art</a> (responsive design using viewheight units)
         </div>

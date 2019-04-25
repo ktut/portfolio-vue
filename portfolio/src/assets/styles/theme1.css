@@ -55,7 +55,7 @@ section.title > h2 {
 
 @media (min-width: 768px) {
 
-    li .thumb {
+    li a.thumb {
         display: none;
     }
 

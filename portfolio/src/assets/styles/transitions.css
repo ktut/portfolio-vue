@@ -5,6 +5,10 @@ body,
     transition: transform 400ms ease;
 }
 
+a {
+    transition: all 0.3s;
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         transition: none !important;
