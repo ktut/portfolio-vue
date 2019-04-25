@@ -73,6 +73,11 @@ li a.thumb {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
+li a.thumb:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
 p em {
     font-style: italic;
 }
