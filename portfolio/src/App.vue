@@ -277,7 +277,7 @@ export default {
     <p>The developer building the page simply feeds a "card" component an array of objects, and the component designs itself using a simple patterning ruleset, and plucks atomic classes from an array. Fun stuff.</p>
     <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
-    <p style="max-width: 900px; margin-left: auto; margin-right: auto; padding-right: 15px; padding-left: 15px;">
+    <p style="max-width: 900px; margin-left: auto; margin-right: auto;">
       <video class="video" width="100%" autoplay loop muted playsinline controls>
         <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
         Your browser does not support the video tag.
