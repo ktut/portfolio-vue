@@ -286,6 +286,28 @@ export default {
 
   </section>
 
+  <section class="ux" id="ux">
+
+    <p>At <em>Chicago</em> magazine, I was tasked with overhauling our subscription page. The old page had very few conversions, and it was clear why:</p>
+
+    <p>
+      <img src="https://ktut.github.io/portfolio/assets/purchase-old.jpg" style="width: 100%;">
+    </p>
+
+    <p>The most important, relevant and well-produced visuals (the covers) were also the smallest on the page, while the biggest thing on the page (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the important fields in various tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own marketing people were confused about how to use the interface.</p>
+
+    <p>After talking with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank">Avant</a>), I settled on a simplier design:</p>
+
+    <p>
+      <img src="https://ktut.github.io/portfolio/assets/purchase-new.jpg" style="width: 100%;">
+    </p>
+
+    <p>Now, the call to action and the purchaseable products are front and center, and no important information is hidden from the user. I worked directly with the vendor to eliminate unnecessary fields as well, to ensure a linear experience between the load of the page and the click of the "Purchase" button.</p>
+
+    <p>During the first six months of the new page's implementation, the magazine saw a 25% increase in conversions per visitor.</p>
+
+  </section>
+
   <section class="contact" id="contact">
 
     <br><hr><br>
