@@ -267,7 +267,7 @@ export default {
 
     <br><hr><br>
 
-    <p><b>At <em>Chicago</em> magazine, I was tasked with overhauling our subscription page.</b> <a class="readmore">Read more ></a> The old page had very few conversions, and it was clear why:</p>
+    <p>At <em>Chicago</em> magazine, I was tasked with overhauling our subscription page. The old page had very few conversions, and it was clear why:</p>
 
     <p>
       <img src="https://ktut.github.io/portfolio/assets/purchase-old.jpg" style="width: 100%;">
