@@ -298,7 +298,8 @@ export default {
 
     <br><hr><br>
 
-    <p style="padding-top: 15px;">At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools. Recently I've been tasked with building programmatic design systems, like this one:</p>
+    <p>I enjoy exploring new intersections of programming and design. At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools.</p>
+    <p>Recently I've been tasked with building programmatic design systems. Here, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself (Using a simple patterning ruleset that plucks atomic classes from an array). Fun stuff:</p>
 
     <p>
       <video class="video" width="100%" autoplay loop muted playsinline controls>
@@ -307,7 +308,6 @@ export default {
       </video>
     </p>
 
-    <p>The developer building the page simply feeds a "card" component an array of objects, and the component designs itself using a simple patterning ruleset, and plucks atomic classes from an array. Fun stuff.</p>
     <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
     <p style="max-width: 900px; margin-left: auto; margin-right: auto;">
