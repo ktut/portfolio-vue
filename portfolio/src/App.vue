@@ -18,6 +18,7 @@ export default {
       greeting: 'Hey there,',
       themes: ['theme1'],
       gradientFocusPercentage: '50%',
+      backgroundImage: '',
     }
   },
   mounted() {
@@ -25,7 +26,7 @@ export default {
   },
   computed: {
     titleCardGradient() {
-      return 'background: linear-gradient(to right, rgba(190,190,190,0.5) 0%,rgba(255,255,255,0.5) ' + this.gradientFocusPercentage + ',rgba(150,150,150,0.5) 100%)';
+      return 'background-image: linear-gradient(to right, rgba(100,100,100,0.7) 0%,rgba(255,255,255,0.7) ' + this.gradientFocusPercentage + ',rgba(100,100,100,0.7) 100%),url("' + this.backgroundImage + '")';
     }
   },
   methods: {
@@ -271,24 +272,25 @@ export default {
 
     <br><hr><br>
 
-    <p>At <em>Chicago</em> magazine, I was tasked with overhauling our subscription page. The old page had very few conversions, and it was clear why:</p>
+    <p>My UX design philosophy is centered around streamlining the user experience, <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">reducing cognitive load</a> and improving design.</p>
+    
+    <p>At <em>Chicago</em> magazine, I was tasked with overhauling our subscription page. The old page had few conversions per user, and it was clear why:</p>
 
     <p>
       <img src="https://ktut.github.io/portfolio/assets/purchase-old.jpg" style="width: 100%;">
     </p>
 
-    <p>The most important, relevant and well-produced visuals (the covers) were also the smallest on the page, while the biggest thing on the page (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the important fields in various tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own marketing people were confused about how to use the interface.</p>
+    <p>The most important, relevant and well-produced visuals (the covers) were the smallest on the page, while the most visually prominent element (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the important fields in various tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own marketing people were confused about how to use the interface.</p>
 
-    <p>After talking with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank">Avant</a>), I settled on a simplier approach:</p>
+    <p>I took some time to study the in-page analytics, research current industry best practices, and talked with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank">Avant</a>). I settled on a simpler approach:</p>
 
     <p style="max-width: 900px; max-height: 675px; overflow-y: auto; border: 1px solid #bbb;">
       <img src="https://ktut.github.io/portfolio/assets/purchase-new-lg-2.jpg" style="width: 100%; vertical-align: middle;">
       <!-- <iframe src="http://web.archive.org/web/20180121131738/https://cma.pcdfusion.com/pcd/Order?iKey=I**D7B" style="width: 100%; min-height: 600px; border: 1px solid #bbb;"></iframe> -->
     </p>
 
-    <p>In the new design, the call to action and the purchaseable products are front and center, and no important information is hidden from the user. I also worked directly with our vendor to eliminate unnecessary fields and create a more linear experience between the load of the page and the click of the "Purchase" button.</p>
-
-    <p>Almost immediately after the new page’s implementation, the magazine saw a 25% increase in conversions per visitor.</p>
+    <p>Now, the call to action and the purchaseable products are front and center, and no important information is hidden from the user.</p>
+    <p>After the design of the page was completed, I worked directly with our vendor to eliminate unnecessary fields and create a more linear experience between the load of the page and the click of the "Purchase" button. In the six months following the new page’s implementation, conversions per visitor went up 20%.</p>
 
   </section>
 
