@@ -60,6 +60,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <template>
@@ -69,7 +70,10 @@ export default {
     <h2>{{greeting}}</h2>
     <h1>I’m Ramzi.</h1>
 
-    <h2>I’m a <a id="test" href="#web-design" v-smooth-scroll>web designer and developer</a>, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
+    <h2>I’m a <a id="test" href="#web-design" v-smooth-scroll>web designer and developer</a>, 
+      <br><a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, 
+      <br><a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, 
+      <br><a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>,<br>and... more?</h2>
   </section>
 
   <section class="about" id="about">
@@ -275,16 +279,16 @@ export default {
 
     <p>The most important, relevant and well-produced visuals (the covers) were also the smallest on the page, while the biggest thing on the page (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the important fields in various tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own marketing people were confused about how to use the interface.</p>
 
-    <p>After talking with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank">Avant</a>), I settled on a simplier design:</p>
+    <p>After talking with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank">Avant</a>), I settled on a simplier approach:</p>
 
-    <p style="max-width: 1200px;">
-      <!-- <img src="https://ktut.github.io/portfolio/assets/purchase-new.jpg" style="width: 100%;"> -->
-      <iframe src="http://web.archive.org/web/20180121131738/https://cma.pcdfusion.com/pcd/Order?iKey=I**D7B" style="width: 100%; min-height: 600px; border: 1px solid #bbb;"></iframe>
+    <p style="max-width: 900px; max-height: 675px; overflow-y: auto; border: 1px solid #bbb;">
+      <img src="https://ktut.github.io/portfolio/assets/purchase-new-lg-2.jpg" style="width: 100%; vertical-align: middle;">
+      <!-- <iframe src="http://web.archive.org/web/20180121131738/https://cma.pcdfusion.com/pcd/Order?iKey=I**D7B" style="width: 100%; min-height: 600px; border: 1px solid #bbb;"></iframe> -->
     </p>
 
-    <p>Now, the call to action and the purchaseable products are front and center, and no important information is hidden from the user. I worked directly with the vendor to eliminate unnecessary fields as well, to ensure a linear experience between the load of the page and the click of the "Purchase" button.</p>
+    <p>In the new design, the call to action and the purchaseable products are front and center, and no important information is hidden from the user. I also worked directly with our vendor to eliminate unnecessary fields and create a more linear experience between the load of the page and the click of the "Purchase" button.</p>
 
-    <p>During the first six months of the new page's implementation, the magazine saw a 25% increase in conversions per visitor.</p>
+    <p>Almost immediately after the new page’s implementation, the magazine saw a 25% increase in conversions per visitor.</p>
 
   </section>
 
