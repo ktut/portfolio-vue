@@ -38,9 +38,9 @@ export default {
     updateGreetingByTimeOfDay() {
       const currentTime = new Date().getHours();
 
-      if (0 <= currentTime&&currentTime < 5) {
+      if (0 <= currentTime&&currentTime < 4) {
       // nighttime
-       this.greeting = 'Good evening!';
+       this.greeting = 'Welcome, night owl!';
       }
       if (5 <= currentTime&&currentTime < 11) {
       // morning
@@ -50,11 +50,11 @@ export default {
       // day
        this.greeting = 'Good day!';
       }
-      if (16 <= currentTime&&currentTime < 22) {
+      if (16 <= currentTime&&currentTime < 18) {
         // evening
-       this.greeting = 'Good evening!';
+       this.greeting = 'Good afternoon!';
       }
-      if (22 <= currentTime&&currentTime <= 24) {
+      if (18 <= currentTime&&currentTime <= 24) {
         // nighttime
        this.greeting = 'Good evening!';
       }
