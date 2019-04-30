@@ -10,7 +10,8 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-smooth-scroll": "^1.0.13"
+    "vue-smooth-scroll": "^1.0.13",
+    "vue2-smooth-scroll": "^1.0.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
