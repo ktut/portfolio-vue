@@ -17,7 +17,7 @@ export default {
     return { 
       greeting: 'Hey there,',
       themes: ['theme1'],
-      gradientFocusPercentage: '50%',
+      gradientFocusPercentage: '0%',
       // default background image
       titleBackgroundURL: 'https://ktut.github.io/portfolio/assets/black-placeholder.jpg',
       videoBackgroundURL: '',
@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     titleCardGradient() {
-      return 'background-image: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) ' + this.gradientFocusPercentage + ', rgba(0,0,0,0.95) 100%)';
+      return 'background-image: linear-gradient(rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) ' + this.gradientFocusPercentage + ', rgba(238,238,238,1) 100%)';
     },
     titleCardImage() {
       return 'background-image: url("' + this.titleBackgroundURL + '")';
@@ -37,9 +37,9 @@ export default {
   },
   methods: {
     updateGradientPosition() {
-      let cursorX = event.pageX;
-      let titleWidth = document.getElementById('title').offsetWidth;
-      this.gradientFocusPercentage = parseInt((cursorX / titleWidth).toFixed(2) * 100) + '%';
+      let cursorY = event.pageY;
+      let titleHeight = document.getElementById('title').offsetHeight;
+      this.gradientFocusPercentage = parseInt((cursorY / titleHeight).toFixed(2) * 100) + '%';
     },
     updateGreetingByTimeOfDay() {
       const currentTime = new Date().getHours();
