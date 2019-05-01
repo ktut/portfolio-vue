@@ -18,7 +18,10 @@ export default {
       greeting: 'Hey there,',
       themes: ['theme1'],
       gradientFocusPercentage: '50%',
-      backgroundImage: '',
+      // default background image
+      titleBackgroundURL: 'https://ktut.github.io/portfolio/assets/black-placeholder.jpg',
+      videoBackgroundURL: '',
+      showVideoBackground: false,
     }
   },
   mounted() {
@@ -26,7 +29,10 @@ export default {
   },
   computed: {
     titleCardGradient() {
-      return 'background-image: linear-gradient(to right, rgba(100,100,100,0.7) 0%,rgba(255,255,255,0.7) ' + this.gradientFocusPercentage + ',rgba(100,100,100,0.7) 100%),url("' + this.backgroundImage + '")';
+      return 'background-image: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) ' + this.gradientFocusPercentage + ', rgba(0,0,0,0.95) 100%)';
+    },
+    titleCardImage() {
+      return 'background-image: url("' + this.titleBackgroundURL + '")';
     }
   },
   methods: {
@@ -67,15 +73,37 @@ export default {
 <template>
   <div id="app">
 
-  <section class="title" id="title" :style="titleCardGradient" @mousemove="updateGradientPosition()" >
-    <h2>{{greeting}}</h2>
-    <h1>I’m Ramzi.</h1>
+  <!-- hack to preload images for topper so they don't jump -->
+  <div class="preload-hack" style="overflow: hidden; position: absolute !important; right: 1000000px; top: 100000px;">
+    <img style="position: absolute !important; right: 1000000px; top: 100000px;" src="https://ktut.github.io/portfolio/assets/william.jpg">
+    <img style="position: absolute !important; right: 1000000px; top: 100000px;" src="https://ktut.github.io/portfolio/assets/cst-cover.jpg">
+  </div>
+  
+  <div class="title-contain" :style="titleCardImage">
 
-    <h2>I’m a <a id="test" href="#web-design" v-smooth-scroll>web designer and developer</a>, 
-      <br><a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, 
-      <br><a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, 
-      <br><a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>,<br>and... more?</h2>
-  </section>
+    <transition name="fade">
+      <video class="title-video" autoplay loop muted playsinline v-if="showVideoBackground">
+        <source :src="videoBackgroundURL">
+        Your browser does not support the video tag.
+      </video>
+    </transition>
+    
+    <section class="title" id="title" :style="titleCardGradient" @mousemove="updateGradientPosition()">
+      <h2>{{greeting}}</h2>
+      <h1>I’m Ramzi.</h1>
+
+      <h2>
+        I’m a <a id="test" href="#web-design" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design3.mov'">web designer and developer</a>, 
+
+        <br><a href="http://www.rkdvisuals.com" target="_blank" @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">photographer</a>, 
+
+        <br><a href="http://www.rkdvisuals.com/video" target="_blank" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">videographer</a>, 
+
+        <br><a href="http://www.rkdvisuals.com/design/" target="_blank" @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">print designer</a>,
+
+        <br>and... more?</h2>
+    </section>
+  </div>
 
   <section class="about" id="about">
 

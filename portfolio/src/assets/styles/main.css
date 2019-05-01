@@ -97,12 +97,12 @@ p em {
 }
 
 a {
-    color: #c00;
+    color: red;
     text-decoration: underline;
 }
 
 a:hover {
-    color: red;
+    color: #c00;
 }
 
 ul {
