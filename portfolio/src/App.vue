@@ -72,12 +72,6 @@ export default {
 
 <template>
   <div id="app">
-
-  <!-- hack to preload images for topper so they don't jump -->
-  <div class="preload-hack" style="overflow: hidden; position: absolute !important; right: 1000000px; top: 100000px;">
-    <img style="position: absolute !important; right: 1000000px; top: 100000px;" src="https://ktut.github.io/portfolio/assets/william.jpg">
-    <img style="position: absolute !important; right: 1000000px; top: 100000px;" src="https://ktut.github.io/portfolio/assets/cst-cover.jpg">
-  </div>
   
   <div class="title-contain" :style="titleCardImage">
 
