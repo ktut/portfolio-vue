@@ -17,7 +17,7 @@ export default {
     return { 
       greeting: 'Hey there,',
       themes: ['theme1'],
-      gradientFocusPercentage: '0%',
+      gradientFocusPercentage: 0,
       // default background image
       titleBackgroundURL: 'https://ktut.github.io/portfolio/assets/black-placeholder.jpg',
       videoBackgroundURL: '',
@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     titleCardGradient() {
-      return 'background-image: linear-gradient(rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + ', rgba(238,238,238,1) 100%)';
+      return 'background-image: linear-gradient(rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
     },
     titleCardImage() {
       return 'background-image: url("' + this.titleBackgroundURL + '")';
@@ -39,7 +39,7 @@ export default {
     updateGradientPosition() {
       let cursorY = event.pageY;
       let titleHeight = document.getElementById('title').offsetHeight;
-      this.gradientFocusPercentage = parseInt((cursorY / titleHeight).toFixed(2) * 100) + '%';
+      this.gradientFocusPercentage = parseInt((cursorY / titleHeight).toFixed(2) * 100);
     },
     updateGreetingByTimeOfDay() {
       const currentTime = new Date().getHours();
@@ -101,12 +101,12 @@ export default {
 
         <br><a href="http://www.rkdvisuals.com/design/" target="_blank" @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">print designer</a>,
 
-        <br>and... more?</h2>
+        <br>and... more?
+       </h2>
     </section>
   </div>
 
   <section class="about" id="about">
-
       <p>Currently I do front-end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s fullstack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here's my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
   </section>
 
@@ -338,7 +338,7 @@ export default {
 
     <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
-    <p style="max-width: 900px; margin-left: auto; margin-right: auto;">
+    <p style="max-width: 900px;">
       <video class="video" width="100%" autoplay loop muted playsinline controls>
         <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
         Your browser does not support the video tag.
