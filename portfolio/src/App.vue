@@ -95,7 +95,7 @@ export default {
 
         <br><a href="http://www.rkdvisuals.com/design/" target="_blank" @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">print designer</a>,
 
-        <br>and... more?
+        <br>and more.
        </h2>
     </section>
   </div>
@@ -290,6 +290,31 @@ export default {
     
   </section>
 
+  <section class="code" id="code">
+
+    <br><hr><br>
+
+    <p>I enjoy exploring new intersections of programming and design. At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools.</p>
+    <p>Recently I've been tasked with building programmatic design systems. Here, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself (Using a simple patterning ruleset that plucks atomic classes from an array). Fun stuff:</p>
+
+    <p>
+      <video class="video" width="100%" autoplay loop muted playsinline controls>
+        <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </p>
+
+    <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
+
+    <p style="max-width: 900px;">
+      <video class="video" width="100%" autoplay loop muted playsinline controls>
+        <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </p>
+
+  </section>
+
   <section class="ux" id="ux">
 
     <br><hr><br>
@@ -313,31 +338,6 @@ export default {
 
     <p>Now, the call to action and the purchaseable products are front and center, and no important information is hidden from the user.</p>
     <p>After the design of the page was completed, I worked directly with our vendor to eliminate unnecessary fields and create a more linear experience between the load of the page and the click of the "Purchase" button. In the six months following the new page’s implementation, conversions per visitor went up 20%.</p>
-
-  </section>
-
-  <section class="code" id="code">
-
-    <br><hr><br>
-
-    <p>I enjoy exploring new intersections of programming and design. At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools.</p>
-    <p>Recently I've been tasked with building programmatic design systems. Here, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself (Using a simple patterning ruleset that plucks atomic classes from an array). Fun stuff:</p>
-
-    <p>
-      <video class="video" width="100%" autoplay loop muted playsinline controls>
-        <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </p>
-
-    <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
-
-    <p style="max-width: 900px;">
-      <video class="video" width="100%" autoplay loop muted playsinline controls>
-        <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </p>
 
   </section>
 
