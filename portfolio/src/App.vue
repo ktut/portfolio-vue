@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     titleCardGradient() {
-      return 'background-image: linear-gradient(rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
+      return 'background-image: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
     },
     titleCardImage() {
       return 'background-image: url("' + this.titleBackgroundURL + '")';
