@@ -8,8 +8,9 @@ require('@/assets/styles/theme1.css');
 // js
 import Vue from 'vue';
 import vueSmoothScroll from 'vue2-smooth-scroll';
-Vue.use(vueSmoothScroll);
+import LazyLoad from "vanilla-lazyload";
 
+Vue.use(vueSmoothScroll);
 
 export default {
   name: 'app',
@@ -26,6 +27,10 @@ export default {
   },
   mounted() {
     this.updateGreetingByTimeOfDay();
+    const lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+    // lazyLoadInstance.update();
   },
   computed: {
     titleCardGradient() {
@@ -76,7 +81,7 @@ export default {
   <div class="title-contain" :style="titleCardImage">
 
     <transition name="fade">
-      <video class="title-video" autoplay loop muted playsinline v-if="showVideoBackground">
+      <video class="title-video" autoplay loop muted playsinline v-if="showVideoBackground" poster="https://ktut.github.io/portfolio/assets/farmers-design4.jpg">
         <source :src="videoBackgroundURL">
         Your browser does not support the video tag.
       </video>
@@ -110,8 +115,8 @@ export default {
     <ul class="resp">
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-1.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-1.mov">
+            <source type="video/mp4" data-src="https://ktut.github.io/portfolio/assets/rendered/vid-1.mov">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -125,8 +130,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-2.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-2.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-2.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -140,8 +145,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-3.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-3.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-3.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -155,8 +160,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-5.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-5.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-5.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -170,8 +175,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-6.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-6.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-6.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -185,8 +190,8 @@ export default {
 
       <li>
           <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">
-            <video class="video" width="100%" autoplay loop muted playsinline>
-              <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
+            <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov">
+              <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
             Your browser does not support the video tag.
             </video>
         </a>
@@ -200,8 +205,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov" type="video/mp4">
           Your browser does not support the video tag.
           </video>
         </a>
@@ -215,8 +220,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -230,8 +235,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov" type="video/mp4">
           Your browser does not support the video tag.
           </video>
         </a>
@@ -245,8 +250,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-9.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-9.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-9.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -260,8 +265,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline>
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-12.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline data-src="https://ktut.github.io/portfolio/assets/rendered/vid-12.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-12.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -275,8 +280,8 @@ export default {
 
       <li>
         <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank">
-          <video class="video" width="100%" autoplay loop muted playsinline poster="https://ktut.github.io/portfolio/assets/rendered/vid-7-poster.jpg">
-            <source src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov" type="video/mp4">
+          <video class="lazy video" width="100%" autoplay loop muted playsinline poster="https://ktut.github.io/portfolio/assets/rendered/vid-7-poster.jpg" data-src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov">
+            <source data-src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </a>
@@ -298,8 +303,8 @@ export default {
     <p>Recently I've been tasked with building programmatic design systems. Here, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself (Using a simple patterning ruleset that plucks atomic classes from an array). Fun stuff:</p>
 
     <p>
-      <video class="video" width="100%" autoplay loop muted playsinline controls>
-        <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
+      <video class="lazy video" width="100%" autoplay loop muted playsinline controls data-src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
+        <source data-src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </p>
@@ -307,8 +312,8 @@ export default {
     <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
     <p style="max-width: 900px;">
-      <video class="video" width="100%" autoplay loop muted playsinline controls>
-        <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
+      <video class="lazy video" width="100%" autoplay loop muted playsinline controls data-src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov">
+        <source data-src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </p>
