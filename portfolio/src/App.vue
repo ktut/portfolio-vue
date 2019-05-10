@@ -30,7 +30,7 @@ export default {
     const lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy"
     });
-    // lazyLoadInstance.update();
+    lazyLoadInstance.update();
   },
   computed: {
     titleCardGradient() {
