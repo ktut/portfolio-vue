@@ -13,12 +13,22 @@ a {
     transition: background-image 0.2s ease-in-out;
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active, 
+.fade-leave-active {
     transition: opacity .7s;
 }
 
 .fade-enter, 
 .fade-leave-to {
+    opacity: 0;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+    transition: all 0.3s;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateY(20px);
     opacity: 0;
 }
 
