@@ -113,7 +113,7 @@ export default {
       <h1>I’m Ramzi.</h1>
 
       <h2>
-        I’m a <a id="test" href="#web-design"  v-on:click="toggleSection('sectionWebDesign')" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">web designer and developer</a>, 
+        I’m a <a id="test" href="#web-design"  v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">web designer and developer</a>, 
 
         <br><a href="http://www.rkdvisuals.com" target="_blank" @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">photographer</a>, 
 
