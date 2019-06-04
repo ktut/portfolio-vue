@@ -122,3 +122,9 @@ section.title > h2 {
         cursor: pointer;
     }
 }
+
+@media (min-width: 1500px) {
+    ul.resp {
+        max-width: 1440px;
+    }
+}
