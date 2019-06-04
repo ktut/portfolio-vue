@@ -122,6 +122,7 @@ button.readmore {
     position: sticky;
     top: 15px;
 
+    min-width: 200px;
     display: block;
     text-align: center;
     margin: 20px auto;
