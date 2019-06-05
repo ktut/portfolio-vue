@@ -18,15 +18,12 @@ export default {
     return { 
       sectionWebDesign: {
         show: false,
-        message: "Expand Section +",
       },
       sectionCode: {
         show: false,
-        message: "Expand Section +",
       },
       sectionUx: {
         show: false,
-        message: "Expand Section +",
       },
       greeting: 'Hey there,',
       themes: ['theme1'],
@@ -56,10 +53,8 @@ export default {
     toggleSection(section) {
       if (this[section].show === true) {
         this[section].show = false;
-        this[section].message = "Expand Section +";
       } else {
         this[section].show = true;
-        this[section].message = "Collapse Section -";
       }
     },
     updateGradientPosition() {
@@ -74,11 +69,11 @@ export default {
       // nighttime
        this.greeting = 'Welcome, night owl!';
       }
-      if (5 <= currentTime&&currentTime < 11) {
+      if (5 <= currentTime&&currentTime < 10) {
       // morning
        this.greeting = 'Good morning!';
       }
-      if (11 <= currentTime&&currentTime < 16) {
+      if (10 <= currentTime&&currentTime < 16) {
       // day
        this.greeting = 'Good day!';
       }
@@ -113,7 +108,9 @@ export default {
       <h1>I’m Ramzi.</h1>
 
       <h2>
-        I’m a <a id="test" href="#web-design"  v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">web designer and developer</a>, 
+        I’m a <a href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">web designer</a> and 
+        
+        <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">developer</a>, 
 
         <br><a href="http://www.rkdvisuals.com" target="_blank" @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">photographer</a>, 
 
@@ -133,7 +130,9 @@ export default {
   <section class="web-design" id="web-design">
     <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design, and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank">won a national award</a> from the City and Regional Magazine Association.</p>
 
-    <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">{{sectionWebDesign.message}}</button>
+    <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">
+      {{ sectionWebDesign.show ? 'Collapse Section -' : 'Expand Section +' }}
+    </button>
 
     <transition name="slide-fade">
       <div v-if="sectionWebDesign.show">
@@ -332,7 +331,7 @@ export default {
 
     <p>I enjoy exploring new intersections of programming and design. At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools.</p>
 
-    <button class="readmore" v-on:click="toggleSection('sectionCode')">{{sectionCode.message}}</button>
+    <button class="readmore" v-on:click="toggleSection('sectionCode')">{{ sectionCode.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
 
     <transition name="slide-fade">
         <div v-if="sectionCode.show">
@@ -365,7 +364,7 @@ export default {
 
     <p>My UX design philosophy is centered around streamlining the user experience, <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">reducing cognitive load</a> and improving design.</p>
 
-    <button class="readmore" v-on:click="toggleSection('sectionUx')">{{sectionUx.message}}</button>
+    <button class="readmore" v-on:click="toggleSection('sectionUx')">{{ sectionUx.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
 
     <transition name="slide-fade">
       <div v-if="sectionUx.show">
