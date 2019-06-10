@@ -8,7 +8,6 @@ require('@/assets/styles/theme1.css');
 // js
 import Vue from 'vue';
 import vueSmoothScroll from 'vue2-smooth-scroll';
-import LazyLoad from "vanilla-lazyload";
 
 Vue.use(vueSmoothScroll);
 
@@ -36,10 +35,6 @@ export default {
   },
   mounted() {
     this.updateGreetingByTimeOfDay();
-    const lazyLoadInstance = new LazyLoad({
-        elements_selector: ".lazy"
-    });
-    lazyLoadInstance.update();
   },
   computed: {
     titleCardGradient() {
@@ -339,7 +334,7 @@ export default {
         <p>Recently I've been tasked with building programmatic design systems. Here, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself (Using a simple patterning ruleset that plucks atomic classes from an array). Fun stuff:</p>
 
         <p>
-          <video class="lazy video" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
+          <video class="video" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
             <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -348,7 +343,7 @@ export default {
         <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
         <p style="max-width: 900px;">
-          <video class="lazy video" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov">
+          <video class="video" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov">
             <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
