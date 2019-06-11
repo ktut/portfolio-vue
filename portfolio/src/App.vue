@@ -16,7 +16,7 @@ export default {
   data() {
     return { 
       sectionWebDesign: {
-        show: false,
+        show: true,
       },
       sectionCode: {
         show: false,
@@ -118,16 +118,23 @@ export default {
     </section>
   </div>
 
-  <section class="about" id="about">
-      <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here's my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
+  <section class="about smaller" id="about">
+      <h2>A little about me first.</h2>
+      <p>Despite the labels above, I’ve never aligned myself to a particular job title. I enjoy planning, creating, leading, reviewing, trying again, and shipping.</p>
+      <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
+      <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. Design without direction is just an aesthetics contest.</p>
+      <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how it works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
+      <p>Limits aside, I do like creating for the sake of itself — it doesn’t have to be work. I’m eager to be the student - I never like being the “smartest” person in the room. </p>
+      <h2>One of my favorite activities is building websites for people to poke and prod on their tiny screens.</h2>
+      <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
   </section>
 
   <section class="web-design" id="web-design">
     <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design, and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank">won a national award</a> from the City and Regional Magazine Association.</p>
 
-    <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">
+    <!-- <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">
       {{ sectionWebDesign.show ? 'Collapse Section -' : 'Expand Section +' }}
-    </button>
+    </button> -->
 
     <transition name="slide-fade">
       <div v-if="sectionWebDesign.show">
@@ -324,14 +331,17 @@ export default {
 
     <br><hr><br>
 
-    <p>I enjoy exploring new intersections of programming and design. At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS PostCSS, and various build tools.</p>
+    <h2>Getting a little more techy...</h2>
+
+    <p>I enjoy exploring new intersections of programming and design. At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS, PostCSS, and other various build tools.</p>
 
     <button class="readmore" v-on:click="toggleSection('sectionCode')">{{ sectionCode.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
 
     <transition name="slide-fade">
         <div v-if="sectionCode.show">
 
-        <p>Recently I've been tasked with building programmatic design systems. Here, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself (Using a simple patterning ruleset that plucks atomic classes from an array). Fun stuff:</p>
+        <p>We needed a way to induce visual variety (without a lot of extra developer effort), on pages that had card components with anywhere from one to twenty articles in them.</p>
+        <p>In this solution I devised, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself, using a simple patterning ruleset that plucks atomic classes from an array. Fun stuff:</p>
 
         <p>
           <video class="video" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
@@ -357,7 +367,9 @@ export default {
 
     <br><hr><br>
 
-    <p>My UX design philosophy is centered around streamlining the user experience, <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">reducing cognitive load</a> and improving design.</p>
+    <h2>From UI to UX.</h2>
+
+    <p>My user experience philosophy is centered around streamlining common pathways, <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">reducing cognitive load</a> and (duh) improving design.</p>
 
     <button class="readmore" v-on:click="toggleSection('sectionUx')">{{ sectionUx.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
 
@@ -391,7 +403,9 @@ export default {
 
     <br><hr><br>
 
-    <p>Here are some clients I've worked with on a freelance basis (if you care about that kind of thing): ConAgra, Avant, Rag & Bone, Printavo, The Chicago Community Trust, ADA25, KNSTRCT, Chicago Public Schools, Mariano’s, Dalhousie University ...and more!</p>
+    <h2>Let’s chat!</h2>
+
+    <p>Here are some clients I’ve worked with on a freelance basis (if you care about that kind of thing): ConAgra, Avant, Rag & Bone, Printavo, The Chicago Community Trust, ADA25, KNSTRCT, Chicago Public Schools, Mariano’s, Dalhousie University ...and more!</p>
 
     <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>.</p>
   </section>
