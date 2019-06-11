@@ -52,11 +52,7 @@
     <div id="app"></div>
 
     <!-- If no JS or older browser, just show some text -->
-    <noscript>
     <style>
-    .older-browser {
-      display: block !important;
-    }
     @supports not (display: flex) {
       .older-browser {
         display: block !important;
@@ -66,7 +62,18 @@
       }
     }
     </style>
+    
+    <noscript>
+    <style>
+    .older-browser {
+      display: block !important;
+    }
+    #app {
+      display: none !important;
+    }
+    </style>
     </noscript>
+    
     <div class="older-browser" style="display: none;">
       <p>Looks like you’re using an older browser or you've disabled Javascript. So much for all the flashy stuff I was going to show you.</p>
       <p>Anyway, I'm Ramzi. I’m a web designer and developer, <a href="http://www.rkdvisuals.com" target="_blank">photographer</a>, <a href="http://www.rkdvisuals.com/video" target="_blank">videographer</a>, <a href="http://www.rkdvisuals.com/design/" target="_blank">print designer</a>, and more.</h2>
