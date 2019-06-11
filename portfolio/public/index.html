@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Reading my source? Here's some stuff I want to improve:
+    - performance, use webpack better
+    - add photos and print design to THIS site
+    - add sharing? or maybe not. you seemed to find this page pretty well  -->
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26343135-2"></script>
     <script>
@@ -34,10 +39,10 @@
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/uif4aoe.css">
 
-    <!-- Preload content for header -->
-    <link rel="preload" href="https://ktut.github.io/portfolio/assets/william.jpg" as="image">
-    <link rel="preload" href="https://ktut.github.io/portfolio/assets/cst-cover.jpg" as="image">
-    <link rel="preload" href="https://ktut.github.io/portfolio/assets/farmers-design4.mov" as="video" type="video/mp4">
+    <!-- On tablet and up, preload content for header-->
+    <link rel="preload" media="(min-width: 768px)" href="https://ktut.github.io/portfolio/assets/william.jpg" as="image">
+    <link rel="preload" media="(min-width: 768px)" href="https://ktut.github.io/portfolio/assets/cst-cover.jpg" as="image">
+    <link rel="preload" media="(min-width: 768px)" href="https://ktut.github.io/portfolio/assets/farmers-design4.mov" as="video" type="video/mp4">
 
 
   </head>
