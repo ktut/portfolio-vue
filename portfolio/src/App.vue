@@ -217,7 +217,7 @@ export default {
             </div>
           </li>
 
-          <li>
+          <li class="better-on-mobile">
               <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank">
                 <video class="video" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov">
                   <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
@@ -232,7 +232,7 @@ export default {
             </div>
           </li>
 
-          <li>
+          <li class="better-on-mobile">
             <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank">
               <video class="video" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov" type="video/mp4">
@@ -247,7 +247,7 @@ export default {
             </div>
           </li>
 
-          <li>
+          <li class="better-on-mobile">
             <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank">
               <video class="video" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov" type="video/mp4">
@@ -262,7 +262,7 @@ export default {
             </div>
           </li>
 
-          <li>
+          <li class="better-on-mobile">
             <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank">
               <video class="video" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov" type="video/mp4">
