@@ -331,9 +331,9 @@ export default {
 
     <br><hr><br>
 
-    <h2>Getting a little more techy...</h2>
+    <h2>I enjoy exploring new intersections of programming and design.</h2>
 
-    <p>I enjoy exploring new intersections of programming and design. At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS, PostCSS, and other various build tools.</p>
+    <p>At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS, PostCSS, and other various build tools.</p>
 
     <button class="readmore" v-on:click="toggleSection('sectionCode')">{{ sectionCode.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
 

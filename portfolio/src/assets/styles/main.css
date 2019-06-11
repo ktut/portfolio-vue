@@ -11,7 +11,7 @@ html {
 
 @media (max-width: 450px) {
     html {
-        font-size: 15px;
+        font-size: 15.5px;
     }
 }
 
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 130%;
     margin-bottom: 20px;
     margin-top: 20px;
