@@ -104,7 +104,18 @@ ul.resp {
         background-size: cover;
         background-position: center;
         margin-bottom: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid #aaa;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    a.web-img:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    }
+
+    a.web-img video {
+        border-radius: 15px;
     }
     
     a.web-img:hover {
