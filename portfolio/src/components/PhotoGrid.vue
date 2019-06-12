@@ -1,7 +1,7 @@
 <script>
 
-import Photoswipe from 'vue-pswipe';
-import Vue from 'vue';
+// import Photoswipe from 'vue-pswipe';
+// import Vue from 'vue';
 
 // const options = {
 //             bgOpacity: 0.8,
