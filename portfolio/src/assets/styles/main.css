@@ -202,3 +202,33 @@ section ul > li:last-child {
     margin-bottom: 0;
 }
 
+.photoswipe-gallery {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.photoswipe-image {
+    width: 100%;
+    vertical-align: bottom;
+    break-inside: avoid;
+}
+
+
+@media (min-width: 451px) {
+    .photoswipe-gallery {
+        column-count: 2;
+        column-gap: 20px;
+    }
+
+    .photoswipe-image {
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .photoswipe-gallery {
+        column-count: 3;
+    }
+}

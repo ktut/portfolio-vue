@@ -8,11 +8,16 @@ require('@/assets/styles/theme1.css');
 // js
 import Vue from 'vue';
 import vueSmoothScroll from 'vue2-smooth-scroll';
+import LazyLoad from "vanilla-lazyload";
+import PhotoGrid from './components/PhotoGrid';
 
 Vue.use(vueSmoothScroll);
 
 export default {
   name: 'app',
+  components: {
+    PhotoGrid
+  },
   data() {
     return { 
       sectionWebDesign: {
@@ -20,6 +25,9 @@ export default {
       },
       sectionCode: {
         show: false,
+      },
+      sectionPhoto: {
+        show: true,
       },
       sectionUx: {
         show: false,
@@ -35,6 +43,10 @@ export default {
   },
   mounted() {
     this.updateGreetingByTimeOfDay();
+    const lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+    lazyLoadInstance.update();
   },
   computed: {
     titleCardGradient() {
@@ -363,7 +375,6 @@ export default {
     </transition>
 
   </section>
-
   <section class="ux" id="ux">
 
     <br><hr><br>
@@ -399,6 +410,24 @@ export default {
     </transition>
 
   </section>
+
+  <section class="photo" id="photo">
+
+    <br><hr><br>
+
+    <h2>Sometimes I take photos.</h2>
+
+    <p>I've been shooting for almost 7 years now, both on my own and on staff at Chicago Sun-Times SPLASH and <em>Chicago</em> magazine. Check out more on my dedicated <a href="www.rkdvisuals.com" target="_blank">photo portfolio site</a>.</p>
+
+    <button class="readmore" v-on:click="toggleSection('sectionPhoto')">{{ sectionPhoto.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
+    <transition name="slide-fade">
+      <div v-if="sectionPhoto.show">
+        <PhotoGrid></PhotoGrid>
+      </div>
+    </transition>
+
+  </section>
+
 
   <section class="contact" id="contact">
 
