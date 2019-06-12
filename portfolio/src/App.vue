@@ -120,11 +120,12 @@ export default {
 
   <section class="about smaller" id="about">
       <h2>A little about me first.</h2>
-      <p>Despite the labels above, I’ve never aligned myself to a particular job title. I enjoy planning, creating, leading, reviewing, trying again, and shipping.</p>
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
+      <p>Despite the labels above, I’ve never aligned myself to a particular job title. I enjoy planning, creating, leading, reviewing, trying again, and shipping.</p>
       <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. Design without direction is just an aesthetics contest.</p>
       <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how it works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
       <p>Limits aside, I do like creating for the sake of itself — it doesn’t have to be work. I’m eager to be the student - I never like being the “smartest” person in the room. </p>
+      <br>
       <h2>One of my favorite activities is building websites for people to poke and prod on their tiny screens.</h2>
       <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
   </section>
@@ -407,7 +408,9 @@ export default {
 
     <p>Here are some clients I’ve worked with on a freelance basis (if you care about that kind of thing): ConAgra, Avant, Rag & Bone, Printavo, The Chicago Community Trust, ADA25, KNSTRCT, Chicago Public Schools, Mariano’s, Dalhousie University ...and more!</p>
 
-    <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>.</p>
+    <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>. Please put relevant information in the subject line. If we've already worked together, please feel free to add me as a contact on LinkedIn.</p>
+    <br>
+    <p class="small">Video and images copyright Ramzi Dreessen 2008 - 2019. Photos and video content is protected by U.S. Copyright Law and is NOT Public Domain, and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of Ramzi Dreessen. Select web design and photo content is copyrighted by SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings.</p>
   </section>
   
   </div>
