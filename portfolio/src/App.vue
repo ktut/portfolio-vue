@@ -119,7 +119,7 @@ export default {
         
         <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">developer</a>, 
 
-        <br><a href="http://www.rkdvisuals.com" target="_blank" @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">photographer</a>, 
+        <br><a href="#photo" target="_blank" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">photographer</a>, 
 
         <br><a href="http://www.rkdvisuals.com/video" target="_blank" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">videographer</a>, 
 
@@ -415,9 +415,9 @@ export default {
 
     <h2>Sometimes I take photos.</h2>
 
-    <p>I've been shooting for almost 7 years now, both on my own and on staff at Chicago Sun-Times SPLASH and <em>Chicago</em> magazine. Check out more on my dedicated <a href="www.rkdvisuals.com" target="_blank">photo portfolio site</a>.</p>
+    <p>I've been shooting for eight years now, both on my own and on staff at Chicago Sun-Times SPLASH and <em>Chicago</em> magazine. Check out more on my dedicated <a href="www.rkdvisuals.com" target="_blank">photo portfolio site</a>.</p>
 
-    <button class="readmore" v-on:click="toggleSection('sectionPhoto')">{{ sectionPhoto.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
+    <!-- <button class="readmore hide-on-mobile" v-on:click="toggleSection('sectionPhoto')">{{ sectionPhoto.show ? 'Collapse Section -' : 'Expand Section +' }}</button> -->
     <transition name="slide-fade">
       <div v-if="sectionPhoto.show">
         <PhotoGrid></PhotoGrid>
@@ -429,7 +429,7 @@ export default {
 
   <section class="contact" id="contact">
 
-    <br><hr><br>
+    <br>
 
     <h2>Let’s chat!</h2>
 
@@ -437,7 +437,7 @@ export default {
 
     <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>. Please put relevant information in the subject line. If we've already worked together, please feel free to add me as a contact on LinkedIn.</p>
     <br>
-    <p class="small">Video and images copyright Ramzi Dreessen 2008 - 2019. Photos and video content is protected by U.S. Copyright Law and is NOT Public Domain, and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of Ramzi Dreessen. Select web design and photo content is copyrighted by SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings.</p>
+    <p class="small">Video and images copyright Ramzi Dreessen 2008 - 2019. Photo and video content is protected by U.S. Copyright Law and is NOT Public Domain, and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of Ramzi Dreessen. Select web design and photo content is copyrighted by SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings.</p>
   </section>
   
   </div>

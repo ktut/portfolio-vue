@@ -41,13 +41,15 @@ export default {
 <template>
     <div>
         <div class="photoswipe-gallery">
-            <img
+            <div class="photoswipe-image"
                 v-for="(src, index) in photos"
-                :key="index"
-                :data-src="src"
-                :data-pswp-src="src"
-                class="photoswipe-image lazy"
-            />
+                :key="index">
+                <img
+                    :data-src="src"
+                    :data-pswp-src="src"
+                    class="lazy"
+                />
+            </div>
         </div>
     </div>
 </template>
