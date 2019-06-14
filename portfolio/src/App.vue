@@ -133,10 +133,9 @@ export default {
   <section class="about smaller" id="about">
       <h2>A little about me first.</h2>
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
-      <p>Despite the labels above, I’ve never aligned myself to a particular job title. I enjoy planning, creating, leading, reviewing, trying again, and shipping.</p>
-      <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. Design without direction is just an aesthetics contest.</p>
-      <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how it works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
-      <p>Limits aside, I do like creating for the sake of itself — it doesn’t have to be work. I’m eager to be the student - I never like being the “smartest” person in the room. </p>
+      <p>Despite the labels above, I’ve never aligned myself to a particular job title. I enjoy leading, planning, creating, reviewing, trying again, shipping... any part of the “creative” process.</p>
+      <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest.</p>
+      <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
       <br>
       <h2>One of my favorite activities is building websites for people to poke and prod on their tiny screens.</h2>
       <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank">Github</a>.</p> 
@@ -379,7 +378,7 @@ export default {
 
     <h2>... as well as intersections of UI and UX.</h2>
 
-    <p>My user experience philosophy is centered around streamlining common pathways, <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">reducing cognitive load</a> and (duh) improving design.</p>
+    <p>My user experience philosophy is centered around streamlining common pathways, <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank">reducing cognitive load</a> and improving design (duh).</p>
 
     <button class="readmore" v-on:click="toggleSection('sectionUx')">{{ sectionUx.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
 
