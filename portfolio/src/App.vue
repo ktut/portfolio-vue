@@ -23,6 +23,9 @@ export default {
       sectionWebDesign: {
         show: true,
       },
+      sectionPrintDesign: {
+        show: false,
+      },
       sectionCode: {
         show: false,
       },
@@ -339,6 +342,80 @@ export default {
     
   </section>
 
+  <section class="print-design fullbleed" id="print-design">
+    <br>
+    <h2>Did the whole CMYK thing, too.</h2>
+
+    <p>My interest in web design designed stemmed from print, originally for the Chicago Sun-Times. I had many projects there, but two of the biggest were:</p>
+    <p>1. Designing a 103-page glossy embossed hardcover book for the Chicago Sun-Times Foundation in Fall/Winter 2015, including hundreds of photos shot over four years of event coverage</p>
+    <p>2. As a part of a three-person team, designed a 24-page glossy lifestyle magazine (SPLASH) from 2012-2016. Circulation: 225,000.</p>
+
+    <button class="readmore" v-on:click="toggleSection('sectionPrintDesign')">
+      {{ sectionPrintDesign.show ? 'Collapse Section -' : 'Expand Section +' }}
+    </button>
+
+    <div class="wide-gallery" v-bind:class="{ expanded: sectionPrintDesign.show }">
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0008.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0013.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0015.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0018.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0020.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0021.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0022.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0039.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0042.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0046.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0048.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0063.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0064.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0065.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0067.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0069.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0071.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0072.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0077.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+    </div>
+
+  </section>
+
   <section class="code" id="code">
 
     <br><hr><br>
@@ -408,7 +485,7 @@ export default {
 
   </section>
 
-  <section class="photo" id="photo">
+  <section class="photo fullbleed" id="photo">
 
     <br><hr><br>
 

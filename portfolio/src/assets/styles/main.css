@@ -198,10 +198,10 @@ section ul {
     margin-right: auto;
 }
 
-section.photo h1,
-section.photo h2,
-section.photo p,
-section.photo ul {
+section.fullbleed h1,
+section.fullbleed h2,
+section.fullbleed p,
+section.fullbleed ul {
     padding-right: 15px;
     padding-left: 15px;
     max-width: 630px;
@@ -212,9 +212,47 @@ section ul > li:last-child {
     margin-bottom: 0;
 }
 
-section.photo {
+section.fullbleed {
     padding-left: 0;
     padding-right: 0;
+}
+
+/* gallery css */
+
+.wide-gallery {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 40px;
+}
+
+.wide-gallery > div {
+    flex-shrink: 0;
+}
+
+.wide-gallery > div img {
+    height: 300px;
+    width: auto !important;
+    margin-right: 15px;
+}
+
+.wide-gallery.expanded > div img {
+    height: 700px;
+    max-height: 90vh;
+    width: auto !important;
+}
+
+.wide-gallery:before {
+    content: "Swipe or scroll to see more >>";
+    padding: 15px;
+    display: block;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555;
+    top: 0;
+    font-size: 0.9rem;
 }
 
 .photoswipe-gallery {
