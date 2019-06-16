@@ -225,6 +225,8 @@ section.fullbleed {
     overflow-x: auto;
     overflow-y: hidden;
     padding-top: 40px;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .wide-gallery > div {

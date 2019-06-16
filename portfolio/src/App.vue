@@ -126,7 +126,7 @@ export default {
 
         <br><a href="http://www.rkdvisuals.com/video" target="_blank" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">videographer</a>, 
 
-        <br><a href="http://www.rkdvisuals.com/design/" target="_blank" @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">print designer</a>,
+        <br><a href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">print designer</a>,
 
         <br>and more.
        </h2>
@@ -354,7 +354,7 @@ export default {
       {{ sectionPrintDesign.show ? 'Collapse Section -' : 'Expand Section +' }}
     </button>
 
-    <div class="wide-gallery" v-bind:class="{ expanded: sectionPrintDesign.show }">
+    <div class="wide-gallery" v-bind:class="{ expanded: sectionPrintDesign.show }" v-on:click='sectionPrintDesign.show = !sectionPrintDesign.show'>
       <div>
         <img class="lazy" :data-src="'/photos/print-design/IMG_0008.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
