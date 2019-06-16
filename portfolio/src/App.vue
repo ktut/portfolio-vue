@@ -356,16 +356,22 @@ export default {
 
     <div class="wide-gallery" v-bind:class="{ expanded: sectionPrintDesign.show }" v-on:click='sectionPrintDesign.show = !sectionPrintDesign.show'>
       <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0063.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
         <img class="lazy" :data-src="'/photos/print-design/IMG_0008.jpg'" alt="Print design by Ramzi Dreessen">
+      </div>
+      <div>
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0042.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
         <img class="lazy" :data-src="'/photos/print-design/IMG_0013.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0015.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0018.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0018.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'/photos/print-design/IMG_0015.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
         <img class="lazy" :data-src="'/photos/print-design/IMG_0020.jpg'" alt="Print design by Ramzi Dreessen">
@@ -380,16 +386,10 @@ export default {
         <img class="lazy" :data-src="'/photos/print-design/IMG_0039.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0042.jpg'" alt="Print design by Ramzi Dreessen">
-      </div>
-      <div>
         <img class="lazy" :data-src="'/photos/print-design/IMG_0046.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
         <img class="lazy" :data-src="'/photos/print-design/IMG_0048.jpg'" alt="Print design by Ramzi Dreessen">
-      </div>
-      <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0063.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
         <img class="lazy" :data-src="'/photos/print-design/IMG_0064.jpg'" alt="Print design by Ramzi Dreessen">

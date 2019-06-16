@@ -14,7 +14,7 @@ a {
 }
 
 .wide-gallery > div img {
-    transition: height 0.4s ease-in;
+    transition: height 0.3s ease-in;
 }
 
 .fade-enter-active, 
