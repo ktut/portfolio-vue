@@ -1,7 +1,22 @@
 /* FONTS */
 * {
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
     font-family: neue-haas-grotesk-display, sans-serif !important;
+}
+
+ul,
+li,
+p,
+p em,
+p a,
+button,
+:before {
+    font-family: neue-haas-grotesk-text, sans-serif !important;
 }
 
 /* BASE FONT SIZE */
@@ -22,7 +37,7 @@ body {
 h1,
 h2 {
     font-weight: 700;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
 }
 
 h1 {
@@ -35,12 +50,11 @@ h2 {
     line-height: 130%;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #333;
 }
 
 p {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 p,
@@ -50,13 +64,12 @@ ul {
 
 p,
 li {
+    color: #555;
     line-height: 160%;
-    letter-spacing: 0.90px;
 }
 
 b {
     font-weight: 700;
-    letter-spacing: 0.3px;
 }
 
 ul {
@@ -66,7 +79,7 @@ ul {
 li {
     display: flex;
     align-items: center;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
@@ -93,7 +106,6 @@ p em {
 
 .small {
     font-size: 0.7rem;
-    letter-spacing: 0.2px;
 }
 
 .caps {
