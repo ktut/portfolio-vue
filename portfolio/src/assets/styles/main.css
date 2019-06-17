@@ -239,6 +239,7 @@ section.fullbleed {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
     padding-top: 40px;
     cursor: pointer;
     cursor: hand;
