@@ -266,7 +266,7 @@ section.fullbleed {
 }
 
 .wide-gallery:before {
-    content: "Swipe or scroll to see more >>";
+    content: "<- Swipe or scroll to see more ->";
     padding: 15px;
     display: block;
     position: absolute;
@@ -327,7 +327,7 @@ section.fullbleed {
     }
 
     .photoswipe-gallery:before {
-        content: "Swipe to see more >>";
+        content: "<- Swipe or scroll to see more ->";
         padding: 15px;
         display: block;
         position: absolute;
