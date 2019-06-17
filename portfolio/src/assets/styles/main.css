@@ -16,7 +16,7 @@ p em,
 p a,
 button,
 :before {
-    font-family: neue-haas-grotesk-text, sans-serif !important;
+    font-family: proxima-nova, sans-serif !important;
 }
 
 /* BASE FONT SIZE */
@@ -37,7 +37,7 @@ body {
 h1,
 h2 {
     font-weight: 700;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
 }
 
 h1 {
@@ -46,15 +46,16 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 130%;
     margin-bottom: 20px;
     margin-top: 20px;
+    color: #333;
 }
 
 p {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 p,
@@ -64,8 +65,7 @@ ul {
 
 p,
 li {
-    color: #555;
-    line-height: 160%;
+    line-height: 155%;
 }
 
 b {
