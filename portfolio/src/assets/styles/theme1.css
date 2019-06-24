@@ -13,8 +13,6 @@
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
-
-    mix-blend-mode: difference;
 }
 
 .letter {
@@ -41,10 +39,11 @@ nav {
     transform: scaleX(0.0);
 }
 
+.loaded .letter,
 .loaded .letter > div,
 .loaded .letter > div > div,
 .loaded nav {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .loaded .logo {
