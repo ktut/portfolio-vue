@@ -51,23 +51,6 @@ nav {
     transform: scaleX(1);
 }
 
-.loaded .letter .top {
-    border-top-left-radius: 0.5em;
-}
-
-.loaded .letter .bottom {
-    border-bottom-left-radius: 0.5em;
-}
-
-.loaded .r .bottom,
-.loaded .k .bottom {
-    border-bottom-right-radius: 0.5em;
-}
-
-.loaded .k .top {
-    border-top-right-radius: 0.5em;
-}
-
 .loaded .r > div {
     border-left: 20px solid black;
     border-top-right-radius: 5em;
@@ -136,7 +119,26 @@ nav a:hover {
 
 @media (max-width: 450px) {
     .letter:not(:first-of-type) {
-        margin-left: 2em;
+        margin-left: 2.5em;
+    }
+}
+
+@media (min-width: 451px) {
+    .loaded .letter .top {
+        border-top-left-radius: 0.5em;
+    }
+
+    .loaded .letter .bottom {
+        border-bottom-left-radius: 0.5em;
+    }
+
+    .loaded .r .bottom,
+    .loaded .k .bottom {
+        border-bottom-right-radius: 0.5em;
+    }
+
+    .loaded .k .top {
+        border-top-right-radius: 0.5em;
     }
 }
 
