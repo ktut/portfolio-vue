@@ -11,8 +11,10 @@
 .logo {
     display: flex;
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
+
+    mix-blend-mode: difference;
 }
 
 .letter {
@@ -20,7 +22,7 @@
 }
 
 .letter:not(:first-of-type) {
-    margin-left: 5em;
+    margin-left: 6em;
 }
 
 .letter > div {
@@ -49,12 +51,21 @@ nav {
     transform: scaleX(1);
 }
 
-.loaded .letter > .top {
+.loaded .letter .top {
     border-top-left-radius: 0.5em;
 }
 
-.loaded .letter > .bottom {
+.loaded .letter .bottom {
     border-bottom-left-radius: 0.5em;
+}
+
+.loaded .r .bottom,
+.loaded .k .bottom {
+    border-bottom-right-radius: 0.5em;
+}
+
+.loaded .k .top {
+    border-top-right-radius: 0.5em;
 }
 
 .loaded .r > div {
@@ -107,9 +118,10 @@ nav {
 nav a {
     border-radius: 3px;
     padding: 4px 5px 3px;
-    margin: 10px;
+    margin: 5px 9px;
     font-weight: 300;
     letter-spacing: 1px;
+    font-size: 0.9rem;
     text-transform: uppercase;
     color: black;
     text-decoration: none;
@@ -131,15 +143,11 @@ nav a:hover {
 /* header */
 
 .image-contain { 
-    min-height: 80vh;
-    margin-left: 50px;
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-    box-shadow: inset 0px 0px 40px 38px rgba(238,238,238,1);
-    border: 3px solid #eee;
 }
 
 .image-video {
@@ -157,9 +165,9 @@ nav a:hover {
         background-color: #eee;
     }
 
-    .image-contain {
+    /* .image-contain {
         display: block;
-    }
+    } */
 }
 
 @media screen and (orientation: portrait) {
@@ -167,9 +175,9 @@ nav a:hover {
         transform: translateX(-30%);
     }
 
-    .image-contain {
+    /* .image-contain {
         display: none;
-    }
+    } */
 }
 
 section.title {
