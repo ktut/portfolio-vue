@@ -137,31 +137,42 @@ export default {
   </div> -->
 
   <section class="newtitle" id="title" v-bind:class="{ loaded: loaded }">
-    <div class="logo">
-      <div class="letter r">
-        <div class="top"></div>
-        <div class="bottom"></div>
-      </div>
-      <div class="letter k">
-        <div class="top"></div>
-        <div class="bottom"></div>
-      </div>
-      <div class="letter d">
-        <div class="top"></div>
-        <div class="bottom"></div>
-      </div>
-    </div>
-    <nav>
-      <a href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
-      
-      <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
+    <div class="logo-contain">
+      <div class="logo">
+          <div class="letter r">
+            <div class="top"></div>
+            <div class="bottom"></div>
+          </div>
+          <div class="letter k">
+            <div class="top"></div>
+            <div class="bottom"></div>
+          </div>
+          <div class="letter d">
+            <div class="top"></div>
+            <div class="bottom"></div>
+          </div>
+        </div>
+        <nav>
+          <a href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
+          
+          <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
 
-      <a href="#photo" target="_blank" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
+          <a href="#photo" target="_blank" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
 
-      <a href="http://www.rkdvisuals.com/video" target="_blank" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
+          <a href="http://www.rkdvisuals.com/video" target="_blank" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
 
-      <a href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
-    </nav>
+          <a href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
+        </nav>
+      </div>
+    
+    <!-- <div class="image-contain" :style="titleCardImage">
+      <transition name="fade">
+        <video class="image-video" autoplay loop muted playsinline v-if="showVideoBackground" poster="https://ktut.github.io/portfolio/assets/farmers-design4.jpg">
+          <source :src="videoBackgroundURL">
+          Your browser does not support the video tag.
+        </video>
+      </transition>
+    </div> -->
     
   </section>
 
