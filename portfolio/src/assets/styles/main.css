@@ -15,7 +15,8 @@ p,
 p em,
 p a,
 button,
-:before {
+:before,
+nav a {
     font-family: proxima-nova, sans-serif !important;
 }
 

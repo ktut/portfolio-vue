@@ -20,6 +20,7 @@ export default {
   },
   data() {
     return { 
+      loaded: false,
       sectionWebDesign: {
         show: true,
       },
@@ -46,6 +47,9 @@ export default {
   },
   mounted() {
     this.updateGreetingByTimeOfDay();
+
+    setTimeout( () => this.loaded = true, 0 );
+    
     const lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy"
     });
@@ -104,7 +108,7 @@ export default {
 <template>
   <div id="app">
   
-  <div class="title-contain" :style="titleCardImage">
+  <!-- <div class="title-contain" :style="titleCardImage">
 
     <transition name="fade">
       <video class="title-video" autoplay loop muted playsinline v-if="showVideoBackground" poster="https://ktut.github.io/portfolio/assets/farmers-design4.jpg">
@@ -129,12 +133,42 @@ export default {
         <br>and more.
        </h2>
     </section>
-  </div>
+
+  </div> -->
+
+  <section class="newtitle" id="title" v-bind:class="{ loaded: loaded }">
+    <div class="logo">
+      <div class="letter r">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="letter k">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="letter d">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+    <nav>
+      <a href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
+      
+      <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
+
+      <a href="#photo" target="_blank" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
+
+      <a href="http://www.rkdvisuals.com/video" target="_blank" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
+
+      <a href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
+    </nav>
+    
+  </section>
 
   <section class="about smaller" id="about">
       <h2>A little about me first.</h2>
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
-      <p>Despite the labels above, I’ve never aligned myself to a particular job title. I enjoy leading, planning, creating, reviewing, trying again, shipping... any part of the creative process.</p>
+      <p>I’ve never aligned myself to a particular job title. I enjoy leading, planning, creating, reviewing, trying again, shipping... any part of the creative process.</p>
       <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest.</p>
       <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
       <br>
