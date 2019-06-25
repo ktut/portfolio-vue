@@ -179,7 +179,7 @@ export default {
   <section class="about smaller" id="about">
       <h2>A little about me first.</h2>
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
-      <p>I’m Ramzi.</p>
+      <p>Hi! I’m Ramzi.</p>
       <p>I’ve never aligned myself to a particular job title. I enjoy leading, planning, creating, reviewing, trying again, shipping... any part of the creative process.</p>
       <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest.</p>
       <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
