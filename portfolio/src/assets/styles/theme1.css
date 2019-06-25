@@ -52,12 +52,12 @@ nav {
 
 .loaded .r > div {
     border-left: 20px solid black;
-    border-top-right-radius: 5em;
+    border-top-right-radius: 10em;
 }
 
 .loaded .r .top {
     border-right: 20px solid black;
-    border-bottom-right-radius: 5em;
+    border-bottom-right-radius: 10em;
 }
 
 .loaded .r .bottom {
@@ -101,7 +101,7 @@ nav a {
     border-radius: 3px;
     padding: 4px 5px 3px;
     margin: 5px 9px;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 1px;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -123,21 +123,8 @@ nav a:hover {
 }
 
 @media (min-width: 451px) {
-    .loaded .letter .top {
-        border-top-left-radius: 0.5em;
-    }
-
-    .loaded .letter .bottom {
-        border-bottom-left-radius: 0.5em;
-    }
-
-    .loaded .r .bottom,
-    .loaded .k .bottom {
-        border-bottom-right-radius: 0.5em;
-    }
-
-    .loaded .k .top {
-        border-top-right-radius: 0.5em;
+    nav a {
+        font-size: 1rem;
     }
 }
 

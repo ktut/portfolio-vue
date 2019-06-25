@@ -74,7 +74,7 @@ button.readmore {
 
 nav {
     transition: 
-        opacity 3.5s ease 1s;
+        opacity 1.2s ease 1.7s;
 }
 
 @media (prefers-reduced-motion: reduce) {

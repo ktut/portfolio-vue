@@ -196,11 +196,6 @@ section.smaller {
     margin-right: auto;
 }
 
-section:first-of-type {
-    padding-top: 20px;
-    padding-top: calc(10px + 5vw);
-}
-
 section:last-of-type {
     margin-bottom: 100px;
 }
