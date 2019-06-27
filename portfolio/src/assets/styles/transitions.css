@@ -41,6 +41,14 @@ button.readmore {
 }
 
 .logo,
+.logo .letter,
+.logo .letter > div {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    will-change: transform, opacity;
+}
+
+.logo,
 .logo .letter {
     transition: 
         transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
@@ -52,7 +60,7 @@ button.readmore {
 .logo .r .bottom {
     transition: 
         transform 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
-        border-radius 1.5s cubic-bezier(0.86, 0, 0.07, 1) 0.3s,
+        border-radius 1.3s cubic-bezier(0.86, 0, 0.07, 1) 0.5s,
         opacity 1s ease 0s;
 }
 
@@ -60,7 +68,7 @@ button.readmore {
 .logo .k .bottom {
     transition: 
         transform 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
-        border-radius 1.8s cubic-bezier(0.86, 0, 0.07, 1) 0.6s,
+        border-radius 1.6s cubic-bezier(0.86, 0, 0.07, 1) 0.6s,
         opacity 1s ease 0s;
 }
 
@@ -68,13 +76,13 @@ button.readmore {
 .logo .d .bottom {
     transition: 
         transform 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
-        border-radius 2s cubic-bezier(0.86, 0, 0.07, 1) 0.9s,
+        border-radius 1.8s cubic-bezier(0.86, 0, 0.07, 1) 0.7s,
         opacity 1s ease 0s;
 }
 
 nav {
     transition: 
-        opacity 1.2s ease 1.7s;
+        opacity 1.2s ease 1.4s;
 }
 
 @media (prefers-reduced-motion: reduce) {
