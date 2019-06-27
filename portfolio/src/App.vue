@@ -188,7 +188,7 @@ export default {
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
       <p>Hi! I’m Ramzi.</p>
       <p>I’ve never aligned myself to a particular job title. I enjoy leading, planning, creating, reviewing, trying again, shipping... any part of the creative process.</p>
-      <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest.</p>
+      <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest. Likewise, with my web design work, I specialize in performative solutions that are fully responsive and utilize progressive enhancement.</p>
       <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
       <br>
       <h2>One of my favorite activities is building websites for people to poke and prod on their tiny screens.</h2>
@@ -199,7 +199,7 @@ export default {
     <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design, and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank" rel="noreferrer noopener">won a national award</a> from the City and Regional Magazine Association.</p>
 
     <!-- <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">
-      {{ sectionWebDesign.show ? 'Collapse Section -' : 'Expand Section +' }}
+      {{ sectionWebDesign.show ? 'See Less -' : 'See More +' }}
     </button> -->
 
     <transition name="slide-fade">
@@ -402,7 +402,7 @@ export default {
     <p><b>2.</b> As a part of a three-person team, designed a 24-page glossy lifestyle magazine (SPLASH) from 2012-2016. Circulation: 225,000.</p>
 
     <button class="readmore" v-on:click="toggleSection('sectionPrintDesign')">
-      {{ sectionPrintDesign.show ? 'Collapse Section -' : 'Expand Section +' }}
+      {{ sectionPrintDesign.show ? 'Make Smaller -' : 'Make Bigger +' }}
     </button>
 
     <div class="wide-gallery" v-bind:class="{ expanded: sectionPrintDesign.show }" v-on:click='sectionPrintDesign.show = !sectionPrintDesign.show'>
@@ -475,7 +475,7 @@ export default {
 
     <p>At my current job, I’ve done a lot of work with component-based design and architecture.</p>
 
-    <button class="readmore" v-on:click="toggleSection('sectionCode')">{{ sectionCode.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
+    <button class="readmore" v-on:click="toggleSection('sectionCode')">{{ sectionCode.show ? 'See Less -' : 'See More +' }}</button>
 
     <transition name="slide-fade">
         <div v-if="sectionCode.show">
@@ -508,7 +508,7 @@ export default {
 
     <p>My user experience philosophy is centered around streamlining common pathways, <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank" rel="noreferrer noopener">reducing cognitive load</a> and improving design (duh).</p>
 
-    <button class="readmore" v-on:click="toggleSection('sectionUx')">{{ sectionUx.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
+    <button class="readmore" v-on:click="toggleSection('sectionUx')">{{ sectionUx.show ? 'See Less -' : 'See More +' }}</button>
 
     <transition name="slide-fade">
       <div v-if="sectionUx.show">
@@ -544,7 +544,7 @@ export default {
 
     <p>I've been shooting for eight years now, both on my own and on staff at Chicago Sun-Times SPLASH and <em>Chicago</em> magazine. Check out more on my dedicated <a href="www.rkdvisuals.com" target="_blank" rel="noreferrer noopener">photo portfolio site</a>.</p>
 
-    <!-- <button class="readmore hide-on-mobile" v-on:click="toggleSection('sectionPhoto')">{{ sectionPhoto.show ? 'Collapse Section -' : 'Expand Section +' }}</button> -->
+    <!-- <button class="readmore hide-on-mobile" v-on:click="toggleSection('sectionPhoto')">{{ sectionPhoto.show ? 'See Less -' : 'See More +' }}</button> -->
     <transition name="slide-fade">
       <div v-if="sectionPhoto.show">
         <PhotoGrid></PhotoGrid>

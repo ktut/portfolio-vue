@@ -139,7 +139,7 @@ button.readmore {
     position: sticky;
     top: 15px;
 
-    min-width: 200px;
+    min-width: 150px;
     display: block;
     text-align: center;
     margin: 20px auto;
@@ -152,6 +152,7 @@ button.readmore {
     font-size: 0.8rem;
     border-radius: 20px;
     z-index: 1;
+    border: 1px solid #777;
 }
 
 button.readmore:focus {
