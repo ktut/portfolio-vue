@@ -192,7 +192,7 @@ export default {
       <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
       <br>
       <h2>One of my favorite activities is building websites for people to poke and prod on their tiny screens.</h2>
-      <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
+      <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS, and various build tools). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
   </section>
 
   <section class="web-design" id="web-design">
@@ -407,61 +407,61 @@ export default {
 
     <div class="wide-gallery" v-bind:class="{ expanded: sectionPrintDesign.show }" v-on:click='sectionPrintDesign.show = !sectionPrintDesign.show'>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0063.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0063.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0008.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0008.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0042.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0042.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0013.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0013.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0018.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0018.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0015.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0015.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0020.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0020.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0021.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0021.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0022.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0022.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0039.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0039.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0046.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0046.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0048.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0048.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0064.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0064.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0065.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0065.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0067.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0067.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0069.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0069.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0071.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0071.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0072.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0072.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
       <div>
-        <img class="lazy" :data-src="'/photos/print-design/IMG_0077.jpg'" alt="Print design by Ramzi Dreessen">
+        <img class="lazy" :data-src="'https://ktut.github.io/portfolio/assets/print-design/IMG_0077.jpg'" alt="Print design by Ramzi Dreessen">
       </div>
     </div>
 
@@ -473,7 +473,7 @@ export default {
 
     <h2>I enjoy exploring new intersections of programming and design...</h2>
 
-    <p>At my current job, I’ve done a lot of work with component-based design and architecture, using Vue.js, Atomic CSS, PostCSS, and other various build tools.</p>
+    <p>At my current job, I’ve done a lot of work with component-based design and architecture.</p>
 
     <button class="readmore" v-on:click="toggleSection('sectionCode')">{{ sectionCode.show ? 'Collapse Section -' : 'Expand Section +' }}</button>
 
