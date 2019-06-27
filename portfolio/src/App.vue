@@ -56,6 +56,13 @@ export default {
     lazyLoadInstance.update();
   },
   computed: {
+    isTouchDevice() {
+      if ("ontouchstart" in document.documentElement) {
+        return true;
+      } else {
+        return false;
+      }
+    },
     titleCardGradient() {
       return 'background-image: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
     },
