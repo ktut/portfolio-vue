@@ -10,8 +10,8 @@
 
 .logo {
     display: flex;
-    width: 100%;
-    max-width: 650px;
+    width: 650px;
+    max-width: 70vw;
     margin: 0 auto;
 }
 
@@ -117,7 +117,7 @@ nav a:hover {
 
 @media (max-width: 730px) {
     .letter:not(:first-of-type) {
-        margin-left: 2.5em;
+        margin-left: 2em;
     }
     .logo-contain {
         width: 100%;
