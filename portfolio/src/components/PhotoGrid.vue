@@ -9,6 +9,7 @@ const options = {
             tapToClose: true,
             shareEl: false,
             fullscreenEl: false,
+            preload: [0,1],
         };
 
 Vue.use(Photoswipe, options);
