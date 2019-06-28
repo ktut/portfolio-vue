@@ -10,6 +10,7 @@ import Vue from 'vue';
 import vueSmoothScroll from 'vue2-smooth-scroll';
 import LazyLoad from "vanilla-lazyload";
 import PhotoGrid from './components/PhotoGrid';
+import photos from './data/photos';
 
 Vue.use(vueSmoothScroll);
 
@@ -21,6 +22,7 @@ export default {
   data() {
     return { 
       loaded: false,
+      photos: photos,
       sectionWebDesign: {
         show: true,
       },
@@ -547,7 +549,7 @@ export default {
     <!-- <button class="readmore hide-on-mobile" v-on:click="toggleSection('sectionPhoto')">{{ sectionPhoto.show ? 'See Less -' : 'See More +' }}</button> -->
     <transition name="slide-fade">
       <div v-if="sectionPhoto.show">
-        <PhotoGrid></PhotoGrid>
+        <PhotoGrid v-bind:photos="photos"></PhotoGrid>
       </div>
     </transition>
 

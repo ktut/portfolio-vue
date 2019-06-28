@@ -1,0 +1,15 @@
+export default [
+    'https://ktut.github.io/portfolio/assets/photo/ruffalo-1.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/WhoWatchR-SLH-122114.01-2.JPG',
+    'https://ktut.github.io/portfolio/assets/photo/will-1100.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/IMG_0038-2.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/IMG_0905.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/1100-westwick.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/00-aless.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/miles-49-RAMZI-DREESSEN.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/PhotoJ-RKD-1.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/10572022_3409851362463_3147035676682537141_o.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/E8A2046-WEB.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/IMG-365.jpg',
+    'https://ktut.github.io/portfolio/assets/photo/lefty-3.jpg',
+];
