@@ -246,23 +246,17 @@ section.fullbleed {
     margin: 0 auto;
 }
 
-.wide-gallery > div {
+.wide-gallery > * {
     flex-shrink: 0;
     margin-right: 25px;
     margin-bottom: 25px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
-.wide-gallery > div img {
+.wide-gallery > * > img {
     height: 300px;
     width: auto !important;
     vertical-align: bottom;
-}
-
-.wide-gallery.expanded > div img {
-    height: 900px;
-    max-height: 78.3vh;
-    width: auto !important;
 }
 
 .wide-gallery:before {

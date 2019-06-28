@@ -21,6 +21,11 @@ export default {
             required: true,
             default: () => [],
         },
+        template: {
+            type: String,
+            required: false,
+            default: 'photoswipe-gallery',
+        },
     },
 }
 
@@ -28,7 +33,7 @@ export default {
 
 <template>
     <div>
-        <Photoswipe class="photoswipe-gallery">
+        <Photoswipe v-bind:class="template">
             <PhotoswipeItem class="photoswipe-image"
                 v-for="(src, index) in photos"
                 :key="index">
