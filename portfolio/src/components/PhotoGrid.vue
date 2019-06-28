@@ -1,17 +1,17 @@
 <script>
 
-// import Photoswipe from 'vue-pswipe';
-// import Vue from 'vue';
+import Photoswipe from 'vue-pswipe';
+import Vue from 'vue';
 
-// const options = {
-//             bgOpacity: 0.8,
-//             captionEl: false,
-//             tapToClose: true,
-//             shareEl: false,
-//             fullscreenEl: false,
-//         };
+const options = {
+            bgOpacity: 0.8,
+            captionEl: false,
+            tapToClose: true,
+            shareEl: false,
+            fullscreenEl: false,
+        };
 
-// Vue.use(Photoswipe, options);
+Vue.use(Photoswipe, options);
 
 export default {
     name: 'PhotoGrid',
@@ -40,16 +40,17 @@ export default {
 
 <template>
     <div>
-        <div class="photoswipe-gallery">
-            <div class="photoswipe-image"
+        <Photoswipe class="photoswipe-gallery">
+            <PhotoswipeItem class="photoswipe-image"
                 v-for="(src, index) in photos"
                 :key="index">
                 <img
                     :data-src="src"
                     :data-pswp-src="src"
+                    v-pswp="src"
                     class="lazy"
                 />
-            </div>
-        </div>
+            </PhotoswipeItem>
+        </Photoswipe>
     </div>
 </template>
