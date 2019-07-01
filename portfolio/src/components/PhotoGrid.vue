@@ -41,7 +41,6 @@ export default {
                 <img
                     :data-src="src"
                     :data-pswp-src="src"
-                    v-pswp="src"
                     class="lazy"
                 />
             </div>
