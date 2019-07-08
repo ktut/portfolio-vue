@@ -149,7 +149,7 @@ export default {
 
   <section class="newtitle" id="title" v-bind:class="{ loaded: loaded }">
     <div class="logo-contain">
-      <div class="logo">
+      <div class="logo webkitForceHardwareAcceleration">
           <div class="letter r">
             <div class="top"></div>
             <div class="bottom"></div>
