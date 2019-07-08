@@ -194,12 +194,11 @@ export default {
       <p>I’ve never aligned myself to a particular job title. I enjoy leading, planning, creating, reviewing, trying again, shipping... any part of the creative process.</p>
       <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest. Likewise, with my web design work, I specialize in performative solutions that are fully responsive and utilize progressive enhancement.</p>
       <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
-      <br>
-      <h2>One of my favorite activities is building websites for people to poke and prod on their tiny screens.</h2>
-      <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS, and various build tools). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
   </section>
 
   <section class="web-design" id="web-design">
+    <h2>One of my favorite activities is building websites for people to poke and prod on their tiny screens.</h2>
+    <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS, and various build tools). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
     <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design, and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank" rel="noreferrer noopener">won a national award</a> with my team from the City and Regional Magazine Association.</p>
 
     <!-- <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">

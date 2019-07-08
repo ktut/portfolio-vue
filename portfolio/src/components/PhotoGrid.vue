@@ -35,7 +35,7 @@ export default {
 <template>
     <div>
         <Photoswipe v-bind:class="template">
-            <PhotoswipeItem class="photoswipe-image"
+            <div class="photoswipe-image"
                 v-for="(src, index) in photos"
                 :key="index">
                 <img
@@ -43,7 +43,7 @@ export default {
                     :data-pswp-src="src"
                     class="lazy"
                 />
-            </PhotoswipeItem>
+            </div>
         </Photoswipe>
     </div>
 </template>
