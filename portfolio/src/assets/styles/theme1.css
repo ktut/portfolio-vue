@@ -162,21 +162,10 @@ nav a:hover {
     flex-grow: 1;
 }
 
-/* .colors > .top > .left {
-    background-color: hsl(0, 100%, 50%);
+.colors > div > div {
+    -webkit-filter: blur(50vw);
+    filter: blur(50vw);
 }
-
-.colors > .top > .right {
-    background-color: hsl(100, 100%, 50%);
-}
-
-.colors > .bottom > .left {
-    background-color: hsl(200, 100%, 50%);
-}
-
-.colors > .bottom > .right {
-    background-color: hsl(300, 100%, 50%);
-} */
 
 /* header */
 
