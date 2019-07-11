@@ -133,6 +133,51 @@ nav a:hover {
     }
 }
 
+/* color block */
+
+.colors {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loaded .colors {
+    opacity: 1;
+}
+
+.colors > div {
+    display: flex;
+}
+
+.colors > .bottom {
+    flex-grow: 1;
+}
+
+.colors > div > .right {
+    flex-grow: 1;
+}
+
+/* .colors > .top > .left {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.colors > .top > .right {
+    background-color: hsl(100, 100%, 50%);
+}
+
+.colors > .bottom > .left {
+    background-color: hsl(200, 100%, 50%);
+}
+
+.colors > .bottom > .right {
+    background-color: hsl(300, 100%, 50%);
+} */
+
 /* header */
 
 .image-contain { 

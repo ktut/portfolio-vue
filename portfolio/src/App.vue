@@ -22,9 +22,14 @@ export default {
   },
   data() {
     return { 
+      // is app loaded
       loaded: false,
+
+      // image data to feed into galleries
       photos: photos,
       printDesign: printDesign,
+
+      // section status
       sectionWebDesign: {
         show: true,
       },
@@ -40,17 +45,26 @@ export default {
       sectionUx: {
         show: false,
       },
-      greeting: 'Hey there,',
-      themes: ['theme1'],
-      gradientFocusPercentage: 0,
+
+      // stuff for header
+      hueTopLeft: 0,
+      hueTopRight: 0,
+      hueBottomLeft: 0,
+      hueBottomRight: 0,
+      // greeting: 'Hey there,',
+      mouseXFocusPercentage: 50,
+      mouseYFocusPercentage: 50,
       // default background image
       titleBackgroundURL: 'https://ktut.github.io/portfolio/assets/black-placeholder.jpg',
       videoBackgroundURL: '',
       showVideoBackground: false,
+
+      themes: ['theme1'],
     }
   },
   mounted() {
-    this.updateGreetingByTimeOfDay();
+    // this.updateGreetingByTimeOfDay();
+    this.computeGradientHues();
 
     setTimeout( () => this.loaded = true, 0 );
     
@@ -67,14 +81,40 @@ export default {
         return false;
       }
     },
-    titleCardGradient() {
-      return 'background-image: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
+    titleCardTopLeft() {
+      return `
+      width: ${this.mouseXFocusPercentage}%;
+      background-color: hsl(${this.hueTopLeft}, 100%, 50%)`;
     },
+    titleCardTopRight() {
+      return `background-color: hsl(${this.hueTopRight}, 100%, 50%)`;
+    },
+    titleCardBottomLeft() {
+      return `
+      width: ${this.mouseXFocusPercentage}%;
+      background-color: hsl(${this.hueBottomLeft}, 100%, 50%)`;
+    },
+    titleCardBottomRight() {
+      return `background-color: hsl(${this.hueBottomRight}, 100%, 50%)`;
+    },
+    titleCardTopSection() {
+      return `
+      height: ${this.mouseYFocusPercentage}%;`;
+    },
+    // titleCardGradient() {
+    //   return 'background-image: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
+    // },
     titleCardImage() {
       return 'background-image: url("' + this.titleBackgroundURL + '")';
     }
   },
   methods: {
+    computeGradientHues(array) {
+      this.hueTopLeft = parseInt(Math.random() * 360);
+      this.hueTopRight = parseInt(Math.random() * 360);
+      this.hueBottomLeft = parseInt(Math.random() * 360);
+      this.hueBottomRight = parseInt(Math.random() * 360);
+    },
     toggleSection(section) {
       if (this[section].show === true) {
         this[section].show = false;
@@ -82,35 +122,39 @@ export default {
         this[section].show = true;
       }
     },
-    updateGradientPosition() {
+    getMousePosition() {
+      let cursorX = event.pageX;
+      let titleWidth = document.getElementById('title').offsetWidth;
+      this.mouseXFocusPercentage = parseInt((cursorX / titleWidth).toFixed(2) * 100);
+
       let cursorY = event.pageY;
       let titleHeight = document.getElementById('title').offsetHeight;
-      this.gradientFocusPercentage = parseInt((cursorY / titleHeight).toFixed(2) * 100);
+      this.mouseYFocusPercentage = parseInt((cursorY / titleHeight).toFixed(2) * 100);
     },
-    updateGreetingByTimeOfDay() {
-      const currentTime = new Date().getHours();
+    // updateGreetingByTimeOfDay() {
+    //   const currentTime = new Date().getHours();
 
-      if (0 <= currentTime&&currentTime < 4) {
-      // nighttime
-       this.greeting = 'Welcome, night owl!';
-      }
-      if (5 <= currentTime&&currentTime < 10) {
-      // morning
-       this.greeting = 'Good morning!';
-      }
-      if (10 <= currentTime&&currentTime < 16) {
-      // day
-       this.greeting = 'Good day!';
-      }
-      if (16 <= currentTime&&currentTime < 18) {
-        // evening
-       this.greeting = 'Good afternoon!';
-      }
-      if (18 <= currentTime&&currentTime <= 24) {
-        // nighttime
-       this.greeting = 'Good evening!';
-      }
-    }
+    //   if (0 <= currentTime&&currentTime < 4) {
+    //   // nighttime
+    //    this.greeting = 'Welcome, night owl!';
+    //   }
+    //   if (5 <= currentTime&&currentTime < 10) {
+    //   // morning
+    //    this.greeting = 'Good morning!';
+    //   }
+    //   if (10 <= currentTime&&currentTime < 16) {
+    //   // day
+    //    this.greeting = 'Good day!';
+    //   }
+    //   if (16 <= currentTime&&currentTime < 18) {
+    //     // evening
+    //    this.greeting = 'Good afternoon!';
+    //   }
+    //   if (18 <= currentTime&&currentTime <= 24) {
+    //     // nighttime
+    //    this.greeting = 'Good evening!';
+    //   }
+    // }
   }
 }
 
@@ -147,7 +191,19 @@ export default {
 
   </div> -->
 
-  <section class="newtitle" id="title" v-bind:class="{ loaded: loaded }">
+  <section class="newtitle" id="title" v-bind:class="{ loaded: loaded }" @mousemove="getMousePosition()">
+
+    <div class="colors">
+      <div class="top" v-bind:style="titleCardTopSection">
+        <div class="left" v-bind:style="titleCardTopLeft"></div>
+        <div class="right" v-bind:style="titleCardTopRight"></div>
+      </div>
+      <div class="bottom">
+        <div class="left" v-bind:style="titleCardBottomLeft"></div>
+        <div class="right" v-bind:style="titleCardBottomRight"></div>
+      </div>
+    </div>
+
     <div class="logo-contain">
       <div class="logo webkitForceHardwareAcceleration">
           <div class="letter r">
