@@ -221,7 +221,7 @@ export default {
   </section>
 
   <section class="about smaller" id="about">
-      <h2>A little about me first.</h2>
+      <h2 style="color: black;">A little about me first.</h2>
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
       <p>Hi! I’m Ramzi.</p>
       <p>I’ve never aligned myself to a particular job title. I enjoy leading, planning, creating, reviewing, trying again, shipping... any part of the creative process.</p>
