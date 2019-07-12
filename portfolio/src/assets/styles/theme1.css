@@ -51,7 +51,7 @@ nav {
 }
 
 .loaded .logo.logoIsDimmed {
-    opacity: 0.1;
+    mix-blend-mode: lighten;
 }
 
 .loaded .r > div {
