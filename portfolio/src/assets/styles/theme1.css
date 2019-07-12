@@ -11,7 +11,7 @@
 .logo {
     display: flex;
     width: 650px;
-    max-width: 85vw;
+    max-width: 75vw;
     margin: 0 auto;
 }
 
@@ -152,18 +152,20 @@ nav a:hover {
 
 .colors > div {
     display: flex;
+    filter: blur(12vw);
+    transform-origin: top;
 }
-
 .colors > .bottom {
     flex-grow: 1;
 }
 
-.colors > div > .right {
-    flex-grow: 1;
+.colors > div > .left {
+    transform-origin: left;
 }
 
 .colors > div > div {
-    filter: blur(30vw);
+    flex-grow: 1;
+    filter: blur(12vw);
 }
 
 /* header */

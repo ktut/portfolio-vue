@@ -90,16 +90,16 @@ nav {
         opacity 3s ease 1s;
 }
 
-.colors > div {
+/* .colors > div {
     transition: 
-        height 1s ease-in .2s;
-}
+        height 1s ease-in 0s;
+} */
 
-.colors > div > div {
+/* .colors > div > div {
     transition: 
         transform 1s ease 0s,
-        width 1s ease-in .2s;
-}
+        width 1s ease-in 0s;
+} */
 
 @media (prefers-reduced-motion: reduce) {
     * {

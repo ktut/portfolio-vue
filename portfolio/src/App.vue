@@ -52,7 +52,7 @@ export default {
       hueBottomLeft: 0,
       hueBottomRight: 0,
       // greeting: 'Hey there,',
-      mouseXFocusPercentage: 50,
+      mouseXFocusScale: 50,
       mouseYFocusPercentage: 50,
       // default background image
       titleBackgroundURL: 'https://ktut.github.io/portfolio/assets/black-placeholder.jpg',
@@ -81,25 +81,23 @@ export default {
         return false;
       }
     },
+    titleCardTopSection() {
+      return `
+      background-color: hsla(${this.hueTopRight}, 100%, 50%,0.8);
+      height: ${this.mouseYFocusPercentage}%;`;
+    },
+    titleCardBottomSection() {
+      return `background-color: hsla(${this.hueBottomRight}, 100%, 50%,0.8)`;
+    },
     titleCardTopLeft() {
       return `
-      width: ${this.mouseXFocusPercentage}%;
+      transform: scaleX(${this.mouseXFocusScale});
       background-color: hsla(${this.hueTopLeft}, 100%, 50%,0.8)`;
-    },
-    titleCardTopRight() {
-      return `background-color: hsla(${this.hueTopRight}, 100%, 50%,0.8)`;
     },
     titleCardBottomLeft() {
       return `
-      width: ${this.mouseXFocusPercentage}%;
+      transform: scaleX(${this.mouseXFocusScale});
       background-color: hsla(${this.hueBottomLeft}, 100%, 50%,0.8)`;
-    },
-    titleCardBottomRight() {
-      return `background-color: hsla(${this.hueBottomRight}, 100%, 50%,0.8)`;
-    },
-    titleCardTopSection() {
-      return `
-      height: ${this.mouseYFocusPercentage}%;`;
     },
     // titleCardGradient() {
     //   return 'background-image: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
@@ -125,7 +123,7 @@ export default {
     getMousePosition() {
       let cursorX = event.pageX;
       let titleWidth = document.getElementById('title').offsetWidth;
-      this.mouseXFocusPercentage = parseInt((cursorX / titleWidth).toFixed(2) * 100);
+      this.mouseXFocusScale = (cursorX / titleWidth).toFixed(3) * 2;
 
       let cursorY = event.pageY;
       let titleHeight = document.getElementById('title').offsetHeight;
@@ -196,41 +194,41 @@ export default {
     <div class="colors">
       <div class="top" v-bind:style="titleCardTopSection">
         <div class="left" v-bind:style="titleCardTopLeft"></div>
-        <div class="right" v-bind:style="titleCardTopRight"></div>
+        <div class="right"></div>
       </div>
-      <div class="bottom">
+      <div class="bottom" v-bind:style="titleCardBottomSection">
         <div class="left" v-bind:style="titleCardBottomLeft"></div>
-        <div class="right" v-bind:style="titleCardBottomRight"></div>
+        <div class="right"></div>
       </div>
     </div>
 
     <div class="logo-contain">
       <div class="logo">
-          <div class="letter r">
-            <div class="top"></div>
-            <div class="bottom"></div>
-          </div>
-          <div class="letter k">
-            <div class="top"></div>
-            <div class="bottom"></div>
-          </div>
-          <div class="letter d">
-            <div class="top"></div>
-            <div class="bottom"></div>
-          </div>
+        <div class="letter r">
+          <div class="top"></div>
+          <div class="bottom"></div>
         </div>
-        <nav>
-          <a href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
-          
-          <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
-
-          <a href="#photo" target="_blank" rel="noreferrer noopener" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
-
-          <a href="http://www.rkdvisuals.com/video" target="_blank" rel="noreferrer noopener" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
-
-          <a href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
-        </nav>
+        <div class="letter k">
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </div>
+        <div class="letter d">
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </div>
       </div>
+      <nav>
+        <a href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
+        
+        <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
+
+        <a href="#photo" target="_blank" rel="noreferrer noopener" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
+
+        <a href="http://www.rkdvisuals.com/video" target="_blank" rel="noreferrer noopener" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
+
+        <a href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
+      </nav>
+    </div>
     
     <!-- <div class="image-contain" :style="titleCardImage">
       <transition name="fade">
