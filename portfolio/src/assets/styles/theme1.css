@@ -163,7 +163,7 @@ nav a:hover {
 }
 
 .colors > div > div {
-    filter: blur(20vw);
+    filter: blur(30vw);
 }
 
 /* header */

@@ -84,18 +84,18 @@ export default {
     titleCardTopLeft() {
       return `
       width: ${this.mouseXFocusPercentage}%;
-      background-color: hsl(${this.hueTopLeft}, 100%, 50%)`;
+      background-color: hsla(${this.hueTopLeft}, 100%, 50%,0.8)`;
     },
     titleCardTopRight() {
-      return `background-color: hsl(${this.hueTopRight}, 100%, 50%)`;
+      return `background-color: hsla(${this.hueTopRight}, 100%, 50%,0.8)`;
     },
     titleCardBottomLeft() {
       return `
       width: ${this.mouseXFocusPercentage}%;
-      background-color: hsl(${this.hueBottomLeft}, 100%, 50%)`;
+      background-color: hsla(${this.hueBottomLeft}, 100%, 50%,0.8)`;
     },
     titleCardBottomRight() {
-      return `background-color: hsl(${this.hueBottomRight}, 100%, 50%)`;
+      return `background-color: hsla(${this.hueBottomRight}, 100%, 50%,0.8)`;
     },
     titleCardTopSection() {
       return `
