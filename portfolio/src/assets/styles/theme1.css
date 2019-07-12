@@ -50,6 +50,10 @@ nav {
     transform: scaleX(1);
 }
 
+.loaded .logo.logoIsDimmed {
+    opacity: 0.1;
+}
+
 .loaded .r > div {
     border-left: 20px solid black;
     border-top-right-radius: 10em;
@@ -152,7 +156,7 @@ nav a:hover {
 
 .colors > div {
     display: flex;
-    filter: blur(100px);
+    filter: blur(150px);
     transform-origin: top;
 }
 .colors > .bottom {
@@ -165,7 +169,7 @@ nav a:hover {
 
 .colors > div > div {
     flex-grow: 1;
-    filter: blur(100px);
+    filter: blur(150px);
 }
 
 /* header */

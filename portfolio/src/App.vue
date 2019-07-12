@@ -52,9 +52,9 @@ export default {
       hueBottomLeft: 0,
       hueBottomRight: 0,
       // greeting: 'Hey there,',
-      mouseXFocusScale: 50,
+      mouseXFocusScale: 1,
       mouseYFocusPercentage: 50,
-      // default background image
+      logoIsDimmed: false,
       titleBackgroundURL: 'https://ktut.github.io/portfolio/assets/black-placeholder.jpg',
       videoBackgroundURL: '',
       showVideoBackground: false,
@@ -83,21 +83,20 @@ export default {
     },
     titleCardTopSection() {
       return `
-      background-color: hsla(${this.hueTopRight}, 100%, 50%,0.8);
-      height: ${this.mouseYFocusPercentage}%;`;
+      background-color: hsla(${this.hueTopRight}, 100%, 50%,0.7);`;
     },
     titleCardBottomSection() {
-      return `background-color: hsla(${this.hueBottomRight}, 100%, 50%,0.8)`;
+      return `background-color: hsla(${this.hueBottomRight}, 100%, 50%,0.7)`;
     },
     titleCardTopLeft() {
       return `
       transform: scaleX(${this.mouseXFocusScale});
-      background-color: hsla(${this.hueTopLeft}, 100%, 50%,0.8)`;
+      background-color: hsla(${this.hueTopLeft}, 100%, 50%,0.7)`;
     },
     titleCardBottomLeft() {
       return `
       transform: scaleX(${this.mouseXFocusScale});
-      background-color: hsla(${this.hueBottomLeft}, 100%, 50%,0.8)`;
+      background-color: hsla(${this.hueBottomLeft}, 100%, 50%,0.7)`;
     },
     // titleCardGradient() {
     //   return 'background-image: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
@@ -125,9 +124,9 @@ export default {
       let titleWidth = document.getElementById('title').offsetWidth;
       this.mouseXFocusScale = (cursorX / titleWidth).toFixed(3) * 2;
 
-      let cursorY = event.pageY;
-      let titleHeight = document.getElementById('title').offsetHeight;
-      this.mouseYFocusPercentage = parseInt((cursorY / titleHeight).toFixed(2) * 100);
+      // let cursorY = event.pageY;
+      // let titleHeight = document.getElementById('title').offsetHeight;
+      // this.mouseYFocusPercentage = parseInt((cursorY / titleHeight).toFixed(2) * 100);
     },
     // updateGreetingByTimeOfDay() {
     //   const currentTime = new Date().getHours();
@@ -203,7 +202,7 @@ export default {
     </div>
 
     <div class="logo-contain">
-      <div class="logo">
+      <div class="logo" v-bind:class="{ logoIsDimmed: logoIsDimmed }">
         <div class="letter r">
           <div class="top"></div>
           <div class="bottom"></div>
@@ -217,7 +216,8 @@ export default {
           <div class="bottom"></div>
         </div>
       </div>
-      <nav>
+      
+      <nav @mouseenter="logoIsDimmed = true" @mouseleave="logoIsDimmed = false">
         <a href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
         
         <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
