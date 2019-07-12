@@ -449,7 +449,7 @@ export default {
 
     <br><hr><br>
 
-    <h2>I enjoy exploring new intersections of programming and design...</h2>
+    <h2>I enjoy exploring new intersections of programming and design.<span v-if="!sectionCode.show">..</span></h2>
 
     <p>At my current job, I’ve done a lot of work with component-based design and architecture.</p>
 
@@ -482,7 +482,7 @@ export default {
   </section>
   <section class="ux" id="ux">
 
-    <h2>... as well as intersections of UI and UX.</h2>
+    <h2><span v-if="!sectionUx.show">... as well as</span><span v-if="sectionUx.show">I enjoy exploring</span> intersections of UI and UX.</h2>
 
     <p>My user experience philosophy is centered around streamlining common pathways, <a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank" rel="noreferrer noopener">reducing cognitive load</a> and improving design (duh).</p>
 
