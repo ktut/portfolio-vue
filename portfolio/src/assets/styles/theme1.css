@@ -163,8 +163,7 @@ nav a:hover {
 }
 
 .colors > div > div {
-    -webkit-filter: blur(50vw);
-    filter: blur(50vw);
+    filter: blur(20vw);
 }
 
 /* header */

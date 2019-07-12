@@ -109,7 +109,7 @@ export default {
     }
   },
   methods: {
-    computeGradientHues(array) {
+    computeGradientHues() {
       this.hueTopLeft = parseInt(Math.random() * 360);
       this.hueTopRight = parseInt(Math.random() * 360);
       this.hueBottomLeft = parseInt(Math.random() * 360);
@@ -191,7 +191,7 @@ export default {
 
   </div> -->
 
-  <section class="newtitle" id="title" v-bind:class="{ loaded: loaded }" @mousemove="getMousePosition()">
+  <section class="newtitle webkitForceHardwareAcceleration" id="title" v-bind:class="{ loaded: loaded }" @mousemove="getMousePosition()">
 
     <div class="colors">
       <div class="top" v-bind:style="titleCardTopSection">
@@ -205,7 +205,7 @@ export default {
     </div>
 
     <div class="logo-contain">
-      <div class="logo webkitForceHardwareAcceleration">
+      <div class="logo">
           <div class="letter r">
             <div class="top"></div>
             <div class="bottom"></div>
