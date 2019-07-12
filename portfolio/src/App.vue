@@ -94,8 +94,8 @@ export default {
   },
   methods: {
     computeGradientHues() {
-      this.hueLeft = parseInt(Math.random() * 360);
-      this.hueRight = parseInt(Math.random() * 360);
+      this.hueLeft = parseInt(Math.random() * 270);
+      this.hueRight = this.hueLeft / 2;
     },
     toggleSection(section) {
       if (this[section].show === true) {
