@@ -47,13 +47,11 @@ export default {
       },
 
       // stuff for header
-      hueTopLeft: 0,
-      hueTopRight: 0,
-      hueBottomLeft: 0,
-      hueBottomRight: 0,
+      hueLeft: 0,
+      hueRight: 0,
       // greeting: 'Hey there,',
       mouseXFocusScale: 1,
-      mouseYFocusPercentage: 50,
+      // mouseYFocusPercentage: 50,
       logoIsDimmed: false,
       titleBackgroundURL: 'https://ktut.github.io/portfolio/assets/black-placeholder.jpg',
       videoBackgroundURL: '',
@@ -81,36 +79,23 @@ export default {
         return false;
       }
     },
-    titleCardTopSection() {
+    colorCard() {
       return `
-      background-color: hsla(${this.hueTopRight}, 100%, 50%,0.7);`;
+      background-color: hsla(${this.hueRight}, 100%, 50%,0.7);`;
     },
-    titleCardBottomSection() {
-      return `background-color: hsla(${this.hueBottomRight}, 100%, 50%,0.7)`;
-    },
-    titleCardTopLeft() {
+    colorCardLeft() {
       return `
       transform: scaleX(${this.mouseXFocusScale});
-      background-color: hsla(${this.hueTopLeft}, 100%, 50%,0.7)`;
+      background-color: hsla(${this.hueLeft}, 100%, 50%,0.7)`;
     },
-    titleCardBottomLeft() {
-      return `
-      transform: scaleX(${this.mouseXFocusScale});
-      background-color: hsla(${this.hueBottomLeft}, 100%, 50%,0.7)`;
-    },
-    // titleCardGradient() {
-    //   return 'background-image: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) ' + this.gradientFocusPercentage + '%, rgba(238,238,238,1) 100%)';
-    // },
-    titleCardImage() {
+    colorCardImage() {
       return 'background-image: url("' + this.titleBackgroundURL + '")';
     }
   },
   methods: {
     computeGradientHues() {
-      this.hueTopLeft = parseInt(Math.random() * 360);
-      this.hueTopRight = parseInt(Math.random() * 360);
-      this.hueBottomLeft = parseInt(Math.random() * 360);
-      this.hueBottomRight = parseInt(Math.random() * 360);
+      this.hueLeft = parseInt(Math.random() * 360);
+      this.hueRight = parseInt(Math.random() * 360);
     },
     toggleSection(section) {
       if (this[section].show === true) {
@@ -160,7 +145,7 @@ export default {
 <template>
   <div id="app">
   
-  <!-- <div class="title-contain" :style="titleCardImage">
+  <!-- <div class="title-contain" :style="colorCardImage">
 
     <transition name="fade">
       <video class="title-video" autoplay loop muted playsinline v-if="showVideoBackground" poster="https://ktut.github.io/portfolio/assets/farmers-design4.jpg">
@@ -169,7 +154,7 @@ export default {
       </video>
     </transition>
     
-    <section class="title" id="title" :style="titleCardGradient" @mousemove="updateGradientPosition()">
+    <section class="title" id="title" :style="colorCardGradient" @mousemove="updateGradientPosition()">
       <h2>{{greeting}}</h2>
       <h1>I’m Ramzi Dreessen.</h1>
 
@@ -190,15 +175,9 @@ export default {
 
   <section class="newtitle webkitForceHardwareAcceleration" id="title" v-bind:class="{ loaded: loaded }" @mousemove="getMousePosition()">
 
-    <div class="colors">
-      <div class="top" v-bind:style="titleCardTopSection">
-        <div class="left" v-bind:style="titleCardTopLeft"></div>
-        <div class="right"></div>
-      </div>
-      <div class="bottom" v-bind:style="titleCardBottomSection">
-        <div class="left" v-bind:style="titleCardBottomLeft"></div>
-        <div class="right"></div>
-      </div>
+    <div class="colors" v-bind:style="colorCard">
+      <div class="left" v-bind:style="colorCardLeft"></div>
+      <div class="right"></div>
     </div>
 
     <div class="logo-contain">
@@ -230,7 +209,7 @@ export default {
       </nav>
     </div>
     
-    <!-- <div class="image-contain" :style="titleCardImage">
+    <!-- <div class="image-contain" :style="colorCardImage">
       <transition name="fade">
         <video class="image-video" autoplay loop muted playsinline v-if="showVideoBackground" poster="https://ktut.github.io/portfolio/assets/farmers-design4.jpg">
           <source :src="videoBackgroundURL">
