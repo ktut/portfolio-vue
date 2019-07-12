@@ -81,12 +81,12 @@ export default {
     },
     colorCard() {
       return `
-      background-color: hsla(${this.hueRight}, 100%, 50%,0.7);`;
+      background-color: hsla(${this.hueRight}, 100%, 50%,0.6);`;
     },
     colorCardLeft() {
       return `
       transform: scaleX(${this.mouseXFocusScale});
-      background-color: hsla(${this.hueLeft}, 100%, 50%,0.7)`;
+      background-color: hsla(${this.hueLeft}, 100%, 50%,0.6)`;
     },
     colorCardImage() {
       return 'background-image: url("' + this.titleBackgroundURL + '")';
