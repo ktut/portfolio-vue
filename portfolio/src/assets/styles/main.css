@@ -180,6 +180,10 @@ img.float {
 
 /* LAYOUT */
 
+#app {
+    overflow-x: hidden;
+}
+
 body {
     min-height: 100vh;
 }
