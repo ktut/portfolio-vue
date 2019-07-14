@@ -90,10 +90,10 @@ nav {
         opacity 3s ease 1s;
 }
 
-/* .colors > div {
+.colors > div {
     transition: 
-        height 1s ease-in 0s;
-} */
+        transform 0.4s ease-in 0s;
+}
 
 /* .colors > div > div {
     transition: 

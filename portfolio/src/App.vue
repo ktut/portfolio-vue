@@ -52,7 +52,7 @@ export default {
       // greeting: 'Hey there,',
       mouseXFocusScale: 1,
       // mouseYFocusPercentage: 50,
-      logoIsDimmed: false,
+      selectedCategory: '',
       titleBackgroundURL: 'https://ktut.github.io/portfolio/assets/black-placeholder.jpg',
       videoBackgroundURL: '',
       showVideoBackground: false,
@@ -173,7 +173,7 @@ export default {
 
   </div> -->
 
-  <section class="newtitle webkitForceHardwareAcceleration" id="title" v-bind:class="{ loaded: loaded }" @mousemove="getMousePosition()">
+  <section class="newtitle webkitForceHardwareAcceleration" id="title" v-bind:class="{ loaded: loaded }">
 
     <div class="colors" v-bind:style="colorCard">
       <div class="left" v-bind:style="colorCardLeft"></div>
@@ -181,7 +181,7 @@ export default {
     </div>
 
     <div class="logo-contain">
-      <div class="logo" v-bind:class="{ logoIsDimmed: logoIsDimmed }">
+      <div class="logo" v-bind:class="[selectedCategory]">
         <div class="letter r">
           <div class="top"></div>
           <div class="bottom"></div>
@@ -196,16 +196,16 @@ export default {
         </div>
       </div>
       
-      <nav @mouseenter="logoIsDimmed = true" @mouseleave="logoIsDimmed = false">
-        <a href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
+      <nav @mouseleave="selectedCategory = ''">
+        <a @mouseenter="getMousePosition(), selectedCategory = 'webDesign'" href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
         
-        <a href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
+        <a @mouseenter="getMousePosition(), selectedCategory = 'code'" href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
 
-        <a href="#photo" target="_blank" rel="noreferrer noopener" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
+        <a @mouseenter="getMousePosition(), selectedCategory = 'photo'" href="#photo" target="_blank" rel="noreferrer noopener" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
 
-        <a href="http://www.rkdvisuals.com/video" target="_blank" rel="noreferrer noopener" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
+        <a @mouseenter="getMousePosition(), selectedCategory = 'video'" href="http://www.rkdvisuals.com/video" target="_blank" rel="noreferrer noopener" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
 
-        <a href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
+        <a @mouseenter="getMousePosition(), selectedCategory = 'printDesign'" href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
       </nav>
     </div>
     
@@ -230,7 +230,7 @@ export default {
   </section>
 
   <section class="web-design" id="web-design">
-    <h2>One of my favorite activities is building websites for people to poke and prod on their tiny screens.</h2>
+    <h2>I like building websites that people poke and prod on their tiny screens.</h2>
     <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS, and various build tools). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
     <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design, and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank" rel="noreferrer noopener">won a national award</a> with my team from the City and Regional Magazine Association.</p>
 
