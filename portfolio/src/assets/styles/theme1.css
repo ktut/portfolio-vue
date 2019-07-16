@@ -254,9 +254,12 @@ ul.resp {
 
 /* video grid */
 
+
 .text {
     font-size: 0.8rem;
     line-height: 1.6;
+    max-width: 100%;
+    width: 179px;
 }
 
 .text > a:first-of-type {
@@ -275,6 +278,19 @@ ul.resp {
 
 .no-resp {
     display: none;
+}
+
+/* @media (max-width: 450px) {
+    ul.resp li {
+        justify-content: center;
+    }
+} */
+
+@media (min-width: 376px) {
+    .text {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
