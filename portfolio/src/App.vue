@@ -270,7 +270,7 @@ export default {
             <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-2.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank" rel="noreferrer noopener">Welcome to Refugee High</a> (video/interactive components, <a href="https://citymag.org/crma_events/2018-national-city-and-regional-magazine-awards-finalists/" target="_blank" rel="noreferrer noopener">2018 CRMA Finalist for Multiplatform Storytelling</a>)
+              <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank" rel="noreferrer noopener">Welcome to Refugee High</a> (video and interactive components, <a href="https://citymag.org/crma_events/2018-national-city-and-regional-magazine-awards-finalists/" target="_blank" rel="noreferrer noopener">2018 CRMA Finalist for Multiplatform Storytelling</a>)
             </div>
           </li>
 
@@ -405,7 +405,7 @@ export default {
             <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" class="thumb" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-12.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank" rel="noreferrer noopener">House Music</a> (Spotify integration, interactive Roland TB-303)
+              <a href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank" rel="noreferrer noopener">Chicago House Music</a> (Spotify integration, interactive Roland TB-303)
             </div>
           </li>
 

@@ -121,12 +121,12 @@ p em {
 }
 
 a {
-    color: red;
+    color: #c00;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #c00;
+    color: red;
     cursor: pointer;
     cursor: hand;
 }
