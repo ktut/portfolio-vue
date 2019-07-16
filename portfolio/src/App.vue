@@ -175,10 +175,10 @@ export default {
 
   <section class="newtitle webkitForceHardwareAcceleration" id="title" v-bind:class="{ loaded: loaded }">
 
-    <div class="colors" v-bind:style="colorCard">
+    <!-- <div class="colors" v-bind:style="colorCard">
       <div class="left" v-bind:style="colorCardLeft"></div>
       <div class="right"></div>
-    </div>
+    </div> -->
 
     <div class="logo-contain">
       <div class="logo" v-bind:class="[selectedCategory]">
