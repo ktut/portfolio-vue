@@ -324,6 +324,7 @@ ul.resp {
         flex-direction: column;
         background-size: cover;
         background-position: center;
+        margin-top: 10px;
         margin-bottom: 15px;
         border: 1px solid #ddd;
         overflow: hidden;
