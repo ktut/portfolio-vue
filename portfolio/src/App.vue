@@ -63,13 +63,15 @@ export default {
   mounted() {
     // this.updateGreetingByTimeOfDay();
     this.computeGradientHues();
+
+    setTimeout( () => this.loaded = true, 300 );
     
     const lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy"
     });
     lazyLoadInstance.update();
 
-    this.loaded = true;
+    this.loaded = true
   },
   computed: {
     isTouchDevice() {
