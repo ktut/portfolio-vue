@@ -120,16 +120,23 @@ nav a:hover {
 }
 
 @media (max-width: 730px) {
+    .letter > div {
+        min-height: 5em;
+    }
+
     .letter:not(:first-of-type) {
         margin-left: 2em;
     }
+
     .logo-contain {
         width: 100%;
     }
+
     nav {
         display: block;
         text-align: center;
     }
+    
     nav a {
         display: block;
         margin: 10px;
