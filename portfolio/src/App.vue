@@ -547,15 +547,16 @@ export default {
 
       <p>The most important, relevant and well-produced visuals (the covers) were the smallest on the page, while the most visually prominent element (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the important fields in various tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own staff was confused about how to use the interface.</p>
 
-      <p>I took some time to study the in-page analytics, research current industry best practices, and talked with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank" rel="noreferrer noopener">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank" rel="noreferrer noopener">Avant</a>). I settled on a simpler approach:</p>
+      <p>I studied the in-page analytics, researched current industry best practices, and talked with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank" rel="noreferrer noopener">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank" rel="noreferrer noopener">Avant</a>). I settled on a simpler approach:</p>
 
       <p style="max-width: 900px; max-height: 675px; overflow-y: auto; border: 1px solid #bbb;">
         <img src="https://ktut.github.io/portfolio/assets/purchase-new-lg-2.jpg" style="width: 100%; vertical-align: middle;">
         <!-- <iframe src="http://web.archive.org/web/20180121131738/https://cma.pcdfusion.com/pcd/Order?iKey=I**D7B" style="width: 100%; min-height: 600px; border: 1px solid #bbb;"></iframe> -->
       </p>
 
-      <p>Now, the call to action and the purchaseable products are front and center, and no important information is hidden from the user.</p>
-      <p>After the design of the page was completed, I worked directly with our vendor to eliminate unnecessary fields and create a more linear experience between the load of the page and the click of the "Purchase" button. In the six months following the new page’s implementation, conversions per visitor went up 20%.</p>
+      <p>I put the call to action and purchaseable products front and center, and ensured that no important information was hidden from the user.</p>
+      <p>After the design of the page was completed, I worked directly with our vendor to eliminate unnecessary fields, handle security checks, and create a more direct experience between the load of the page and the click of the "Purchase" button.</p>
+      <p>In the six months following the implementation of the new design, conversions per visitor went up 20%.</p>
 
       </div>
     </transition>
