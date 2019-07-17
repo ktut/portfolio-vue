@@ -228,14 +228,14 @@ export default {
       <p>Hi! I’m Ramzi.</p>
       <p>I’ve never aligned myself to a particular job title. I enjoy planning, creating, reviewing, tearing apart my own work, rebuilding, finally shipping... any and all parts of the creative process.</p>
       <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography, and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest. With web design, I specialize in performative solutions that are fully responsive and utilize progressive enhancement.</p>
-      <p>I understand component-based design, but I don’t belive in keeping design elements "sacred" across projects - to me, that’s just laziness. If you want someone to build you <a href="http://tiffzhang.com/startup" target="_blank" rel="nofollow"> a cookie-cutter website filled with buzzwords and stock images</a>, I’m probably not your guy. I value a strong art team and strong content, and working with others.</p>
+      <p>I understand component-based design, but I don’t belive in keeping design elements "sacred" across projects - to me, that’s just laziness. If you want someone to build you <a href="http://tiffzhang.com/startup" target="_blank" rel="noreferrer noopener"> a cookie-cutter website filled with buzzwords and stock images</a>, I’m probably not your guy. I value a strong art team and strong content, and working with others.</p>
       <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
   </section>
 
   <section class="web-design" id="web-design">
     <h2>I like building websites that people poke and prod on their tiny screens.</h2>
     <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS, and various build tools). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
-    <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design, and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank" rel="noreferrer noopener">won a national award</a> with my team from the City and Regional Magazine Association.</p>
+    <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design and administration (taking over from the very talented <a href="https://www.seemann.com/luke/" target="_blank" rel="noreferrer noopener">Luke Seemann</a>), and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank" rel="noreferrer noopener">won a national award for online excellence</a> with my team from the City and Regional Magazine Association.</p>
 
     <!-- <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">
       {{ sectionWebDesign.show ? 'See Less -' : 'See More +' }}
