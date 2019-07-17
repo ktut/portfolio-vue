@@ -259,7 +259,7 @@ ul.resp {
     font-size: 0.8rem;
     line-height: 1.6;
     max-width: 100%;
-    width: 179px;
+    width: 154px;
 }
 
 .text > a:first-of-type {
@@ -280,13 +280,13 @@ ul.resp {
     display: none;
 }
 
-/* @media (max-width: 450px) {
-    ul.resp li {
-        justify-content: center;
+@media (min-width: 375px) {
+    .text {
+        width: 179px;
     }
-} */
+}
 
-@media (min-width: 376px) {
+@media (min-width: 400px) {
     .text {
         width: 100%;
         max-width: 100%;
