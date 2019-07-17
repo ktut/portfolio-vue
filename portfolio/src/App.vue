@@ -226,8 +226,9 @@ export default {
       <h2 style="color: black;">A little about me first.</h2>
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
       <p>Hi! I’m Ramzi.</p>
-      <p>I’ve never aligned myself to a particular job title. I enjoy leading, planning, creating, reviewing, trying again, shipping... any part of the creative process.</p>
-      <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography... and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest. Likewise, with my web design work, I specialize in performative solutions that are fully responsive and utilize progressive enhancement.</p>
+      <p>I’ve never aligned myself to a particular job title. I enjoy planning, creating, reviewing, tearing apart my own work, rebuilding, finally shipping... any and all parts of the creative process.</p>
+      <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography, and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest. With web design, I specialize in performative solutions that are fully responsive and utilize progressive enhancement.</p>
+      <p>I understand component-based design, but I don’t belive in keeping design elements "sacred" across projects - to me, that’s just laziness. If you want someone to build you <a href="http://tiffzhang.com/startup" target="_blank" rel="nofollow"> a cookie-cutter website filled with buzzwords and stock images</a>, I’m probably not your guy. I value a strong art team and strong content, and working with others.</p>
       <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
   </section>
 
