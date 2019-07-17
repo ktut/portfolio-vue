@@ -499,7 +499,7 @@ export default {
 
     <h2>I enjoy exploring new intersections of programming and design.<span v-if="!sectionCode.show">..</span></h2>
 
-    <p>At my current job, I’ve done a lot of work with component-based design and architecture.</p>
+    <p>At my current job, I’ve worked with with component-based design and architecture, and have been interested in how we can better use patterning and rulesets to improve both the user and developer experiences.</p>
 
     <button class="readmore" v-on:click="toggleSection('sectionCode')">{{ sectionCode.show ? 'See Less -' : 'See More +' }}</button>
 
