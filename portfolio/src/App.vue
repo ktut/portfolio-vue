@@ -545,7 +545,7 @@ export default {
         <img src="https://ktut.github.io/portfolio/assets/purchase-old.jpg" style="width: 100%;">
       </p>
 
-      <p>The most important, relevant and well-produced visuals (the covers) were the smallest on the page, while the most visually prominent element (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the important fields in various tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own marketing people were confused about how to use the interface.</p>
+      <p>The most important, relevant and well-produced visuals (the covers) were the smallest on the page, while the most visually prominent element (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the important fields in various tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own staff was confused about how to use the interface.</p>
 
       <p>I took some time to study the in-page analytics, research current industry best practices, and talked with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank" rel="noreferrer noopener">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank" rel="noreferrer noopener">Avant</a>). I settled on a simpler approach:</p>
 
