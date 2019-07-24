@@ -53,6 +53,22 @@ nav {
     mix-blend-mode: lighten;
 }
 
+.loaded .logo.webDesign,
+.loaded .logo.code,
+.loaded .logo.printDesign,
+.loaded .logo.photo,
+.loaded .logo.video {
+    transform: scale(0.65);
+}
+
+.loaded nav.webDesign a,
+.loaded nav.code a,
+.loaded nav.printDesign a,
+.loaded nav.photo a,
+.loaded nav.video a {
+    transform: scale(1.2);
+}
+
 .loaded .r > div {
     border-left: 10px solid black;
     border-top-right-radius: 10em;
@@ -109,7 +125,7 @@ nav a {
     border-radius: 3px;
     padding: 4px 5px 3px;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: black;
@@ -124,7 +140,6 @@ nav a:hover {
 }
 
 @media (max-width: 730px) {
-
     .logo {
         width: 230px;
     }
