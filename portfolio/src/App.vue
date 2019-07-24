@@ -477,25 +477,7 @@ export default {
     
   </section>
 
-  <section class="print-design fullbleed" id="print-design">
-    <br>
-    <h2>Did the whole CMYK thing, too.</h2>
-
-    <p>My interest in web design stemmed from print design, starting at the Chicago Sun-Times in 2012. Two of the biggest projects I worked on there were:</p>
-    <p><b>1.</b> Designing a 103-page glossy embossed hardcover book for the Chicago Sun-Times Foundation in Fall/Winter 2015, including hundreds of photos shot over four years of event coverage</p>
-    <p><b>2.</b> As a part of a three-person team, designed a 24-page glossy lifestyle magazine (SPLASH) from 2012-2016. Circulation: 225,000.</p>
-
-    <!-- <button class="readmore" v-on:click="toggleSection('sectionPrintDesign')">
-      {{ sectionPrintDesign.show ? 'Make Smaller -' : 'Make Bigger +' }}
-    </button> -->
-
-    <PhotoGrid v-bind:photos="printDesign" v-bind:template="'wide-gallery'"></PhotoGrid>
-
-  </section>
-
   <section class="code" id="code">
-
-    <br><hr><br>
 
     <h2>I enjoy exploring new intersections of programming and design.<span v-if="!sectionCode.show">..</span></h2>
 
@@ -528,6 +510,7 @@ export default {
     </transition>
 
   </section>
+  
   <section class="ux" id="ux">
 
     <h2><span v-if="!sectionUx.show">... as well as</span><span v-if="sectionUx.show">I enjoy exploring</span> intersections of UI and UX.</h2>
@@ -563,9 +546,27 @@ export default {
 
   </section>
 
+  <section class="print-design fullbleed" id="print-design">
+    <br>
+    <hr>
+    <br>
+    <h2>Did the whole CMYK thing, too.</h2>
+
+    <p>My interest in web design stemmed from print design, starting at the Chicago Sun-Times in 2012. Two of the biggest projects I worked on there were:</p>
+    <p><b>1.</b> Designing a 103-page glossy embossed hardcover book for the Chicago Sun-Times Foundation in Fall/Winter 2015, including hundreds of photos shot over four years of event coverage</p>
+    <p><b>2.</b> As a part of a three-person team, designed a 24-page glossy lifestyle magazine (SPLASH) from 2012-2016. Circulation: 225,000.</p>
+
+    <!-- <button class="readmore" v-on:click="toggleSection('sectionPrintDesign')">
+      {{ sectionPrintDesign.show ? 'Make Smaller -' : 'Make Bigger +' }}
+    </button> -->
+
+    <PhotoGrid v-bind:photos="printDesign" v-bind:template="'wide-gallery'"></PhotoGrid>
+
+  </section>
+
   <section class="photo fullbleed" id="photo">
 
-    <br><hr><br>
+    <br>
 
     <h2>Sometimes I take photos.</h2>
 
