@@ -82,7 +82,8 @@ button.readmore {
 
 nav {
     transition: 
-        opacity 1.2s ease 1.4s;
+        opacity 1s cubic-bezier(0.77, 0, 0.175, 1) 1.2s,
+        height 0.4s cubic-bezier(0.77, 0, 0.175, 1) 1.2s,;
 }
 
 .colors {

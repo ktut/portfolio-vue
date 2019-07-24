@@ -3,15 +3,14 @@
 .newtitle {
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .logo {
     display: flex;
-    width: 650px;
-    max-width: 75vw;
+    width: 265px;
     margin: 0 auto;
 }
 
@@ -20,11 +19,11 @@
 }
 
 .letter:not(:first-of-type) {
-    margin-left: 6em;
+    margin-left: 5em;
 }
 
 .letter > div {
-    min-height: 7em;
+    min-height: 1em;
 }
 
 .letter > div,
@@ -55,22 +54,22 @@ nav {
 }
 
 .loaded .r > div {
-    border-left: 20px solid black;
+    border-left: 10px solid black;
     border-top-right-radius: 10em;
 }
 
 .loaded .r .top {
-    border-right: 20px solid black;
+    border-right: 10px solid black;
     border-bottom-right-radius: 10em;
 }
 
 .loaded .r .bottom {
-    border-right: 20px solid black;
+    border-right: 10px solid black;
 }
 
 .loaded .k > div {
-    border-left: 20px solid black;
-    border-right: 20px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
 }
 
 .loaded .k .top {
@@ -82,8 +81,8 @@ nav {
 }
 
 .loaded .d > div {
-    border-left: 20px solid black;
-    border-right: 20px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
 }
 
 .loaded .d .top {
@@ -95,18 +94,23 @@ nav {
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 50px;
+    text-align: center;
     margin-top: 40px;
 }
 
+.loaded nav {
+    height: 275px;
+}
+
 nav a {
+    display: block;
+    margin: 25px 10px;
     border-radius: 3px;
     padding: 4px 5px 3px;
-    margin: 5px 9px;
     font-weight: 700;
-    letter-spacing: 1px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: black;
     text-decoration: none;
@@ -120,27 +124,9 @@ nav a:hover {
 }
 
 @media (max-width: 730px) {
-    .letter > div {
-        min-height: 5em;
-    }
 
-    .letter:not(:first-of-type) {
-        margin-left: 2em;
-    }
-
-    .logo-contain {
-        width: 100%;
-    }
-
-    nav {
-        display: block;
-        text-align: center;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px;
-        font-size: 1rem;
+    .logo {
+        width: 230px;
     }
 }
 

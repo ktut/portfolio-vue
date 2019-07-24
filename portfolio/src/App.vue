@@ -182,34 +182,32 @@ export default {
       <div class="right"></div>
     </div> -->
 
-    <div class="logo-contain">
-      <div class="logo" v-bind:class="[selectedCategory]">
-        <div class="letter r">
-          <div class="top"></div>
-          <div class="bottom"></div>
-        </div>
-        <div class="letter k">
-          <div class="top"></div>
-          <div class="bottom"></div>
-        </div>
-        <div class="letter d">
-          <div class="top"></div>
-          <div class="bottom"></div>
-        </div>
+    <div class="logo" v-bind:class="[selectedCategory]">
+      <div class="letter r">
+        <div class="top"></div>
+        <div class="bottom"></div>
       </div>
-      
-      <nav @mouseleave="selectedCategory = ''">
-        <a @mouseenter="getMousePosition(), selectedCategory = 'webDesign'" href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
-        
-        <a @mouseenter="getMousePosition(), selectedCategory = 'code'" href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
-
-        <a @mouseenter="getMousePosition(), selectedCategory = 'photo'" href="#photo" target="_blank" rel="noreferrer noopener" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
-
-        <a @mouseenter="getMousePosition(), selectedCategory = 'video'" href="http://www.rkdvisuals.com/video" target="_blank" rel="noreferrer noopener" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
-
-        <a @mouseenter="getMousePosition(), selectedCategory = 'printDesign'" href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
-      </nav>
+      <div class="letter k">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="letter d">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
     </div>
+    
+    <nav @mouseleave="selectedCategory = ''">
+      <a style="font-size: 1.2rem" class="punch" @mouseenter="getMousePosition(), selectedCategory = 'webDesign'" href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
+      
+      <a style="font-size: 1.1rem" class="punch" @mouseenter="getMousePosition(), selectedCategory = 'code'" href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
+
+      <a style="font-size: 1.05rem" @mouseenter="getMousePosition(), selectedCategory = 'printDesign'" href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
+
+      <a style="font-size: 1rem" @mouseenter="getMousePosition(), selectedCategory = 'photo'" href="#photo" target="_blank" rel="noreferrer noopener" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
+
+      <a style="font-size: 1rem" @mouseenter="getMousePosition(), selectedCategory = 'video'" href="http://www.rkdvisuals.com/video" target="_blank" rel="noreferrer noopener" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a>
+    </nav>
     
     <!-- <div class="image-contain" :style="colorCardImage">
       <transition name="fade">
