@@ -64,7 +64,7 @@ export default {
     // this.updateGreetingByTimeOfDay();
     this.computeGradientHues();
 
-    setTimeout( () => this.loaded = true, 300 );
+    setTimeout( () => this.loaded = true, 100 );
     
     const lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy"
