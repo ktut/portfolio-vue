@@ -182,18 +182,18 @@ export default {
       <div class="right"></div>
     </div> -->
 
-    <div class="logo" v-bind:class="[selectedCategory]" class="webkitForceHardwareAcceleration">
-      <div class="letter r" class="webkitForceHardwareAcceleration">
-        <div class="top" class="webkitForceHardwareAcceleration"></div>
-        <div class="bottom" class="webkitForceHardwareAcceleration"></div>
+    <div class="logo" v-bind:class="[selectedCategory]">
+      <div class="letter r webkitForceHardwareAcceleration">
+        <div class="top webkitForceHardwareAcceleration"></div>
+        <div class="bottom webkitForceHardwareAcceleration"></div>
       </div>
-      <div class="letter k" class="webkitForceHardwareAcceleration">
-        <div class="top" class="webkitForceHardwareAcceleration"></div>
-        <div class="bottom" class="webkitForceHardwareAcceleration"></div>
+      <div class="letter k webkitForceHardwareAcceleration">
+        <div class="top webkitForceHardwareAcceleration"></div>
+        <div class="bottom webkitForceHardwareAcceleration"></div>
       </div>
-      <div class="letter d" class="webkitForceHardwareAcceleration">
-        <div class="top" class="webkitForceHardwareAcceleration"></div>
-        <div class="bottom" class="webkitForceHardwareAcceleration"></div>
+      <div class="letter d webkitForceHardwareAcceleration">
+        <div class="top webkitForceHardwareAcceleration"></div>
+        <div class="bottom webkitForceHardwareAcceleration"></div>
       </div>
     </div>
     
