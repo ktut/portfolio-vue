@@ -182,22 +182,22 @@ export default {
       <div class="right"></div>
     </div> -->
 
-    <div class="logo" v-bind:class="[selectedCategory]">
-      <div class="letter r">
-        <div class="top"></div>
-        <div class="bottom"></div>
+    <div class="logo" v-bind:class="[selectedCategory]" class="webkitForceHardwareAcceleration">
+      <div class="letter r" class="webkitForceHardwareAcceleration">
+        <div class="top" class="webkitForceHardwareAcceleration"></div>
+        <div class="bottom" class="webkitForceHardwareAcceleration"></div>
       </div>
-      <div class="letter k">
-        <div class="top"></div>
-        <div class="bottom"></div>
+      <div class="letter k" class="webkitForceHardwareAcceleration">
+        <div class="top" class="webkitForceHardwareAcceleration"></div>
+        <div class="bottom" class="webkitForceHardwareAcceleration"></div>
       </div>
-      <div class="letter d">
-        <div class="top"></div>
-        <div class="bottom"></div>
+      <div class="letter d" class="webkitForceHardwareAcceleration">
+        <div class="top" class="webkitForceHardwareAcceleration"></div>
+        <div class="bottom" class="webkitForceHardwareAcceleration"></div>
       </div>
     </div>
     
-    <nav @mouseleave="selectedCategory = ''"  v-bind:class="[selectedCategory]">
+    <nav @mouseleave="selectedCategory = ''"  v-bind:class="[selectedCategory]" class="webkitForceHardwareAcceleration">
       <a class="punch" @mouseenter="getMousePosition(), selectedCategory = 'webDesign'" href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
       
       <a class="punch" @mouseenter="getMousePosition(), selectedCategory = 'code'" href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
