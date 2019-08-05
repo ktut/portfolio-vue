@@ -562,7 +562,7 @@ export default {
     <br>
     <h2>Did the whole CMYK thing, too.</h2>
 
-    <p>My interest in web design stemmed from print design, starting at the Chicago Sun-Times in 2012. Two of the biggest projects I worked on there were:</p>
+    <p>My interest in web design stemmed from print design, starting at the Chicago Sun-Times in 2012 and culminating at <em>Chicago</em> in 2016. Two of the biggest projects I worked on there were:</p>
     <p><b>1.</b> Designing a 103-page glossy embossed hardcover book for the Chicago Sun-Times Foundation in Fall/Winter 2015, including hundreds of photos shot over four years of event coverage</p>
     <p><b>2.</b> As a part of a three-person team, designed a 24-page glossy lifestyle magazine (SPLASH) from 2012-2016. Circulation: 225,000.</p>
 
