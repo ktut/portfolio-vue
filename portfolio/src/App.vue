@@ -11,6 +11,7 @@ import vueSmoothScroll from 'vue2-smooth-scroll';
 import LazyLoad from "vanilla-lazyload";
 import PhotoGrid from './components/PhotoGrid';
 import photos from './data/photos';
+import logos from './data/logos';
 import printDesign from './data/printDesign';
 
 Vue.use(vueSmoothScroll);
@@ -28,6 +29,7 @@ export default {
       // image data to feed into galleries
       photos: photos,
       printDesign: printDesign,
+      logos: logos,
 
       // section status
       sectionIntro: {
@@ -236,10 +238,33 @@ export default {
 
       <transition name="slide-fade">
         <div v-if="sectionIntro.show">
-          <p>I understand component-based design, but I don’t believe in keeping design elements “sacred” across projects - to me, that’s just laziness. If you want someone to build you <a href="http://tiffzhang.com/startup" target="_blank" rel="noreferrer noopener"> a cookie-cutter website filled with buzzwords and stock images</a>, I’m probably not your guy. I value a strong art team and strong content, and working with others.</p>
+          <p>I understand component-based design, but I don’t believe in keeping design elements “sacred” across projects - to me, that’s just laziness. If you want someone to build you a cookie-cutter website filled with buzzwords and stock images (like one of these <a href="http://tiffzhang.com/startup" target="_blank" rel="noreferrer noopener">fake startup websites</a>), I’m probably not your guy. I value a strong art team and strong content, and working with others.</p>
           <p>I’m not afraid of complexity, but I also have a guideline: If I can't fully explain how something works to a non-technical person, in a concise manner, I find myself wondering why it was necessary to include in the first place.</p>
         </div>
       </transition>
+  </section>
+
+  <section class="brand-logos fullbleed">
+
+    <p>Here are a few companies I’ve worked for, or worked with on a freelance basis:</p>
+    <div class="outer-logo-slider">
+      <div class="inner-logo-slider">
+        <div class="brandlogo"
+            v-for="(logo, index) in logos"
+            v-bind:key="index">
+            <img
+                v-bind:src="logo.src"
+                v-bind:style="logo.height"
+            />
+            <div class="tooltip">
+              <span class="tooltip-inner">
+                {{logo.tooltip}}
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section class="web-design" id="web-design">
@@ -597,8 +622,6 @@ export default {
     <br>
 
     <h2>Let’s chat!</h2>
-
-    <p>Here are some clients I’ve worked with on a freelance basis (if you care about that kind of thing): ConAgra, Avant, Rag & Bone, Printavo, The Chicago Community Trust, ADA25, KNSTRCT, Chicago Public Schools, Mariano’s, Dalhousie University ...and more!</p>
 
     <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>. Please put relevant information in the subject line. If we've already worked together, please feel free to add me as a contact on LinkedIn.</p>
     <br>
