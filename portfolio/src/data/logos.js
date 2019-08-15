@@ -80,12 +80,12 @@ export default [
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/reuters-min.png',
     },
     {
-        height: 'height: 40px;',
+        height: 'height: 45px;',
         tooltip: 'Web design, development, admin work; photo, video, print design',
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/splash-min.png',
     },
     {
-        height: 'height: 50px;',
+        height: 'height: 60px;',
         tooltip: 'Web design, development, admin work; photo, video, print design',
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/suntimes-min.png',
     },
