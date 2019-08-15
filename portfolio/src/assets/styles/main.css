@@ -308,8 +308,8 @@ section.fullbleed {
 
 @media (min-width: 451px) {
     @keyframes marquee {
-        0% { left: 0; }
-        100% { left: -3150px; }
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-3150px); }
     }
 }
 
@@ -328,8 +328,8 @@ section.fullbleed {
     }
 
     @keyframes marquee {
-        0% { left: 0; }
-        100% { left: -1130px; }
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-1130px); }
     }
 }
 
