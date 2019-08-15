@@ -85,7 +85,7 @@ export default [
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/splash-min.png',
     },
     {
-        height: 'height: 60px;',
+        height: 'height: 72px;',
         tooltip: 'Web design, development, admin work; photo, video, print design',
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/suntimes-min.png',
     },
