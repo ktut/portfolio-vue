@@ -76,7 +76,7 @@ export default [
     },
     {
         height: 'height: 50px;',
-        tooltip: 'Photography assistance work',
+        tooltip: 'Photography assistance',
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/reuters-min.png',
     },
     {
