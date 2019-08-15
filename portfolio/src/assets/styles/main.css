@@ -306,9 +306,31 @@ section.fullbleed {
     padding-bottom: 25px;
 }
 
-@keyframes marquee {
-    0% { left: 0; }
-    100% { left: -3150px; }
+@media (min-width: 451px) {
+    @keyframes marquee {
+        0% { left: 0; }
+        100% { left: -3150px; }
+    }
+}
+
+@media (max-width: 450px) {
+
+    .inner-logo-slider {
+        flex-wrap: wrap;
+        justify-content: center;
+        animation: marquee 25s linear infinite;
+        animation-direction: alternate;
+        width: 1500px;
+    }
+
+    .brandlogo {
+        margin: 10px 27px;
+    }
+
+    @keyframes marquee {
+        0% { left: 0; }
+        100% { left: -1130px; }
+    }
 }
 
 .wide-gallery {
