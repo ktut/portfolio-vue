@@ -623,7 +623,7 @@ export default {
 
     <h2>Let’s chat!</h2>
 
-    <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>. Please put relevant information in the subject line. If we've already worked together, please feel free to add me as a contact on LinkedIn.</p>
+    <p>You can reach me by email at <a href="mailto:ramzi@rkdvisuals.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzi@rkdvisuals.com</a>. Please put relevant information in the subject line. If we've already worked together, please feel free to add me as a contact on <a href="https://www.linkedin.com/in/ramzidreessen/" target="_blank" rel="noreferrer noopener">LinkedIn</a>.</p>
     <br>
     <p class="small">Video and images copyright Ramzi Dreessen 2008 - 2019. Photo and video content is protected by U.S. Copyright Law and is NOT Public Domain, and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of Ramzi Dreessen. Select web design and photo content is copyrighted by SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings.</p>
   </section>
