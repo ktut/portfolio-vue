@@ -320,7 +320,7 @@ section.fullbleed {
         justify-content: center;
         animation: marquee 25s linear infinite;
         animation-direction: alternate;
-        width: 1500px;
+        width: 960px;
     }
 
     .brandlogo {
@@ -329,7 +329,7 @@ section.fullbleed {
 
     @keyframes marquee {
         0% { transform: translateX(0); }
-        100% { transform: translateX(-1130px); }
+        100% { transform: translateX(-600px); }
     }
 }
 
