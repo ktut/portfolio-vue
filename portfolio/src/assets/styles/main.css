@@ -318,7 +318,7 @@ section.fullbleed {
     .inner-logo-slider {
         flex-wrap: wrap;
         justify-content: center;
-        animation: marquee 25s linear infinite;
+        animation: marquee 30s linear infinite;
         animation-direction: alternate;
         width: 960px;
     }
