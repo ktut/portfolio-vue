@@ -605,7 +605,7 @@ export default {
 
     <h2>Sometimes I take photos.</h2>
 
-    <p>I've been shooting for eight years now, both on my own and on staff at Chicago Sun-Times SPLASH and <em>Chicago</em> magazine. Check out more on my dedicated <a href="www.rkdvisuals.com" target="_blank" rel="noreferrer noopener">photo portfolio site</a>.</p>
+    <p>I've been shooting for eight years now, both on my own and on staff at Chicago Sun-Times SPLASH and <em>Chicago</em> magazine. Check out more on my dedicated <a href="http://www.rkdvisuals.com" target="_blank" rel="noreferrer noopener">photo portfolio site</a>.</p>
 
     <!-- <button class="readmore hide-on-mobile" v-on:click="toggleSection('sectionPhoto')">{{ sectionPhoto.show ? 'See Less -' : 'See More +' }}</button> -->
     <transition name="slide-fade">
