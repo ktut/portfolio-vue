@@ -178,7 +178,7 @@ img.float {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
-.lazy {
+/* .lazy {
 	opacity: 0;
 }
 .lazy:not(.initial) {
@@ -191,7 +191,7 @@ img.float {
 }
 .lazy:not([src]) {
 	visibility: hidden;
-}
+} */
 
 /* LAYOUT */
 
