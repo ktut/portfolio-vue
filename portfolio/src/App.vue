@@ -228,7 +228,7 @@ export default {
   <section class="about smaller" id="about">
       <h2 style="color: black;">A little about me first.</h2>
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float">
-      <p>Hi! I’m Ramzi.</p>
+      <p>Hi! I’m <b>Ramzi Dreessen</b>.</p>
       <p>I’ve never aligned myself to a particular job title. I enjoy planning, creating, reviewing, tearing apart my own work, rebuilding, finally shipping... any and all parts of the creative process.</p>
       <p>As a creator, I keep things simple. Good art, proper use of negative space, relevant typography, and staying in-tune with the “why” of the project. I’m aware that design without direction is just an aesthetics contest. With web design, I specialize in performative solutions that are fully responsive and utilize progressive enhancement.</p>
 
@@ -269,7 +269,7 @@ export default {
 
   <section class="web-design" id="web-design">
     <h2>I like building websites that people poke and prod on their tiny screens.</h2>
-    <p>Currently I do front end web development for Fitch Ratings (using Vue.js, GraphQL, Node, Atomic CSS, and various build tools). Previously, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
+    <p>Currently I work for High 5 Games in New York as a web developer (primarily doing programmatic design using React + Hooks). Previously, I was a junior software engineer at Fitch Ratings (using Vue.js, GraphQL and Atomic CSS), and before that, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
     <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design and administration (taking over from the very talented <a href="https://www.seemann.com/luke/" target="_blank" rel="noreferrer noopener">Luke Seemann</a>), and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank" rel="noreferrer noopener">won a national award for online excellence</a> with my team from the City and Regional Magazine Association.</p>
 
     <!-- <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">
@@ -516,7 +516,7 @@ export default {
 
     <h2>I enjoy exploring new intersections of programming and design.<span v-if="!sectionCode.show">..</span></h2>
 
-    <p>At Fitch Ratings, I’ve worked with with component-based design and architecture, and have been interested in how we can better use patterning and rulesets to improve both the user and developer experiences.</p>
+    <p>At Fitch Ratings, I worked with with component-based design and architecture, and was interested in how we could better use patterning and rulesets to improve both the user and developer experiences.</p>
 
     <button class="readmore" v-on:click="toggleSection('sectionCode')">{{ sectionCode.show ? 'See Less -' : 'See More +' }}</button>
 
@@ -524,7 +524,7 @@ export default {
         <div v-if="sectionCode.show">
 
         <p>We needed a way to induce visual variety (without a lot of extra developer effort), on pages that had card components with anywhere from one to twenty articles in them.</p>
-        <p>In this solution I devised, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself, using a simple patterning ruleset that plucks atomic classes from an array. Fun stuff:</p>
+        <p>In the solution I devised, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself, using a simple patterning ruleset that plucks atomic classes from an array. Fun stuff:</p>
 
         <p>
           <video class="video lazy" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
@@ -557,13 +557,13 @@ export default {
     <transition name="slide-fade">
       <div v-if="sectionUx.show">
     
-      <p>At <em>Chicago</em> magazine, I was tasked with overhauling our subscription page. The old page had few conversions per user, and it was clear why:</p>
+      <p>At <em>Chicago</em>, I was tasked with overhauling our subscription page. The old page had few conversions per user, and it was clear as to why:</p>
 
       <p>
         <img src="https://ktut.github.io/portfolio/assets/purchase-old.jpg" style="width: 100%;">
       </p>
 
-      <p>The most important, relevant and well-produced visuals (the covers) were the smallest on the page, while the most visually prominent element (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the important fields in various tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own staff was confused about how to use the interface.</p>
+      <p>The most important, relevant and well-produced visuals (the covers) were the smallest elements on the page, while the largest page element (the copy) wasn't even relevant to the page's primary purpose (to convert visitors into paid subscribers of the print product). Hiding the most important fields within tabs prevented the user from easily accessing them, and it wasn't even clear what order the tabs were meant to be clicked. Even our own staff was confused about how to use the interface.</p>
 
       <p>I studied the in-page analytics, researched current industry best practices, and talked with a few of my friends (including <a href="http://bruceackerman.com/" target="_blank" rel="noreferrer noopener">Bruce Ackerman</a>, former head of UX at <a href="https://www.avant.com/" target="_blank" rel="noreferrer noopener">Avant</a>). I settled on a simpler approach:</p>
 
@@ -605,7 +605,7 @@ export default {
 
     <h2>Sometimes I take photos.</h2>
 
-    <p>I've been shooting for eight years now, both on my own and on staff at Chicago Sun-Times SPLASH and <em>Chicago</em> magazine. Check out more on my dedicated <a href="http://www.rkdvisuals.com" target="_blank" rel="noreferrer noopener">photo portfolio site</a>.</p>
+    <p>I've been shooting for eight years now, both on my own and on staff at Chicago Sun-Times SPLASH and <em>Chicago</em>. Check out more on my dedicated <a href="http://www.rkdvisuals.com" target="_blank" rel="noreferrer noopener">photo portfolio site</a>.</p>
 
     <!-- <button class="readmore hide-on-mobile" v-on:click="toggleSection('sectionPhoto')">{{ sectionPhoto.show ? 'See Less -' : 'See More +' }}</button> -->
     <transition name="slide-fade">
