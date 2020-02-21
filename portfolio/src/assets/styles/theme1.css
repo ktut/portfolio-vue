@@ -379,6 +379,10 @@ ul.resp {
 
 @media (min-width: 1500px) {
     ul.resp {
-        max-width: 1600px;
+        max-width: 1500px;
+    }
+
+    ul.resp > li {
+        max-width: 450px;
     }
 }
