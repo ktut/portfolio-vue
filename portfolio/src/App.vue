@@ -283,37 +283,37 @@ export default {
       
         <ul class="resp">
           <li>
-            <a class="no-resp web-img" href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank" rel="noreferrer noopener">
+            <a class="no-resp web-img" href="http://web.archive.org/web/20180705121959/https://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-1.mov">
                 <source type="video/mp4" src="https://ktut.github.io/portfolio/assets/rendered/vid-1.mov">
                 Your browser does not support the video tag.
               </video>
             </a>
 
-            <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-1.jpg');"></a>
+            <a href="http://web.archive.org/web/20180705121959/https://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-1.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank" rel="noreferrer noopener">A Second City</a> (design direction, interactive components, <a href="https://citymag.org/crma_events/2019-national-city-and-regional-magazine-awards-finalists/" target="_blank" rel="noreferrer noopener">2019 CRMA Finalist for Multiplatform Storytelling</a>)
+              <a href="http://web.archive.org/web/20180705121959/https://www.chicagomag.com/city-life/February-2018/A-Second-City-West-Side-Health-Life-Expectancy/" target="_blank" rel="noreferrer noopener">A Second City</a> (design direction, interactive components, <a href="https://citymag.org/crma_events/2019-national-city-and-regional-magazine-awards-finalists/" target="_blank" rel="noreferrer noopener">2019 CRMA Finalist for Multiplatform Storytelling</a>)
             </div>
           </li>
 
           <li>
-            <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank" rel="noreferrer noopener">
+            <a class="no-resp web-img" href="http://web.archive.org/web/20180202212548/http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-2.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-2.mov" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </a>
 
-            <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-2.jpg');"></a>
+            <a href="http://web.archive.org/web/20180202212548/http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-2.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank" rel="noreferrer noopener">Welcome to Refugee High</a> (video and interactive components, <a href="https://citymag.org/crma_events/2018-national-city-and-regional-magazine-awards-finalists/" target="_blank" rel="noreferrer noopener">2018 CRMA Finalist for Multiplatform Storytelling</a>)
+              <a href="http://web.archive.org/web/20180202212548/http://www.chicagomag.com/Chicago-Magazine/June-2017/Welcome-to-Refugee-High/" target="_blank" rel="noreferrer noopener">Welcome to Refugee High</a> (video and interactive components, <a href="https://citymag.org/crma_events/2018-national-city-and-regional-magazine-awards-finalists/" target="_blank" rel="noreferrer noopener">2018 CRMA Finalist for Multiplatform Storytelling</a>)
             </div>
           </li>
 
           <li>
-            <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank" rel="noreferrer noopener">
+            <a class="no-resp web-img" href="https://web.archive.org/web/20201124144409/https://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-3.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-3.mov" type="video/mp4">
                 Your browser does not support the video tag.
@@ -328,47 +328,47 @@ export default {
           </li>
 
           <li>
-            <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank" rel="noreferrer noopener">
+            <a class="no-resp web-img" href="http://web.archive.org/web/20181004061833/http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-6.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-6.mov" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </a>
 
-            <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-6.jpg');"></a>
+            <a href="http://web.archive.org/web/20181004061833/http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-6.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank" rel="noreferrer noopener">A Guide to Farmer’s Markets</a> (photo deconstructed into flexbox components)
+              <a href="http://web.archive.org/web/20181004061833/http://www.chicagomag.com/Chicago-Magazine/June-2017/Farmers-Markets/" target="_blank" rel="noreferrer noopener">A Guide to Farmer’s Markets</a> (photo deconstructed into flexbox components)
             </div>
           </li>
 
           <li>
-            <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank" rel="noreferrer noopener">
+            <a class="no-resp web-img" href="http://web.archive.org/web/20170719233806/https://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-5.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-5.mov" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </a>
 
-            <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-5.jpg');"></a>
+            <a href="http://web.archive.org/web/20170719233806/https://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-5.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank" rel="noreferrer noopener">Face of a Century</a> (custom gallery with audio integration)
+              <a href="http://web.archive.org/web/20170719233806/https://www.chicagomag.com/Chicago-Magazine/May-2017/Faces-of-a-Century/" target="_blank" rel="noreferrer noopener">Face of a Century</a> (custom gallery with audio integration)
             </div>
           </li>
 
           <li class="better-on-mobile">
-              <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank" rel="noreferrer noopener">
+              <a class="no-resp web-img" href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank" rel="noreferrer noopener">
                 <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov">
                   <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
             </a>
 
-            <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-4.jpg');"></a>
+            <a href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-4.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank" rel="noreferrer noopener">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
+              <a href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank" rel="noreferrer noopener">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
             </div>
           </li>
 
