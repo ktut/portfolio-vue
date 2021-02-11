@@ -320,10 +320,10 @@ export default {
               </video>
             </a>
 
-            <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-3.jpg');"></a>
+            <a href="https://web.archive.org/web/20201124144409/https://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-3.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank" rel="noreferrer noopener">What’s in Their Fridge</a> (3D transforms, SVGs, pseudo elements)
+              <a href="https://web.archive.org/web/20201124144409/https://www.chicagomag.com/Chicago-Magazine/July-2017/Whats-In-Their-Fridge/" target="_blank" rel="noreferrer noopener">What’s in Their Fridge</a> (3D transforms, SVGs, pseudo elements)
             </div>
           </li>
 
