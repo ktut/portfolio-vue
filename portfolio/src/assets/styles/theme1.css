@@ -288,6 +288,10 @@ ul.resp {
     display: none;
 }
 
+a.web-img {
+    pointer-events: none;
+}
+
 @media (min-width: 375px) {
     .text {
         width: 179px;
