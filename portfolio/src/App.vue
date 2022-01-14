@@ -523,22 +523,26 @@ export default {
   <section class="hb" style="max-width: 900px; margin: 0 auto;">
     <video v-bind:class="`video lazy hb-mobile small first ${[sectionHb.show]}`"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
     <h2>Multimedia trickery? No problem.</h2>
-    <p>I’m no stranger to using multiple skills on a project.</p> 
+    <p>I’m no stranger to acting as a one-man agency for the right project. For Chicago-based real estate company Hudson Burnham, they wanted a homepage that would attract attention and play nicely with their slogan "Move Up". They wanted a video background unlike any of their competitors - stock footage wouldn't cut it.</p> 
 
 
     <transition name="slide-fade">
       <div v-if="sectionHb.show">
+        <p class="overview">
+          <img src="https://ktut.github.io/portfolio/assets/city-drawing-2.png" class="city"/>
+          <img src="https://ktut.github.io/portfolio/assets/camera-angle.png" class="camera"/>
+        </p>
 
-        <p>For real estate company Hudson Burnham, they wanted a homepage that would attract attention and play nicely with their slogan "Move Up".</p>
-        <p>SKETCH HERE</p>
-        <p>I devised a means of ......</p>
+        <p>I knew we’d need a couple tall buildings in the front of the shot, to work with the theme, with the Sears Tower (as true Chicagoans call it) anchoring the background. I assumed we'd shoot in the golden hour for optimal lighting, and in order to get the composition right, we’d have to maneuver as demonstrated in the drawing to the right here &#10132;</p>
 
-        <p>On the web development side, this had to be stuck on a Wordpress site that I was already building. I created a custom template and ensured that we were handling the different crop positions and file formats for each platform:</p>
+        <p>The drone pilot was able to shoot from about 3,000 feet up and rotate downward in a helix motion, stabilized by the Mavic 2’s Hyperlapse feature (essentially, shooting automatically-comped stills instead of video). After reversing, speed-ramping and color grading the footage in Premiere, I was ready to start coding.</p>
+
+        <p>I created a custom template for the Wordpress site I was building, and ensured that we were handling the different crop positions and optimal file formats for each platform:</p>
 
         <!-- <p>
           <img src="https://ktut.github.io/portfolio/assets/hb-code.png" style="width: 100%;">
         </p> -->
-        <p style="max-width: 635px; max-height: 200px; overflow-y: auto; border: 1px solid #bbb;">
+        <p style="max-width: 635px; max-height: 200px; overflow-y: auto; border: 1px solid #bbb; clear:both;">
           <!-- <img src="https://ktut.github.io/portfolio/assets/hb-code.png" style="width: 100%; vertical-align: middle;"> -->
           <picture>
             <source 
@@ -553,7 +557,7 @@ export default {
           </picture>
         </p>
 
-        <p>The final result </p>
+        <p>The final result is not only performant (loads within 1-2 seconds, streaming the video as it plays), it looks great:</p>
         <!-- v-if="windowWidth <= 400"  -->
         <p style="position: relative; max-width: 900px;">
           <video class="`video lazy hb-mobile large"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
@@ -563,7 +567,7 @@ export default {
       </div>
     </transition>
 
-    <button class="readmore" v-on:click="toggleSection('sectionHb')">{{ sectionHb.show ? 'See Less -' : 'See More +' }}</button>
+    <button class="readmore" v-on:click="toggleSection('sectionHb')" style="clear:both;">{{ sectionHb.show ? 'See Less -' : 'See More +' }}</button>
 
 
   </section>

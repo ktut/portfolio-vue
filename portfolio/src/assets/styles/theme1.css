@@ -409,7 +409,8 @@ section.hb video.hb-mobile.small {
     width: 175px;
     border-radius: 24px;
     filter: drop-shadow(3px 6px 10px rgba(0,0,0,0.3));
-    transform: rotate(0deg);
+    transform: rotate(-5deg);
+    margin-left: 30px;
 }
 
 section.hb video.hb-mobile.large {
@@ -447,6 +448,42 @@ section.hb video.hb-mobile.first.true {
         filter: drop-shadow(5px 10px 5px rgba(0,0,0,0.5));
         transform: rotate(-3deg);
         z-index: 1;
+    }
+}
+
+section.hb p.overview {
+    width: 200px;
+    float: right;
+    position: relative;
+    margin-left: 25px;
+}
+
+section.hb .overview .city {
+    width: 100%;
+}
+
+section.hb .overview .camera {
+    position: absolute;
+    animation: cameraMove 3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cameraMove {
+    0% { 
+        width: 25%;
+        top: 4%;
+        right: 0%;
+        transform: rotate(-60deg);
+        filter: drop-shadow(15px 25px 15px rgba(0,0,0,1));
+
+    }
+    100% { 
+        width: 15%;
+        top: 58%;
+        right: -10%;
+        transform: rotate(0deg);
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,1));
+
     }
 }
 
