@@ -35,6 +35,9 @@ export default {
       sectionIntro: {
         show: false,
       },
+      sectionChimag: {
+        show: false,
+      },
       sectionWebDesign: {
         show: true,
       },
@@ -358,21 +361,6 @@ export default {
           </li>
 
           <li class="better-on-mobile">
-              <a class="no-resp web-img" href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank" rel="noreferrer noopener">
-                <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov">
-                  <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-            </a>
-
-            <a href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-4.jpg');"></a>
-            
-            <div class="text">
-              <a href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank" rel="noreferrer noopener">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
-            </div>
-          </li>
-
-          <li class="better-on-mobile">
             <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Get-Beached/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-8.mov" type="video/mp4">
@@ -387,7 +375,7 @@ export default {
             </div>
           </li>
 
-          <li class="better-on-mobile">
+          <li v-if="sectionChimag.show" class="better-on-mobile">
             <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/November-2018/12-Blocks/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-10.mov" type="video/mp4">
@@ -402,22 +390,37 @@ export default {
             </div>
           </li>
 
-          <li class="better-on-mobile">
-            <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank" rel="noreferrer noopener">
+          <li v-if="sectionChimag.show" class="better-on-mobile">
+              <a class="no-resp web-img" href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank" rel="noreferrer noopener">
+                <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov">
+                  <source src="https://ktut.github.io/portfolio/assets/rendered/vid-4.mov" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </a>
+
+            <a href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-4.jpg');"></a>
+            
+            <div class="text">
+              <a href="http://web.archive.org/web/20180320110712/https://www.chicagomag.com/Chicago-Magazine/March-2018/Spring-Fashion-2018/" target="_blank" rel="noreferrer noopener">Spring Fashion: Pattern Recognition</a> (SVG masking, lazyloading, custom scrolling)
+            </div>
+          </li>
+
+          <li v-if="sectionChimag.show" class="better-on-mobile">
+            <a class="no-resp web-img" href="http://web.archive.org/web/20180106051955/https://www.chicagomag.com/chicago-magazine/january-2018/top-doctors/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-11.mov" type="video/mp4">
               Your browser does not support the video tag.
               </video>
             </a>
 
-            <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-11.jpg');"></a>
+            <a href="http://web.archive.org/web/20180106051955/https://www.chicagomag.com/chicago-magazine/january-2018/top-doctors/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-11.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/January-2018/Top-Doctors/" target="_blank" rel="noreferrer noopener">Top Doctors</a> (animation, responsive design)
+              <a href="http://web.archive.org/web/20180106051955/https://www.chicagomag.com/chicago-magazine/january-2018/top-doctors/" target="_blank" rel="noreferrer noopener">Top Doctors</a> (animation, responsive design)
             </div>
           </li>
 
-          <li>
+          <li v-if="sectionChimag.show">
             <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/What-Trauma-Docs-Know/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-9.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-9.mov" type="video/mp4">
@@ -432,7 +435,7 @@ export default {
             </div>
           </li>
 
-          <li>
+          <li v-if="sectionChimag.show">
             <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/August-2018/House-Music/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-12.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-12.mov" type="video/mp4">
@@ -447,22 +450,22 @@ export default {
             </div>
           </li>
 
-          <li>
-            <a class="no-resp web-img" href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank" rel="noreferrer noopener">
+          <li v-if="sectionChimag.show">
+            <a class="no-resp web-img" href="http://web.archive.org/web/20171123234228/https://www.chicagomag.com/chicago-magazine/september-2017/how-to-buy-art/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline poster="https://ktut.github.io/portfolio/assets/rendered/vid-7-poster.jpg" src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-7.mov" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </a>
-            <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-7.jpg');"></a>
+            <a href="http://web.archive.org/web/20171123234228/https://www.chicagomag.com/chicago-magazine/september-2017/how-to-buy-art/" class="thumb" target="_blank" style="background-image: url('https://ktut.github.io/portfolio/assets/thumbs2/vid-7.jpg');"></a>
             
             <div class="text">
-              <a href="http://www.chicagomag.com/Chicago-Magazine/September-2017/How-to-Buy-Art/" target="_blank" rel="noreferrer noopener">How to Buy Art</a> (responsive design using viewheight units)
+              <a href="http://web.archive.org/web/20171123234228/https://www.chicagomag.com/chicago-magazine/september-2017/how-to-buy-art/" target="_blank" rel="noreferrer noopener">How to Buy Art</a> (responsive design using viewheight units)
             </div>
           </li>
 
 
-          <li>
+          <li v-if="sectionChimag.show">
             <a class="no-resp web-img" href="https://www.chicagomag.com/Chicago-Magazine/June-2017/Whos-Got-Next/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-13.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-13.mov" type="video/mp4">
@@ -477,7 +480,7 @@ export default {
           </li>
 
 
-          <li>
+          <li v-if="sectionChimag.show">
             <a class="no-resp web-img" href="https://www.chicagomag.com/Chicago-Magazine/July-2017/Summer-Guide/Eat-It-on-a-Stick/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-14.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-14.mov" type="video/mp4">
@@ -492,7 +495,7 @@ export default {
           </li>
 
 
-          <li>
+          <li v-if="sectionChimag.show">
             <a class="no-resp web-img" href="https://www.chicagomag.com/Chicago-Magazine/December-2017/Chicagoans-of-the-Year/" target="_blank" rel="noreferrer noopener">
               <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/vid-15.mov">
                 <source src="https://ktut.github.io/portfolio/assets/rendered/vid-15.mov" type="video/mp4">
@@ -505,6 +508,8 @@ export default {
               <a href="https://www.chicagomag.com/Chicago-Magazine/December-2017/Chicagoans-of-the-Year/" target="_blank" rel="noreferrer noopener">Chicagoans of the Year</a> (custom SVGs and event integration)
             </div>
           </li>
+
+          <button class="readmore" v-on:click="toggleSection('sectionChimag')">{{ sectionChimag.show ? 'See Less -' : 'See More +' }}</button>
         </ul>
 
       </div>
