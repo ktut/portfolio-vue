@@ -376,9 +376,9 @@ a.web-img {
         max-width: 350px;
     }
 
-    ul.resp > li:hover {
+    /* ul.resp > li:hover {
         cursor: pointer;
-    }
+    } */
 }
 
 @media (min-width: 1500px) {
