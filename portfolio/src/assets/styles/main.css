@@ -178,6 +178,10 @@ img.float {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
+img:not([src]):not([srcset]) {
+    visibility: hidden;
+  }
+
 /* .lazy {
 	opacity: 0;
 }
@@ -373,7 +377,7 @@ section.fullbleed {
 }
 
 .wide-gallery:before {
-    content: "<- Swipe or scroll to see more ->";
+    content: "\2190 Swipe or scroll to see more \2192";
     padding: 15px;
     display: block;
     position: absolute;
@@ -440,7 +444,7 @@ section.fullbleed {
     }
 
     .photoswipe-gallery:before {
-        content: "<- Swipe or scroll to see more ->";
+        content: "\2190 Swipe or scroll to see more \2192";
         padding: 15px;
         display: block;
         position: absolute;

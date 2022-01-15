@@ -410,7 +410,7 @@ section.hb video.hb-mobile.small {
     border-radius: 24px;
     filter: drop-shadow(3px 6px 10px rgba(0,0,0,0.3));
     transform: rotate(2deg);
-    margin-left: 30px;
+    margin-left: 21px;
     margin-bottom: 15px;
 }
 
@@ -429,6 +429,7 @@ section.hb video.hb-desktop {
 section.hb video.hb-mobile.first.true {
     opacity: 0;
     width: 0px;
+    transform: translateY(400px);
 }
 
 @media (min-width: 400px) {
@@ -440,16 +441,16 @@ section.hb video.hb-mobile.first.true {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
     section.hb video.hb-mobile.large {
         display: block;
-        top: -50px;
-        right: -100px;
+        top: -35px;
+        right: -111px;
         position: absolute;
         width: 250px;
         border-radius: 45px;
-        filter: drop-shadow(5px 10px 5px rgba(0,0,0,0.5));
-        transform: rotate(-3deg);
+        filter: drop-shadow(5px 13px 9px rgba(0,0,0,0.5));
+        transform: rotate(-2deg);
         z-index: 1;
     }
 }

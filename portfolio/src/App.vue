@@ -30,7 +30,6 @@ export default {
       photos: photos,
       printDesign: printDesign,
       logos: logos,
-      windowWidth: window.innerWidth,
 
       // section status
       sectionIntro: {
@@ -518,10 +517,13 @@ export default {
     </transition>
     
   </section>
+    <br>
+    <hr>
+    <br>
 
      <!-- v-bind:class="[selectedCategory]" -->
-  <section class="hb" style="max-width: 900px; margin: 0 auto;">
-    <video v-bind:class="`video lazy hb-mobile small first ${[sectionHb.show]}`"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
+  <section class="hb" style="max-width: 900px; margin: 0 auto;" id="code">
+    <video v-bind:class="`video lazy hb-mobile small first ${[sectionHb.show]}`"  width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
     <h2>I enjoy being the utility guy.</h2>
     <p>I’m no stranger to acting as a one-man agency for the right project. For Chicago-based real estate company Hudson Burnham, they wanted a homepage that would attract attention and play nicely with their slogan "Move Up". They wanted a video background unlike any of their competitors - stock footage wouldn't cut it.</p> 
 
@@ -539,11 +541,7 @@ export default {
 
         <p>I created a custom template for the Wordpress site I was building, and ensured that we were handling the different crop positions and optimal file formats for each platform:</p>
 
-        <!-- <p>
-          <img src="https://ktut.github.io/portfolio/assets/hb-code.png" style="width: 100%;">
-        </p> -->
         <p style="max-width: 635px; max-height: 200px; overflow-y: auto; border: 1px solid #bbb; clear:both;">
-          <!-- <img src="https://ktut.github.io/portfolio/assets/hb-code.png" style="width: 100%; vertical-align: middle;"> -->
           <picture>
             <source 
             style="width: 100%; vertical-align: middle;"
@@ -558,10 +556,9 @@ export default {
         </p>
 
         <p>The final result is not only performant (loads within 1-2 seconds, streaming the video as it plays), but it looks great as well:</p>
-        <!-- v-if="windowWidth <= 400"  -->
         <p style="position: relative; max-width: 900px;">
-          <video class="`video lazy hb-mobile large"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
-          <video v-if="windowWidth > 400" class="video lazy hb-desktop" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-desktop-2.mp4"></video>
+          <video class="`video lazy hb-mobile large"  width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
+          <video class="video lazy hb-desktop" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/HB-desktop-2.mp4"></video>
         </p>
 
       </div>
@@ -572,7 +569,11 @@ export default {
 
   </section>
 
-  <section class="code" id="code">
+  <br>
+  <hr>
+  <br>
+
+  <section class="code">
 
     <h2>I enjoy exploring new intersections of programming and design.<span v-if="!sectionCode.show">..</span></h2>
 
@@ -587,7 +588,7 @@ export default {
         <p>In the solution I devised, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself, using a simple patterning ruleset that plucks atomic classes from an array. Fun stuff:</p>
 
         <p>
-          <video class="video lazy" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
+          <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
             <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -596,7 +597,7 @@ export default {
         <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
         <p style="max-width: 900px;">
-          <video class="video lazy" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov">
+          <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov">
             <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
