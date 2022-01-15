@@ -490,3 +490,28 @@ section.fullbleed {
         vertical-align: bottom;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    *:not(img):not(video):not(picture),
+    a, b,
+    .wide-gallery:before,
+    .photoswipe-gallery:before  {
+        color: #eee !important;
+    }
+    body {
+        background: #333;
+    }
+    button.readmore {
+        color: black !important;
+        font-weight: 700;
+    }
+    .needsWhiteBackgroundInDarkMode {
+        background: #eee;
+    }
+    .brandlogo img {
+        filter: invert(1);
+    }
+    #title .logo .letter div {
+        border-color: #eee !important;
+    }
+}

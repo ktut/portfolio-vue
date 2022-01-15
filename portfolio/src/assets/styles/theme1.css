@@ -412,6 +412,7 @@ section.hb video.hb-mobile.small {
     transform: rotate(2deg);
     margin-left: 21px;
     margin-bottom: 15px;
+    top: 5px;
 }
 
 section.hb video.hb-mobile.large {
