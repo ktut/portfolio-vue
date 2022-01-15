@@ -522,7 +522,7 @@ export default {
      <!-- v-bind:class="[selectedCategory]" -->
   <section class="hb" style="max-width: 900px; margin: 0 auto;">
     <video v-bind:class="`video lazy hb-mobile small first ${[sectionHb.show]}`"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
-    <h2>Multimedia trickery? No problem.</h2>
+    <h2>I enjoy being the utility guy.</h2>
     <p>I’m no stranger to acting as a one-man agency for the right project. For Chicago-based real estate company Hudson Burnham, they wanted a homepage that would attract attention and play nicely with their slogan "Move Up". They wanted a video background unlike any of their competitors - stock footage wouldn't cut it.</p> 
 
 
@@ -533,9 +533,9 @@ export default {
           <img src="https://ktut.github.io/portfolio/assets/camera-angle.png" class="camera"/>
         </p>
 
-        <p>I knew we’d need a couple tall buildings in the front of the shot, to work with the theme, with the Sears Tower (as true Chicagoans call it) anchoring the background. I assumed we'd shoot in the golden hour for optimal lighting, and in order to get the composition right, we’d have to maneuver as demonstrated in the drawing to the right here &#10132;</p>
+        <p>I knew we’d need a couple tall buildings in the front of the shot, to work with the theme, with the Sears Tower (as true Chicagoans call it) anchoring the background. I assumed we'd shoot in the golden hour for optimal lighting.</p>
 
-        <p>The drone pilot was able to shoot from about 3,000 feet up and rotate downward in a helix motion, stabilized by the Mavic 2’s Hyperlapse feature (essentially, shooting automatically-comped stills instead of video). After reversing, speed-ramping and color grading the footage in Premiere, I was ready to start coding.</p>
+        <p>The drone pilot was able to shoot from about 3,000 feet up and rotate downward in a helix motion, stabilized by the Mavic 2’s Hyperlapse feature (essentially, shooting automatically-comp’d stills instead of video). After reversing, speed-ramping and color-grading the footage in Premiere, I was ready to start coding.</p>
 
         <p>I created a custom template for the Wordpress site I was building, and ensured that we were handling the different crop positions and optimal file formats for each platform:</p>
 
@@ -557,7 +557,7 @@ export default {
           </picture>
         </p>
 
-        <p>The final result is not only performant (loads within 1-2 seconds, streaming the video as it plays), it looks great:</p>
+        <p>The final result is not only performant (loads within 1-2 seconds, streaming the video as it plays), but it looks great as well:</p>
         <!-- v-if="windowWidth <= 400"  -->
         <p style="position: relative; max-width: 900px;">
           <video class="`video lazy hb-mobile large"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>

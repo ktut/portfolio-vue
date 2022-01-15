@@ -409,14 +409,17 @@ section.hb video.hb-mobile.small {
     width: 175px;
     border-radius: 24px;
     filter: drop-shadow(3px 6px 10px rgba(0,0,0,0.3));
-    transform: rotate(-5deg);
+    transform: rotate(2deg);
     margin-left: 30px;
+    margin-bottom: 15px;
 }
 
 section.hb video.hb-mobile.large {
     width: 350px;
     border-radius: 57px;
     filter: drop-shadow(5px 10px 5px rgba(0,0,0,0.5));
+    float: none;
+    margin-left: 0;
 }
 
 section.hb video.hb-desktop {
@@ -456,6 +459,7 @@ section.hb p.overview {
     float: right;
     position: relative;
     margin-left: 25px;
+    left: -10px;
 }
 
 section.hb .overview .city {
