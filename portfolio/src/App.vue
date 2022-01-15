@@ -30,12 +30,16 @@ export default {
       photos: photos,
       printDesign: printDesign,
       logos: logos,
+      windowWidth: window.innerWidth,
 
       // section status
       sectionIntro: {
         show: false,
       },
       sectionChimag: {
+        show: false,
+      },
+      sectionHb: {
         show: false,
       },
       sectionWebDesign: {
@@ -71,8 +75,6 @@ export default {
   mounted() {
     // this.updateGreetingByTimeOfDay();
     this.computeGradientHues();
-
-    setTimeout( () => this.loaded = true, 100 );
     
     const lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy"
@@ -272,7 +274,7 @@ export default {
 
   <section class="web-design" id="web-design">
     <h2>I like building websites that people poke and prod on their tiny screens.</h2>
-    <p>Currently I work for High 5 Games in New York as a web developer (primarily doing programmatic design using React + Hooks). Previously, I was a junior software engineer at Fitch Ratings (using Vue.js, GraphQL and Atomic CSS), and before that, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em></a> magazine, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends (learning React, Mongo and MySQL). Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
+    <p>Currently I work for High 5 Games in New York City as a web developer (primarily doing programmatic design using React + Hooks). Previously, I was a junior software engineer at Fitch Ratings (using Vue.js, GraphQL and Atomic CSS), and before that, I was the web guy for <a href="http://www.chicagomag.com" target="_blank" rel="noreferrer noopener"><em>Chicago</em> magazine</a>, and attended Northwestern University’s full-stack coding bootcamp on nights/weekends. Here’s my <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github</a>.</p> 
     <p style="margin-bottom: 10px;">At <em>Chicago</em>, I was in charge of web design and administration (taking over from the very talented <a href="https://www.seemann.com/luke/" target="_blank" rel="noreferrer noopener">Luke Seemann</a>), and <a href="https://citymag.org/crma_events/national-city-and-regional-magazine-2018-award-winners/" target="_blank" rel="noreferrer noopener">won a national award for online excellence</a> with my team from the City and Regional Magazine Association.</p>
 
     <!-- <button class="readmore" v-on:click="toggleSection('sectionWebDesign')">
@@ -517,6 +519,59 @@ export default {
     
   </section>
 
+     <!-- v-bind:class="[selectedCategory]" -->
+  <section class="hb" style="max-width: 900px; margin: 0 auto;">
+    <video v-bind:class="`video lazy hb-mobile small first ${[sectionHb.show]}`"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
+    <h2>I enjoy being the utility guy.</h2>
+    <p>I’m no stranger to acting as a one-man agency for the right project. For Chicago-based real estate company Hudson Burnham, they wanted a homepage that would attract attention and play nicely with their slogan "Move Up". They wanted a video background unlike any of their competitors - stock footage wouldn't cut it.</p> 
+
+
+    <transition name="slide-fade">
+      <div v-if="sectionHb.show">
+        <p class="overview">
+          <img src="https://ktut.github.io/portfolio/assets/city-drawing-2.png" class="city"/>
+          <img src="https://ktut.github.io/portfolio/assets/camera-angle.png" class="camera"/>
+        </p>
+
+        <p>I knew we’d need a couple tall buildings in the front of the shot, to work with the theme, with the Sears Tower (as true Chicagoans call it) anchoring the background. I assumed we'd shoot in the golden hour for optimal lighting.</p>
+
+        <p>The drone pilot was able to shoot from about 3,000 feet up and rotate downward in a helix motion, stabilized by the Mavic 2’s Hyperlapse feature (essentially, shooting automatically-comp’d stills instead of video). After reversing, speed-ramping and color-grading the footage in Premiere, I was ready to start coding.</p>
+
+        <p>I created a custom template for the Wordpress site I was building, and ensured that we were handling the different crop positions and optimal file formats for each platform:</p>
+
+        <!-- <p>
+          <img src="https://ktut.github.io/portfolio/assets/hb-code.png" style="width: 100%;">
+        </p> -->
+        <p style="max-width: 635px; max-height: 200px; overflow-y: auto; border: 1px solid #bbb; clear:both;">
+          <!-- <img src="https://ktut.github.io/portfolio/assets/hb-code.png" style="width: 100%; vertical-align: middle;"> -->
+          <picture>
+            <source 
+            style="width: 100%; vertical-align: middle;"
+              srcset="https://ktut.github.io/portfolio/assets/hb-code.png"
+              media="(min-width: 600px)"
+            />
+            <img 
+            style="width: 100%; vertical-align: middle;"
+              src="https://ktut.github.io/portfolio/assets/hb-code-mobile.png" 
+            />
+          </picture>
+        </p>
+
+        <p>The final result is not only performant (loads within 1-2 seconds, streaming the video as it plays), but it looks great as well:</p>
+        <!-- v-if="windowWidth <= 400"  -->
+        <p style="position: relative; max-width: 900px;">
+          <video class="`video lazy hb-mobile large"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
+          <video v-if="windowWidth > 400" class="video lazy hb-desktop" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-desktop-2.mp4"></video>
+        </p>
+
+      </div>
+    </transition>
+
+    <button class="readmore" v-on:click="toggleSection('sectionHb')" style="clear:both;">{{ sectionHb.show ? 'See Less -' : 'See More +' }}</button>
+
+
+  </section>
+
   <section class="code" id="code">
 
     <h2>I enjoy exploring new intersections of programming and design.<span v-if="!sectionCode.show">..</span></h2>
@@ -593,7 +648,7 @@ export default {
     <h2>Did the whole CMYK thing, too.</h2>
 
     <p>My interest in web design stemmed from print design, starting at the Chicago Sun-Times in 2012 and culminating at <em>Chicago</em> in 2016. Two of the biggest projects I worked on there were:</p>
-    <p><b>1.</b> Designing a 103-page glossy embossed hardcover book for the Chicago Sun-Times Foundation in Fall/Winter 2015, including hundreds of photos shot over four years of event coverage</p>
+    <p><b>1.</b> Designing a 103-page glossy embossed hardcover book for the Chicago Sun-Times Foundation in Fall/Winter 2015, including hundreds of photos that I shot over four years of covering the biggest philanthropic events in the city.</p>
     <p><b>2.</b> As a part of a three-person team, designed a 24-page glossy lifestyle magazine (SPLASH) from 2012-2016. Circulation: 225,000.</p>
 
     <!-- <button class="readmore" v-on:click="toggleSection('sectionPrintDesign')">
