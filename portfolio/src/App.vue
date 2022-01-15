@@ -30,7 +30,6 @@ export default {
       photos: photos,
       printDesign: printDesign,
       logos: logos,
-      windowWidth: window.innerWidth,
 
       // section status
       sectionIntro: {
@@ -518,6 +517,9 @@ export default {
     </transition>
     
   </section>
+    <br>
+    <hr>
+    <br>
 
      <!-- v-bind:class="[selectedCategory]" -->
   <section class="hb" style="max-width: 900px; margin: 0 auto;" id="code">
@@ -529,7 +531,7 @@ export default {
     <transition name="slide-fade">
       <div v-if="sectionHb.show">
         <p class="overview">
-          <img src="https://ktut.github.io/portfolio/assets/city-drawing-2.png" class="city"/>
+          <img src="https://ktut.github.io/portfolio/assets/city-drawing-2.png" class="city needsWhiteBackgroundInDarkMode"/>
           <img src="https://ktut.github.io/portfolio/assets/camera-angle.png" class="camera"/>
         </p>
 
@@ -539,11 +541,7 @@ export default {
 
         <p>I created a custom template for the Wordpress site I was building, and ensured that we were handling the different crop positions and optimal file formats for each platform:</p>
 
-        <!-- <p>
-          <img src="https://ktut.github.io/portfolio/assets/hb-code.png" style="width: 100%;">
-        </p> -->
         <p style="max-width: 635px; max-height: 200px; overflow-y: auto; border: 1px solid #bbb; clear:both;">
-          <!-- <img src="https://ktut.github.io/portfolio/assets/hb-code.png" style="width: 100%; vertical-align: middle;"> -->
           <picture>
             <source 
             style="width: 100%; vertical-align: middle;"
@@ -558,10 +556,9 @@ export default {
         </p>
 
         <p>The final result is not only performant (loads within 1-2 seconds, streaming the video as it plays), but it looks great as well:</p>
-        <!-- v-if="windowWidth <= 400"  -->
         <p style="position: relative; max-width: 900px;">
-          <video class="`video lazy hb-mobile large"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
-          <video v-if="windowWidth > 400" class="video lazy hb-desktop" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-desktop-2.mp4"></video>
+          <video class="`video lazy hb-mobile large"  width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
+          <video class="video lazy hb-desktop" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/HB-desktop-2.mp4"></video>
         </p>
 
       </div>
@@ -571,6 +568,10 @@ export default {
 
 
   </section>
+
+  <br>
+  <hr>
+  <br>
 
   <section class="code">
 
@@ -587,7 +588,7 @@ export default {
         <p>In the solution I devised, the developer building the page simply feeds a "card" component an array of article objects, and the component designs itself, using a simple patterning ruleset that plucks atomic classes from an array. Fun stuff:</p>
 
         <p>
-          <video class="video lazy" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
+          <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov">
             <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-1.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -596,7 +597,7 @@ export default {
         <p>Here's what happens when you add this a bunch of cards, all held together with some CSS Grid:</p>
 
         <p style="max-width: 900px;">
-          <video class="video lazy" width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov">
+          <video class="video lazy" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov">
             <source src="https://ktut.github.io/portfolio/assets/rendered/fitch-2.mov" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -685,7 +686,7 @@ export default {
 
     <p>You can reach me by email at <a href="mailto:ramzidreessen@gmail.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzidreessen@gmail.com</a>. Please put relevant information in the subject line. If we've already worked together, please feel free to add me as a contact on <a href="https://www.linkedin.com/in/ramzidreessen/" target="_blank" rel="noreferrer noopener">LinkedIn</a>.</p>
     <br>
-    <p class="small">Video and images copyright Ramzi Dreessen 2008 - 2019. Photo and video content is protected by U.S. Copyright Law and is NOT Public Domain, and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of Ramzi Dreessen. Select web design and photo content is copyrighted by SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings.</p>
+    <p class="small">Video and images copyright Ramzi Dreessen 2008 - <span v-once>{{new Date().getFullYear()}}</span>. Photo and video content is protected by U.S. Copyright Law and is NOT Public Domain, and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of Ramzi Dreessen. Select web design and photo content is copyrighted by SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings.</p>
   </section>
   
   </div>
