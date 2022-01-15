@@ -520,7 +520,7 @@ export default {
   </section>
 
      <!-- v-bind:class="[selectedCategory]" -->
-  <section class="hb" style="max-width: 900px; margin: 0 auto;">
+  <section class="hb" style="max-width: 900px; margin: 0 auto;" id="code">
     <video v-bind:class="`video lazy hb-mobile small first ${[sectionHb.show]}`"  width="100%" autoplay loop muted playsinline controls src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
     <h2>I enjoy being the utility guy.</h2>
     <p>I’m no stranger to acting as a one-man agency for the right project. For Chicago-based real estate company Hudson Burnham, they wanted a homepage that would attract attention and play nicely with their slogan "Move Up". They wanted a video background unlike any of their competitors - stock footage wouldn't cut it.</p> 
@@ -572,7 +572,7 @@ export default {
 
   </section>
 
-  <section class="code" id="code">
+  <section class="code">
 
     <h2>I enjoy exploring new intersections of programming and design.<span v-if="!sectionCode.show">..</span></h2>
 
