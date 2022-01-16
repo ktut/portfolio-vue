@@ -501,6 +501,9 @@ section.fullbleed {
     body {
         background: #333;
     }
+    nav a.github img {
+        filter: invert(1);
+    }
     button.readmore {
         color: black !important;
         font-weight: 700;
@@ -509,7 +512,7 @@ section.fullbleed {
         background: #eee;
     }
     .brandlogo img {
-        filter: invert(1);
+        filter: contrast(0) brightness(0) invert(1);
     }
     #title .logo .letter div {
         border-color: #eee !important;
