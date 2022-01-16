@@ -146,6 +146,17 @@ nav a:hover {
     color: black;
 }
 
+nav a.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a.github img {
+    width: 20px;
+    margin-left: 5px;
+}
+
 @media (max-width: 730px) {
     .logo {
         width: 230px;
