@@ -467,13 +467,12 @@ section.hb video.hb-mobile.first.true {
 @media (min-width: 1100px) {
     section.hb video.hb-mobile.large {
         display: block;
-        top: -35px;
+        top: 54px;
         right: -111px;
         position: absolute;
         width: 250px;
         border-radius: 45px;
-        filter: drop-shadow(5px 13px 9px rgba(0,0,0,0.5));
-        transform: rotate(-2deg);
+        filter: drop-shadow(5px 13px 9px rgba(0,0,0,0.8));
         z-index: 1;
     }
 }
