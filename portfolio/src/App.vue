@@ -211,13 +211,18 @@ export default {
       
       <a class="punch" href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
 
-      <a class="punch github" href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github<img src="./assets/github.svg" alt="Github"></a> 
-
       <a href="#print-design" v-smooth-scroll>Print Design</a>
 
       <a @mouseenter="getMousePosition(), selectedCategory = 'photo'" href="#photo" target="_blank" rel="noreferrer noopener" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
 
-      <a href="#contact" v-smooth-scroll>Contact</a>
+      <a class="contact">
+        <a href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">
+          <img src="./assets/github.svg" alt="Github" />
+        </a>
+        <a href="https://www.linkedin.com/in/ramzidreessen/" target="_blank" rel="noreferrer noopener">
+         <img src="./assets/linkedin.png" alt="LinkedIn" />
+        </a>
+      </a>
 
       <!-- <a @mouseenter="getMousePosition(), selectedCategory = 'video'" href="https://www.rkdvisuals.com/Video" target="_blank" rel="noreferrer noopener" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a> -->
     </nav>

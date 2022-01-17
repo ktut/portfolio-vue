@@ -126,7 +126,7 @@ nav {
     height: 275px;
 }
 
-nav a {
+nav > a {
     display: block;
     margin: 25px 10px;
     border-radius: 3px;
@@ -146,14 +146,25 @@ nav a:hover {
     color: black;
 }
 
-nav a.github {
+nav a.contact {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav a.github img {
-    width: 20px;
+nav a.contact a {
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    transform: scale(1);
+}
+
+nav a.contact a:hover {
+    transform: scale(1.2);
+}
+
+nav a.contact a img {
+    width: 30px;
     margin-left: 5px;
 }
 

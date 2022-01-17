@@ -55,6 +55,16 @@ export default [
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/fitch-min.png',
     },
     {
+        height: 'height: 60px;',
+        tooltip: 'Web development',
+        src: 'https://ktut.github.io/portfolio/assets/logos-upload/h5g-min.png',
+    },
+    {
+        height: 'height: 60px;',
+        tooltip: 'Web development, design, video production',
+        src: 'https://ktut.github.io/portfolio/assets/logos-upload/hb-min.png',
+    },
+    {
         height: 'height: 30px;',
         tooltip: 'Portrait photography',
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/knstrct-min.png',
@@ -88,15 +98,5 @@ export default [
         height: 'height: 72px;',
         tooltip: 'Web design, development, admin work; photo, video, print design',
         src: 'https://ktut.github.io/portfolio/assets/logos-upload/suntimes-min.png',
-    },
-    {
-        height: 'height: 60px;',
-        tooltip: 'Web development, design, video production',
-        src: 'https://ktut.github.io/portfolio/assets/logos-upload/hb-min.png',
-    },
-    {
-        height: 'height: 60px;',
-        tooltip: 'Web development',
-        src: 'https://ktut.github.io/portfolio/assets/logos-upload/h5g-min.png',
-    },
+    }
 ];

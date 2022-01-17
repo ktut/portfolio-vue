@@ -327,7 +327,7 @@ section.fullbleed {
 @media (min-width: 451px) {
     @keyframes marquee {
         0% { transform: translateX(0); }
-        100% { transform: translateX(-3150px); }
+        100% { transform: translateX(-3300px); }
     }
 }
 
@@ -336,7 +336,7 @@ section.fullbleed {
     .inner-logo-slider {
         flex-wrap: wrap;
         justify-content: center;
-        animation: marquee 30s linear infinite;
+        animation: marquee 40s linear infinite;
         animation-direction: alternate;
         width: 960px;
     }
@@ -501,7 +501,7 @@ section.fullbleed {
     body {
         background: #333;
     }
-    nav a.github img {
+    nav img {
         filter: invert(1);
     }
     button.readmore {
