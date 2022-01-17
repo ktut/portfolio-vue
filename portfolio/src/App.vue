@@ -207,15 +207,17 @@ export default {
     </div>
     
     <nav @mouseleave="selectedCategory = ''"  v-bind:class="[selectedCategory]" class="webkitForceHardwareAcceleration">
-      <a class="punch" @mouseenter="getMousePosition(), selectedCategory = 'webDesign'" href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
+      <a class="punch" href="#web-design" v-on:click="sectionWebDesign.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Design</a>
       
-      <a class="punch" @mouseenter="getMousePosition(), selectedCategory = 'code'" href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
+      <a class="punch" href="#code" v-on:click="sectionCode.show = true" v-smooth-scroll @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/farmers-design4.mov'">Web Development</a> 
 
       <a class="punch github" href="https://github.com/ktut" target="_blank" rel="noreferrer noopener">Github<img src="./assets/github.svg" alt="Github"></a> 
 
-      <a @mouseenter="getMousePosition(), selectedCategory = 'printDesign'" href="#print-design" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/cst-cover.jpg'">Print Design</a>
+      <a href="#print-design" v-smooth-scroll>Print Design</a>
 
       <a @mouseenter="getMousePosition(), selectedCategory = 'photo'" href="#photo" target="_blank" rel="noreferrer noopener" v-smooth-scroll @mouseover="showVideoBackground = false, titleBackgroundURL = 'https://ktut.github.io/portfolio/assets/william.jpg'">Photo</a>
+
+      <a href="#contact" v-smooth-scroll>Contact</a>
 
       <!-- <a @mouseenter="getMousePosition(), selectedCategory = 'video'" href="https://www.rkdvisuals.com/Video" target="_blank" rel="noreferrer noopener" @mouseover="showVideoBackground = true, titleBackgroundURL = '', videoBackgroundURL = 'https://ktut.github.io/portfolio/assets/rendered/vid-comp1.mp4'">Video</a> -->
     </nav>
@@ -681,7 +683,7 @@ export default {
   </section>
 
 
-  <section class="contact" id="contact">
+  <section class="contact">
 
     <br>
 
@@ -690,6 +692,7 @@ export default {
     <p>You can reach me by email at <a href="mailto:ramzidreessen@gmail.com?Subject=Saw%20your%20site%20at%20rkdvis.com" target="_top">ramzidreessen@gmail.com</a>. Please put relevant information in the subject line. If we've already worked together, please feel free to add me as a contact on <a href="https://www.linkedin.com/in/ramzidreessen/" target="_blank" rel="noreferrer noopener">LinkedIn</a>.</p>
     <br>
     <p class="small">Video and images copyright Ramzi Dreessen 2008 - <span v-once>{{new Date().getFullYear()}}</span>. Photo and video content is protected by U.S. Copyright Law and is NOT Public Domain, and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of Ramzi Dreessen. Select web design and photo content is copyrighted by SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings and may not be manipulated, copied, published, reproduced, downloaded, or used in any manner without prior consent of SPLASH PUBLICATIONS, LLC, Tribune Publishing or Fitch Ratings.</p>
+    <br id="contact"/>
   </section>
   
   </div>
