@@ -545,9 +545,9 @@ export default {
           <img src="https://ktut.github.io/portfolio/assets/camera-angle.png" class="camera"/>
         </p>
 
-        <p>I knew we’d need a couple tall buildings in the front of the shot, to work with the theme, with the Sears Tower (as true Chicagoans call it) anchoring the background. I assumed we'd shoot in the golden hour for optimal lighting.</p>
+        <p>I knew we’d need a couple tall buildings in the front of the shot to play nicely with the theme, with the Sears Tower (as true Chicagoans call it) anchoring the background. I assumed we’d shoot in the golden hour for optimal lighting.</p>
 
-        <p>The drone pilot was able to shoot from about 3,000 feet up and rotate downward in a helix motion, stabilized by the Mavic 2’s Hyperlapse feature (essentially, shooting automatically-comp’d stills instead of video). After reversing, speed-ramping and color-grading the footage in Premiere, I was ready to start coding.</p>
+        <p>The drone pilot was able to shoot from about 3,000 feet up and rotate downward and outward over the lake in a helix motion (visualized at right), stabilized by the Mavic 2’s Hyperlapse feature (essentially, shooting automatically-comp’d stills instead of video). After reversing, speed-ramping and color-grading the footage in Premiere, I was ready to start coding.</p>
 
         <p>I created a custom template for the Wordpress site I was building, and ensured that we were handling the different crop positions and optimal file formats for each platform:</p>
 
@@ -565,7 +565,7 @@ export default {
           </picture>
         </p>
 
-        <p>The final result is not only performant (loads within 1-2 seconds, streaming the video as it plays), but it looks great as well:</p>
+        <p>The final result is not only performant (loads within 2-3 seconds, streaming the video as it plays), but it looks great as well:</p>
         <p style="position: relative; max-width: 900px;">
           <video class="`video lazy hb-mobile large"  width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/HB-mobile-2.mp4"></video>
           <video class="video lazy hb-desktop" width="100%" autoplay loop muted playsinline src="https://ktut.github.io/portfolio/assets/rendered/HB-desktop-2.mp4"></video>
