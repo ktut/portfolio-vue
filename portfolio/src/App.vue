@@ -291,8 +291,13 @@ export default {
       <h2 style="color: black">A little about me first.</h2>
       <img src="./assets/me.jpg" alt="Ramzi Dreessen" class="float" />
       <p>
-        Hi! I’m <b>Ramzi Dreessen</b>, a web developer (with other superpowers)
-        living in New York and Chicago.
+        Hi! I’m <b>Ramzi Dreessen</b>, a web developer with
+        <b
+          ><span v-once>{{ new Date().getFullYear() - 2018 }}</span> years of
+          experience,</b
+        >
+        along with <b>6 years of print and web design experience</b>, living in
+        New York and Chicago.
       </p>
 
       <button class="readmore" v-on:click="toggleSection('sectionIntro')">
