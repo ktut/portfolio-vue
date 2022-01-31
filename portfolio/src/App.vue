@@ -1125,6 +1125,14 @@ export default {
         stock footage wouldn't cut it.
       </p>
 
+      <button
+        class="readmore"
+        v-on:click="toggleSection('sectionHb')"
+        style="clear: both"
+      >
+        {{ sectionHb.show ? "See Less -" : "See More +" }}
+      </button>
+
       <transition name="slide-fade">
         <div v-if="sectionHb.show">
           <p class="overview">
@@ -1208,14 +1216,6 @@ export default {
           </p>
         </div>
       </transition>
-
-      <button
-        class="readmore"
-        v-on:click="toggleSection('sectionHb')"
-        style="clear: both"
-      >
-        {{ sectionHb.show ? "See Less -" : "See More +" }}
-      </button>
     </section>
 
     <br />
